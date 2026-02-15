@@ -1883,24 +1883,17 @@ function buildCard(type, year, aggregates, units, options = {}) {
   return card;
 }
 
-function buildEmptyYearCard(year) {
+function buildEmptySelectionCard() {
   const card = document.createElement("div");
-  card.className = "card card-empty-year";
+  card.className = "card card-empty-selection";
   const body = document.createElement("div");
-  body.className = "card-empty-year-body";
-  const emptyMessage = `No activities in ${year}`;
-
-  const emptyStat = buildSideStatCard(emptyMessage, "", {
-    className: "card-stat card-empty-year-stat",
+  body.className = "card-empty-selection-body";
+  const emptyStat = buildSideStatCard("No activities for current filters", "", {
+    className: "card-stat card-empty-selection-stat",
   });
   body.appendChild(emptyStat);
   card.appendChild(body);
   return card;
-}
-
-function buildEmptySelectionCard(_types, years) {
-  const year = Array.isArray(years) && years.length ? years[0] : 0;
-  return buildEmptyYearCard(year);
 }
 
 function buildLabeledCardRow(label, card, kind) {
@@ -2104,13 +2097,8 @@ function buildStatsOverview(payload, types, years, color, options = {}) {
     })
     .filter(Boolean);
 
-  const oldestActivityYear = activities.reduce(
-    (oldest, activity) => Math.min(oldest, activity.year),
-    Number.POSITIVE_INFINITY,
-  );
-  const visibleYearsDesc = Number.isFinite(oldestActivityYear)
-    ? yearsDesc.filter((year) => Number(year) >= oldestActivityYear)
-    : yearsDesc.slice();
+  const activityYears = new Set(activities.map((activity) => Number(activity.year)));
+  const visibleYearsDesc = yearsDesc.filter((year) => activityYears.has(Number(year)));
   const yearIndex = new Map();
   visibleYearsDesc.forEach((year, index) => {
     yearIndex.set(Number(year), index);
@@ -2230,7 +2218,7 @@ function buildStatsOverview(payload, types, years, color, options = {}) {
       });
     }
     reportMetricState("init");
-    return buildEmptySelectionCard(types, yearsDesc);
+    return buildEmptySelectionCard();
   }
 
   const dayPanel = buildStatPanel("");
@@ -2861,18 +2849,15 @@ async function init() {
     return result;
   }
 
-  function trackYearMetricAvailability(year, hasData, visibleYearsSet, filterableMetricsByYearMap) {
-    if (hasData) {
-      visibleYearsSet.add(year);
-      return;
-    }
-    filterableMetricsByYearMap.set(Number(year), new Set());
+  function trackYearMetricAvailability(year, visibleYearsSet) {
+    visibleYearsSet.add(Number(year));
   }
 
   function pruneYearMetricSelectionsByFilterability(selectionByYear, filterableMetricsByYearMap) {
-    filterableMetricsByYearMap.forEach((filterableSet, year) => {
+    Array.from(selectionByYear.keys()).forEach((year) => {
+      const filterableSet = filterableMetricsByYearMap.get(year);
       const selectedMetricKey = selectionByYear.get(year) || null;
-      if (selectedMetricKey && !filterableSet.has(selectedMetricKey)) {
+      if (!filterableSet || (selectedMetricKey && !filterableSet.has(selectedMetricKey))) {
         selectionByYear.delete(year);
       }
     });
@@ -3349,7 +3334,7 @@ async function init() {
         const list = document.createElement("div");
         list.className = "type-list";
         const yearTotals = getTypesYearTotals(payload, types, years);
-        const cardYears = years.slice();
+        const cardYears = years.filter((year) => (yearTotals.get(year) || 0) > 0);
         const { typeLabelsByDate, typeBreakdownsByDate } = buildCombinedTypeDetailsByDate(payload, types, cardYears);
         const combinedSelectionKey = `combined:${types.join("|")}`;
         if (showMoreStats) {
@@ -3372,7 +3357,6 @@ async function init() {
         cardYears.forEach((year) => {
           const yearData = payload.aggregates?.[String(year)] || {};
           const aggregates = combineYearAggregates(yearData, types);
-          const total = yearTotals.get(year) || 0;
           const colorForEntry = (entry) => {
             if (!entry.types || entry.types.length === 0) {
               return {
@@ -3391,32 +3375,25 @@ async function init() {
               backgroundImage: buildMultiTypeBackgroundImage(entry.types),
             };
           };
-          const card = total > 0
-            ? buildCard(
-              "all",
-              year,
-              aggregates,
-              currentUnits,
-              {
-                colorForEntry,
-                metricHeatmapColor: frequencyCardColor,
-                weekStart: setupWeekStart,
-                cardMetricYear: year,
-                initialMetricKey: getInitialYearMetricKey(year),
-                onYearMetricStateChange,
-                selectedTypes: types,
-                typeBreakdownsByDate,
-                typeLabelsByDate,
-              },
-            )
-            : buildEmptyYearCard(year);
-          setCardScrollKey(card, `${combinedSelectionKey}:year:${year}`);
-          trackYearMetricAvailability(
+          const card = buildCard(
+            "all",
             year,
-            total > 0,
-            nextVisibleYearMetricYears,
-            nextFilterableYearMetricsByYear,
+            aggregates,
+            currentUnits,
+            {
+              colorForEntry,
+              metricHeatmapColor: frequencyCardColor,
+              weekStart: setupWeekStart,
+              cardMetricYear: year,
+              initialMetricKey: getInitialYearMetricKey(year),
+              onYearMetricStateChange,
+              selectedTypes: types,
+              typeBreakdownsByDate,
+              typeLabelsByDate,
+            },
           );
+          setCardScrollKey(card, `${combinedSelectionKey}:year:${year}`);
+          trackYearMetricAvailability(year, nextVisibleYearMetricYears);
           list.appendChild(buildLabeledCardRow(String(year), card, "year"));
         });
         section.appendChild(list);
@@ -3429,7 +3406,7 @@ async function init() {
           const list = document.createElement("div");
           list.className = "type-list";
           const yearTotals = getTypeYearTotals(payload, type, years);
-          const cardYears = years.slice();
+          const cardYears = years.filter((year) => (yearTotals.get(year) || 0) > 0);
           const typeCardKey = `type:${type}`;
           if (showMoreStats) {
             const frequencyCard = buildStatsOverview(payload, [type], cardYears, frequencyCardColor, {
@@ -3450,23 +3427,15 @@ async function init() {
           }
           cardYears.forEach((year) => {
             const aggregates = payload.aggregates?.[String(year)]?.[type] || {};
-            const total = yearTotals.get(year) || 0;
-            const card = total > 0
-              ? buildCard(type, year, aggregates, currentUnits, {
-                metricHeatmapColor: getColors(type)[4],
-                weekStart: setupWeekStart,
-                cardMetricYear: year,
-                initialMetricKey: getInitialYearMetricKey(year),
-                onYearMetricStateChange,
-              })
-              : buildEmptyYearCard(year);
+            const card = buildCard(type, year, aggregates, currentUnits, {
+              metricHeatmapColor: getColors(type)[4],
+              weekStart: setupWeekStart,
+              cardMetricYear: year,
+              initialMetricKey: getInitialYearMetricKey(year),
+              onYearMetricStateChange,
+            });
             setCardScrollKey(card, `${typeCardKey}:year:${year}`);
-            trackYearMetricAvailability(
-              year,
-              total > 0,
-              nextVisibleYearMetricYears,
-              nextFilterableYearMetricsByYear,
-            );
+            trackYearMetricAvailability(year, nextVisibleYearMetricYears);
             list.appendChild(buildLabeledCardRow(String(year), card, "year"));
           });
           if (!list.childElementCount) {
