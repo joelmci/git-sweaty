@@ -41,7 +41,7 @@ Once the script succeeds, it will provide the URL for your dashboard.
 
 ### Switching Sources Later
 
-You can switch between `strava` and `garmin` any time.
+You can switch between `strava` and `garmin` at any time.
 
 - Re-run `./scripts/bootstrap.sh` and choose a different source.
 - If you re-run setup and choose the same source, setup asks whether to force a one-time full backfill for that run.
