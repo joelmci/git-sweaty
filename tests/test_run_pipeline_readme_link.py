@@ -146,6 +146,33 @@ class RunPipelineReadmeLinkTests(unittest.TestCase):
                 updated,
             )
 
+    def test_update_readme_live_site_link_handles_non_bulleted_sentence(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            readme_path = os.path.join(tmpdir, "README.md")
+            with open(readme_path, "w", encoding="utf-8") as handle:
+                handle.write(
+                    "# Test\n"
+                    "View the Interactive [Activity Dashboard](https://aspain.github.io/git-sweaty/).  \n"
+                )
+
+            previous_cwd = os.getcwd()
+            os.chdir(tmpdir)
+            try:
+                with (
+                    mock.patch("run_pipeline._repo_slug_from_git", return_value="michalpalaxo/git-sweaty"),
+                    mock.patch("run_pipeline._dashboard_url_from_pages_api", return_value=None),
+                ):
+                    run_pipeline._update_readme_live_site_link()
+            finally:
+                os.chdir(previous_cwd)
+
+            with open(readme_path, "r", encoding="utf-8") as handle:
+                updated = handle.read()
+            self.assertIn(
+                "View the Interactive [Activity Dashboard](https://michalpalaxo.github.io/git-sweaty/).",
+                updated,
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

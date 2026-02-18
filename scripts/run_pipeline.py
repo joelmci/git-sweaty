@@ -41,7 +41,7 @@ SOURCE_HINT_STRAVA = "strava"
 SOURCE_HINT_GARMIN = "garmin"
 SOURCE_HINT_MIXED = "mixed"
 README_LIVE_SITE_RE = re.compile(
-    r"(?im)^(-\s*(?:Live site:\s*\[Interactive Heatmaps\]|View the Interactive \[Activity Dashboard\])\()https?://[^)]+(\)\s*)$",
+    r"(?im)^([ \t]*(?:-\s*)?(?:Live site:\s*\[Interactive Heatmaps\]|View the Interactive \[Activity Dashboard\])\()https?://[^)]+(\)[ \t]*\.?[ \t]*)$",
     re.IGNORECASE,
 )
 
