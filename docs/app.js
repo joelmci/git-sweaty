@@ -3938,7 +3938,7 @@ async function init() {
   syncStravaProfileLink();
   syncProfileLinkNavigationTarget();
   syncHeaderLinkPlacement();
-  const resp = await fetch("data.json");
+  const resp = await fetch("https://cdn.jsdelivr.net/gh/joelmci/git-sweaty@dashboard-data/site/data.json");
   if (!resp.ok) {
     throw new Error(`Failed to load data.json (${resp.status})`);
   }
