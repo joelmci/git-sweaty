@@ -3944,6 +3944,10 @@ function renderLoadError(error) {
  * @returns {[number, number][]}
  */
 function decodePolyline(encoded) {
+  if (typeof encoded !== "string" || !encoded) {
+    console.warn("[map] decodePolyline: invalid input", typeof encoded, encoded);
+    return [];
+  }
   const points = [];
   let index = 0;
   let lat = 0;
@@ -3970,6 +3974,10 @@ function decodePolyline(encoded) {
     lng += dlng;
     points.push([lat / 1e5, lng / 1e5]);
   }
+  if (points.length > 0 && !decodePolyline._logged) {
+    decodePolyline._logged = true;
+    console.log("[map] decodePolyline: decoded", encoded.length, "chars ->", points.length, "points, first:", points[0]);
+  }
   return points;
 }
 
@@ -3978,15 +3986,26 @@ function decodePolyline(encoded) {
  * @param {object} payload - dashboard data.json payload
  */
 function initMapView(payload) {
-  const activities = payload.activities || [];
-  const withStart = activities.filter((a) => Array.isArray(a.start_latlng) && a.start_latlng.length >= 2);
-  const withPolyline = activities.filter((a) => typeof a.summary_polyline === "string" && a.summary_polyline);
+  const raw = payload.activities;
+  const activities = Array.isArray(raw) ? raw : (raw && typeof raw === "object" ? Object.values(raw) : []);
+  const withStart = activities.filter((a) => a && Array.isArray(a.start_latlng) && a.start_latlng.length >= 2);
+  const withPolyline = activities.filter((a) => a && typeof a.summary_polyline === "string" && a.summary_polyline);
   const hasMapData = withStart.length > 0 || withPolyline.length > 0;
 
-  if (!tabHeatmaps || !tabMap || !heatmapsPane || !mapPane) return;
+  console.log("[map] initMapView: activities=", activities.length, "withStart=", withStart.length, "withPolyline=", withPolyline.length, "hasMapData=", hasMapData);
+  if (activities.length > 0) {
+    const sample = activities[0];
+    console.log("[map] sample activity keys:", Object.keys(sample), "start_latlng:", sample.start_latlng, "summary_polyline:", typeof sample.summary_polyline, sample.summary_polyline ? "(length " + sample.summary_polyline.length + ")" : "missing");
+  }
+
+  if (!tabHeatmaps || !tabMap || !heatmapsPane || !mapPane) {
+    console.warn("[map] initMapView: missing tab/pane elements", { tabHeatmaps: !!tabHeatmaps, tabMap: !!tabMap, heatmapsPane: !!heatmapsPane, mapPane: !!mapPane });
+    return;
+  }
 
   function switchTab(paneId) {
     const isMap = paneId === "mapPane";
+    console.log("[map] switchTab:", paneId, "isMap:", isMap);
     heatmapsPane.classList.toggle("hidden", isMap);
     mapPane.classList.toggle("hidden", !isMap);
     tabHeatmaps.classList.toggle("active", !isMap);
@@ -3994,8 +4013,11 @@ function initMapView(payload) {
     tabHeatmaps.setAttribute("aria-selected", !isMap ? "true" : "false");
     tabMap.setAttribute("aria-selected", isMap ? "true" : "false");
     if (isMap && mapContainer && typeof L !== "undefined" && window.mapViewInit) {
+      console.log("[map] switchTab: calling mapViewInit");
       window.mapViewInit();
       window.mapViewInit = null;
+    } else if (isMap) {
+      console.warn("[map] switchTab: mapViewInit not called", { mapContainer: !!mapContainer, L: typeof L, mapViewInit: !!window.mapViewInit });
     }
   }
 
@@ -4003,6 +4025,7 @@ function initMapView(payload) {
   tabMap.addEventListener("click", () => switchTab("mapPane"));
 
   if (!hasMapData || !mapContainer || typeof L === "undefined") {
+    console.log("[map] initMapView: skipping map init", { hasMapData, mapContainer: !!mapContainer, L: typeof L });
     if (countryCountEl) {
       countryCountEl.textContent = hasMapData
         ? "Map data is loading…"
@@ -4016,28 +4039,46 @@ function initMapView(payload) {
   let heatLayer = null;
 
   window.mapViewInit = function () {
-    if (map) return;
+    console.log("[map] mapViewInit: called");
+    if (map) {
+      console.log("[map] mapViewInit: map already exists, calling invalidateSize");
+      map.invalidateSize();
+      return;
+    }
+    console.log("[map] mapViewInit: creating map, container dimensions:", mapContainer?.offsetWidth, "x", mapContainer?.offsetHeight);
     map = L.map(mapContainer).setView([20, 0], 2);
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "© OpenStreetMap contributors",
     }).addTo(map);
 
     const heatPoints = [];
-    withPolyline.forEach((a) => {
+    withPolyline.forEach((a, i) => {
       try {
         const pts = decodePolyline(a.summary_polyline);
         pts.forEach((p) => heatPoints.push([p[0], p[1], 0.5]));
-      } catch (_) {}
+        if (i === 0) console.log("[map] first polyline:", pts.length, "points");
+      } catch (e) {
+        console.warn("[map] decodePolyline error for activity:", e);
+      }
     });
-    withStart.forEach(([lat, lng]) => {
+    withStart.forEach((a) => {
+      const lat = a.start_latlng[0];
+      const lng = a.start_latlng[1];
       heatPoints.push([lat, lng, 0.8]);
     });
 
+    console.log("[map] heatPoints count:", heatPoints.length, "L.heatLayer:", typeof L.heatLayer);
     if (heatPoints.length > 0 && typeof L.heatLayer === "function") {
       heatLayer = L.heatLayer(heatPoints, { radius: 12, blur: 15, maxZoom: 14 });
       heatLayer.addTo(map);
       const bounds = L.latLngBounds(heatPoints.map((p) => [p[0], p[1]]));
       map.fitBounds(bounds, { padding: [20, 20], maxZoom: 12 });
+      console.log("[map] heat layer added, bounds:", bounds.toBBoxString());
+      requestAnimationFrame(() => {
+        if (map) map.invalidateSize();
+      });
+    } else {
+      console.warn("[map] could not add heat layer:", heatPoints.length, "points, L.heatLayer:", typeof L.heatLayer);
     }
 
     if (countryCountEl && withStart.length > 0) {
@@ -4046,7 +4087,9 @@ function initMapView(payload) {
       const cacheKey = (lat, lng) => `${Number(lat).toFixed(2)},${Number(lng).toFixed(2)}`;
       const cache = {};
       const keyToCount = {};
-      withStart.forEach(([lat, lng]) => {
+      withStart.forEach((a) => {
+        const lat = a.start_latlng[0];
+        const lng = a.start_latlng[1];
         const k = cacheKey(lat, lng);
         keyToCount[k] = (keyToCount[k] || 0) + 1;
       });
