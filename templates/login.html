@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Connect with Strava - Activity Dashboard</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%B5%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", system-ui, sans-serif;
+        background: #0f172a;
+        color: #e5e7eb;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 16px;
+        padding: 48px;
+        text-align: center;
+        max-width: 420px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+      }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 0 8px;
+      }
+      p {
+        color: #94a3b8;
+        margin: 0 0 32px;
+        font-size: 0.95rem;
+      }
+      .strava-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #fc4c02;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 14px 28px;
+        border-radius: 10px;
+        transition: background 0.2s, transform 0.1s;
+      }
+      .strava-btn:hover {
+        background: #e64500;
+        transform: translateY(-1px);
+      }
+      .strava-btn:active {
+        transform: translateY(0);
+      }
+      .strava-btn svg {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Activity Heatmaps</h1>
+      <p>Connect your Strava account to view your personal activity dashboard.</p>
+      <a href="{{ url_for('login') }}" class="strava-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.599h4.172L10.463 0l-7 13.828h4.169" />
+        </svg>
+        Connect with Strava
+      </a>
+    </div>
+  </body>
+</html>
