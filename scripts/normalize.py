@@ -98,6 +98,19 @@ def _normalize_activity(activity: Dict, type_aliases: Dict[str, str], source: st
     }
     if activity_name:
         normalized["name"] = activity_name
+    # Map data for dashboard map view (Strava: start_latlng, map.summary_polyline)
+    if source == "strava":
+        start_latlng = activity.get("start_latlng")
+        if isinstance(start_latlng, (list, tuple)) and len(start_latlng) >= 2:
+            try:
+                lat, lng = float(start_latlng[0]), float(start_latlng[1])
+                normalized["start_latlng"] = [lat, lng]
+            except (TypeError, ValueError):
+                pass
+        map_obj = activity.get("map") or {}
+        summary_polyline = map_obj.get("summary_polyline")
+        if isinstance(summary_polyline, str) and summary_polyline.strip():
+            normalized["summary_polyline"] = summary_polyline.strip()
     return normalized
 
 

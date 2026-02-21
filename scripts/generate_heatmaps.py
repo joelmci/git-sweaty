@@ -172,6 +172,10 @@ def _load_activities(
                 activity_name = str(item.get("name") or "").strip()
                 if activity_name:
                     activity["name"] = activity_name
+        if item.get("start_latlng"):
+            activity["start_latlng"] = item["start_latlng"]
+        if item.get("summary_polyline"):
+            activity["summary_polyline"] = item["summary_polyline"]
         activities.append(activity)
     return activities
 

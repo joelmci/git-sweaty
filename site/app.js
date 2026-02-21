@@ -58,6 +58,12 @@ const footerHostedPrefix = document.getElementById("footerHostedPrefix");
 const footerHostedLink = document.getElementById("footerHostedLink");
 const footerPoweredLabel = document.getElementById("footerPoweredLabel");
 const dashboardTitle = document.getElementById("dashboardTitle");
+const tabHeatmaps = document.getElementById("tabHeatmaps");
+const tabMap = document.getElementById("tabMap");
+const heatmapsPane = document.getElementById("heatmapsPane");
+const mapPane = document.getElementById("mapPane");
+const mapContainer = document.getElementById("mapContainer");
+const countryCountEl = document.getElementById("countryCount");
 const isTouch = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
 const hasTouchInput = Number(window.navigator?.maxTouchPoints || 0) > 0;
 const useTouchInteractions = isTouch || hasTouchInput;
@@ -3932,6 +3938,170 @@ function renderLoadError(error) {
   heatmaps.appendChild(card);
 }
 
+/**
+ * Decode Google polyline encoding to [lat, lng] array.
+ * @param {string} encoded
+ * @returns {[number, number][]}
+ */
+function decodePolyline(encoded) {
+  const points = [];
+  let index = 0;
+  let lat = 0;
+  let lng = 0;
+  while (index < encoded.length) {
+    let b;
+    let shift = 0;
+    let result = 0;
+    do {
+      b = encoded.charCodeAt(index++) - 63;
+      result |= (b & 0x1f) << shift;
+      shift += 5;
+    } while (b >= 0x20);
+    const dlat = (result & 1) ? ~(result >> 1) : result >> 1;
+    shift = 0;
+    result = 0;
+    do {
+      b = encoded.charCodeAt(index++) - 63;
+      result |= (b & 0x1f) << shift;
+      shift += 5;
+    } while (b >= 0x20);
+    const dlng = (result & 1) ? ~(result >> 1) : result >> 1;
+    lat += dlat;
+    lng += dlng;
+    points.push([lat / 1e5, lng / 1e5]);
+  }
+  return points;
+}
+
+/**
+ * Set up map tab and init Leaflet map + heat layer + country count when Map tab is first shown.
+ * @param {object} payload - dashboard data.json payload
+ */
+function initMapView(payload) {
+  const activities = payload.activities || [];
+  const withStart = activities.filter((a) => Array.isArray(a.start_latlng) && a.start_latlng.length >= 2);
+  const withPolyline = activities.filter((a) => typeof a.summary_polyline === "string" && a.summary_polyline);
+  const hasMapData = withStart.length > 0 || withPolyline.length > 0;
+
+  if (!tabHeatmaps || !tabMap || !heatmapsPane || !mapPane) return;
+
+  function switchTab(paneId) {
+    const isMap = paneId === "mapPane";
+    heatmapsPane.classList.toggle("hidden", isMap);
+    mapPane.classList.toggle("hidden", !isMap);
+    tabHeatmaps.classList.toggle("active", !isMap);
+    tabMap.classList.toggle("active", isMap);
+    tabHeatmaps.setAttribute("aria-selected", !isMap ? "true" : "false");
+    tabMap.setAttribute("aria-selected", isMap ? "true" : "false");
+    if (isMap && mapContainer && typeof L !== "undefined" && window.mapViewInit) {
+      window.mapViewInit();
+      window.mapViewInit = null;
+    }
+  }
+
+  tabHeatmaps.addEventListener("click", () => switchTab("heatmapsPane"));
+  tabMap.addEventListener("click", () => switchTab("mapPane"));
+
+  if (!hasMapData || !mapContainer || typeof L === "undefined") {
+    if (countryCountEl) {
+      countryCountEl.textContent = hasMapData
+        ? "Map data is loading…"
+        : "No route or start location data available for the map.";
+      countryCountEl.classList.remove("loading");
+    }
+    return;
+  }
+
+  let map = null;
+  let heatLayer = null;
+
+  window.mapViewInit = function () {
+    if (map) return;
+    map = L.map(mapContainer).setView([20, 0], 2);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "© OpenStreetMap contributors",
+    }).addTo(map);
+
+    const heatPoints = [];
+    withPolyline.forEach((a) => {
+      try {
+        const pts = decodePolyline(a.summary_polyline);
+        pts.forEach((p) => heatPoints.push([p[0], p[1], 0.5]));
+      } catch (_) {}
+    });
+    withStart.forEach(([lat, lng]) => {
+      heatPoints.push([lat, lng, 0.8]);
+    });
+
+    if (heatPoints.length > 0 && typeof L.heatLayer === "function") {
+      heatLayer = L.heatLayer(heatPoints, { radius: 12, blur: 15, maxZoom: 14 });
+      heatLayer.addTo(map);
+      const bounds = L.latLngBounds(heatPoints.map((p) => [p[0], p[1]]));
+      map.fitBounds(bounds, { padding: [20, 20], maxZoom: 12 });
+    }
+
+    if (countryCountEl && withStart.length > 0) {
+      countryCountEl.textContent = "Loading countries…";
+      countryCountEl.classList.add("loading");
+      const cacheKey = (lat, lng) => `${Number(lat).toFixed(2)},${Number(lng).toFixed(2)}`;
+      const cache = {};
+      const keyToCount = {};
+      withStart.forEach(([lat, lng]) => {
+        const k = cacheKey(lat, lng);
+        keyToCount[k] = (keyToCount[k] || 0) + 1;
+      });
+      const keys = Object.keys(keyToCount);
+      const countryCounts = {};
+      let processed = 0;
+
+      function fetchNext() {
+        if (processed >= keys.length) {
+          const entries = Object.entries(countryCounts).sort((a, b) => b[1] - a[1]);
+          const text = entries.length === 0
+            ? "Could not resolve countries for start locations."
+            : `Activities by country: ${entries.map(([c, n]) => `${c} (${n})`).join(", ")}`;
+          countryCountEl.textContent = text;
+          countryCountEl.classList.remove("loading");
+          return;
+        }
+        const key = keys[processed];
+        const count = keyToCount[key];
+        const [lat, lng] = key.split(",").map(Number);
+        if (cache[key] !== undefined) {
+          countryCounts[cache[key]] = (countryCounts[cache[key]] || 0) + count;
+          processed++;
+          fetchNext();
+          return;
+        }
+        fetch(
+          `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`,
+          { headers: { Accept: "application/json" } }
+        )
+          .then((r) => r.json())
+          .then((data) => {
+            const country = data?.address?.country || "Unknown";
+            cache[key] = country;
+            countryCounts[country] = (countryCounts[country] || 0) + count;
+            processed++;
+            setTimeout(fetchNext, 1100);
+          })
+          .catch(() => {
+            cache[key] = "Unknown";
+            countryCounts["Unknown"] = (countryCounts["Unknown"] || 0) + count;
+            processed++;
+            setTimeout(fetchNext, 1100);
+          });
+      }
+      fetchNext();
+    } else if (countryCountEl) {
+      countryCountEl.textContent = withStart.length === 0
+        ? "No start coordinates to count countries."
+        : "Activity routes are shown on the map.";
+      countryCountEl.classList.remove("loading");
+    }
+  };
+}
+
 async function init() {
   syncRepoLink();
   syncFooterHostedLink();
@@ -4715,6 +4885,7 @@ async function init() {
   });
   syncUnitToggleState();
   update();
+  initMapView(payload);
 
   if (document.fonts?.ready) {
     document.fonts.ready.then(() => {
