@@ -11,7 +11,7 @@ import threading
 import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Tuple
 
 from flask import Flask, redirect, render_template, request, session, send_from_directory, url_for
 
@@ -20,6 +20,8 @@ _pipeline_lock = threading.Lock()
 _pipeline_running = False
 _pipeline_last_run_at = None
 _pipeline_last_success = None
+_pipeline_last_athlete_id = None
+_pipeline_last_error = None
 
 # Add scripts to path for pipeline imports
 SCRIPT_DIR = Path(__file__).resolve().parent / "scripts"
@@ -174,8 +176,40 @@ strava:
     CONFIG_LOCAL.write_text(content, encoding="utf-8")
 
 
-def run_pipeline() -> bool:
-    """Run the sync + generate pipeline. Returns True on success.
+def _trigger_pipeline_background(athlete_id: int) -> None:
+    """Start the pipeline in a background thread for the given athlete."""
+
+    def _run():
+        global _pipeline_running, _pipeline_last_run_at, _pipeline_last_success
+        global _pipeline_last_athlete_id, _pipeline_last_error
+        with _pipeline_lock:
+            _pipeline_running = True
+        try:
+            success, err = run_pipeline()
+            if success and DATA_JSON_PATH.exists():
+                data_json = DATA_JSON_PATH.read_text(encoding="utf-8")
+                store_user_data(athlete_id, data_json)
+            with _pipeline_lock:
+                _pipeline_last_run_at = datetime.now(timezone.utc)
+                _pipeline_last_success = success
+                _pipeline_last_athlete_id = athlete_id
+                _pipeline_last_error = None if success else err
+        except Exception as exc:
+            app.logger.exception("Background pipeline failed: %s", exc)
+            with _pipeline_lock:
+                _pipeline_last_run_at = datetime.now(timezone.utc)
+                _pipeline_last_success = False
+                _pipeline_last_athlete_id = athlete_id
+                _pipeline_last_error = str(exc)
+        finally:
+            with _pipeline_lock:
+                _pipeline_running = False
+
+    threading.Thread(target=_run, daemon=True).start()
+
+
+def run_pipeline() -> Tuple[bool, Optional[str]]:
+    """Run the sync + generate pipeline. Returns (success, error_message).
     Uses DATA_DIR from environment so pipeline writes data.json to the volume when set.
     """
     env = dict(os.environ)
@@ -191,15 +225,16 @@ def run_pipeline() -> bool:
             timeout=300,
         )
         if result.returncode != 0:
-            app.logger.warning("Pipeline failed: %s", result.stderr)
-            return False
-        return True
+            err = (result.stderr or result.stdout or "unknown error").strip()
+            app.logger.warning("Pipeline failed: %s", err)
+            return False, err[:500] if err else "Non-zero exit code"
+        return True, None
     except subprocess.TimeoutExpired:
         app.logger.warning("Pipeline timed out")
-        return False
+        return False, "Pipeline timed out after 300 seconds"
     except Exception as exc:
         app.logger.exception("Pipeline error: %s", exc)
-        return False
+        return False, str(exc)
 
 
 @app.route("/")
@@ -284,29 +319,7 @@ def callback():
 
     write_user_config(refresh_token)
     ensure_dashboard_files()
-
-    def _run_pipeline_background():
-        global _pipeline_running, _pipeline_last_run_at, _pipeline_last_success
-        with _pipeline_lock:
-            _pipeline_running = True
-        try:
-            success = run_pipeline()
-            if success and DATA_JSON_PATH.exists():
-                data_json = DATA_JSON_PATH.read_text(encoding="utf-8")
-                store_user_data(athlete_id, data_json)
-            with _pipeline_lock:
-                _pipeline_last_run_at = datetime.now(timezone.utc)
-                _pipeline_last_success = success
-        except Exception as exc:
-            app.logger.exception("Background pipeline failed: %s", exc)
-            with _pipeline_lock:
-                _pipeline_last_run_at = datetime.now(timezone.utc)
-                _pipeline_last_success = False
-        finally:
-            with _pipeline_lock:
-                _pipeline_running = False
-
-    threading.Thread(target=_run_pipeline_background, daemon=True).start()
+    _trigger_pipeline_background(athlete_id)
     return redirect(url_for("dashboard"))
 
 
@@ -327,7 +340,7 @@ def dashboard():
     write_user_config(tokens["refresh_token"])
     # Run pipeline if no user data yet (e.g. first visit after OAuth or redeploy)
     if get_user_data(athlete_id) is None:
-        success = run_pipeline()
+        success, _ = run_pipeline()
         if success and DATA_JSON_PATH.exists():
             store_user_data(athlete_id, DATA_JSON_PATH.read_text(encoding="utf-8"))
 
@@ -356,25 +369,50 @@ def dashboard_static(filename):
 
 
 def _get_pipeline_status():
-    """Return (running, last_run_at, last_success)."""
+    """Return (running, last_run_at, last_success, last_athlete_id, last_error)."""
     with _pipeline_lock:
-        return (_pipeline_running, _pipeline_last_run_at, _pipeline_last_success)
+        return (
+            _pipeline_running,
+            _pipeline_last_run_at,
+            _pipeline_last_success,
+            _pipeline_last_athlete_id,
+            _pipeline_last_error,
+        )
+
+
+@app.route("/sync")
+def sync():
+    """Manually trigger the pipeline in a background thread. Requires login."""
+    athlete_id = session.get("athlete_id")
+    if not athlete_id:
+        return redirect(url_for("index"))
+    tokens = get_tokens(athlete_id)
+    if not tokens:
+        session.pop("athlete_id", None)
+        return redirect(url_for("index"))
+    write_user_config(tokens["refresh_token"])
+    _trigger_pipeline_background(athlete_id)
+    return redirect(url_for("status"))
 
 
 @app.route("/status")
 def status():
-    running, last_run_at, last_success = _get_pipeline_status()
-    last_run_str = last_run_at.isoformat() if last_run_at else "never"
-    last_success_str = (
-        "succeeded" if last_success is True
-        else "failed" if last_success is False
-        else "unknown"
-    )
-    return (
-        f"Pipeline running: {running}\n"
-        f"Last run: {last_run_str}\n"
-        f"Last run result: {last_success_str}\n"
-    ), 200, {"Content-Type": "text/plain; charset=utf-8"}
+    running, last_run_at, last_success, last_athlete_id, last_error = _get_pipeline_status()
+    athlete_id = session.get("athlete_id")
+    has_user_data = get_user_data(athlete_id) is not None if athlete_id else None
+
+    lines = [
+        f"Pipeline running: {running}",
+        f"Last run: {last_run_at.isoformat() if last_run_at else 'never'}",
+        f"Last run result: {'succeeded' if last_success is True else 'failed' if last_success is False else 'unknown'}",
+    ]
+    if last_athlete_id is not None:
+        lines.append(f"Last run athlete_id: {last_athlete_id}")
+    if last_error:
+        lines.append(f"Last error: {last_error}")
+    if athlete_id is not None:
+        lines.append(f"Current user has data: {has_user_data}")
+    return "\n".join(lines) + "\n", 200, {"Content-Type": "text/plain; charset=utf-8"}
 
 
 @app.route("/logout")
