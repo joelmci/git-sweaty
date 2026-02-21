@@ -66,6 +66,10 @@ def init_db():
     conn.close()
 
 
+# Create tables when app is loaded (e.g. by gunicorn) - main() is not called in that case
+init_db()
+
+
 def store_tokens(athlete_id: int, access_token: str, refresh_token: str, expires_at: int):
     from datetime import datetime, timezone
 
