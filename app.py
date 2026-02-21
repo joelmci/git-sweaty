@@ -7,6 +7,7 @@ import secrets
 import shutil
 import subprocess
 import sys
+import threading
 import urllib.parse
 from pathlib import Path
 
@@ -227,11 +228,16 @@ def callback():
     session["athlete_id"] = athlete_id
     session.pop("oauth_state", None)
 
-    # Write config and run pipeline so dashboard has data
     write_user_config(refresh_token)
     ensure_dashboard_files()
-    run_pipeline()
 
+    def _run_pipeline_background():
+        try:
+            run_pipeline()
+        except Exception as exc:
+            app.logger.exception("Background pipeline failed: %s", exc)
+
+    threading.Thread(target=_run_pipeline_background, daemon=True).start()
     return redirect(url_for("dashboard"))
 
 
