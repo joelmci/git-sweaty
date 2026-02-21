@@ -23,7 +23,12 @@ from utils import (
 
 AGG_PATH = os.path.join("data", "daily_aggregates.json")
 ACTIVITIES_PATH = os.path.join("data", "activities_normalized.json")
-SITE_DATA_PATH = os.path.join("site", "data.json")
+_DATA_DIR = os.environ.get("DATA_DIR")
+SITE_DATA_PATH = (
+    os.path.join(_DATA_DIR, "data.json")
+    if _DATA_DIR
+    else os.path.join("site", "data.json")
+)
 
 CELL = 12
 GAP = 2
@@ -406,7 +411,9 @@ def _svg_for_year(
 
 
 def _write_site_data(payload: Dict) -> None:
-    ensure_dir("site")
+    parent = os.path.dirname(SITE_DATA_PATH)
+    if parent:
+        ensure_dir(parent)
     write_json(SITE_DATA_PATH, payload)
 
 

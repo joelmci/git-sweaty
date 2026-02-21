@@ -11,6 +11,7 @@ import threading
 import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Optional
 
 from flask import Flask, redirect, render_template, request, session, send_from_directory, url_for
 
@@ -32,6 +33,8 @@ DASHBOARD_SITE_DIR = ROOT / "site"
 DASHBOARD_SOURCE_DIR = ROOT / "docs" / "site"
 DB_PATH = ROOT / "tokens.db"
 CONFIG_LOCAL = ROOT / "config.local.yaml"
+DATA_DIR = os.environ.get("DATA_DIR")
+DATA_JSON_PATH = Path(DATA_DIR) / "data.json" if DATA_DIR else DASHBOARD_SITE_DIR / "data.json"
 
 STRAVA_AUTHORIZE = "https://www.strava.com/oauth/authorize"
 STRAVA_TOKEN = "https://www.strava.com/oauth/token"
@@ -66,6 +69,15 @@ def init_db():
             refresh_token TEXT NOT NULL,
             expires_at INTEGER NOT NULL,
             created_at TEXT NOT NULL,
+            updated_at TEXT NOT NULL
+        )
+        """
+    )
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS user_data (
+            athlete_id INTEGER PRIMARY KEY,
+            data_json TEXT NOT NULL,
             updated_at TEXT NOT NULL
         )
         """
@@ -109,6 +121,35 @@ def get_tokens(athlete_id: int):
     return dict(row) if row else None
 
 
+def store_user_data(athlete_id: int, data_json: str) -> None:
+    from datetime import datetime, timezone
+
+    now = datetime.now(timezone.utc).isoformat()
+    conn = get_db()
+    conn.execute(
+        """
+        INSERT INTO user_data (athlete_id, data_json, updated_at)
+        VALUES (?, ?, ?)
+        ON CONFLICT(athlete_id) DO UPDATE SET
+            data_json = excluded.data_json,
+            updated_at = excluded.updated_at
+        """,
+        (athlete_id, data_json, now),
+    )
+    conn.commit()
+    conn.close()
+
+
+def get_user_data(athlete_id: int) -> Optional[str]:
+    conn = get_db()
+    row = conn.execute(
+        "SELECT data_json FROM user_data WHERE athlete_id = ?",
+        (athlete_id,),
+    ).fetchone()
+    conn.close()
+    return row["data_json"] if row else None
+
+
 def ensure_dashboard_files():
     """Ensure site/ has index.html and app.js (copy from docs/site if missing)."""
     DASHBOARD_SITE_DIR.mkdir(parents=True, exist_ok=True)
@@ -134,11 +175,17 @@ strava:
 
 
 def run_pipeline() -> bool:
-    """Run the sync + generate pipeline. Returns True on success."""
+    """Run the sync + generate pipeline. Returns True on success.
+    Uses DATA_DIR from environment so pipeline writes data.json to the volume when set.
+    """
+    env = dict(os.environ)
+    if DATA_DIR:
+        env["DATA_DIR"] = DATA_DIR
     try:
         result = subprocess.run(
             [sys.executable, str(ROOT / "scripts" / "run_pipeline.py")],
             cwd=str(ROOT),
+            env=env,
             capture_output=True,
             text=True,
             timeout=300,
@@ -244,6 +291,9 @@ def callback():
             _pipeline_running = True
         try:
             success = run_pipeline()
+            if success and DATA_JSON_PATH.exists():
+                data_json = DATA_JSON_PATH.read_text(encoding="utf-8")
+                store_user_data(athlete_id, data_json)
             with _pipeline_lock:
                 _pipeline_last_run_at = datetime.now(timezone.utc)
                 _pipeline_last_success = success
@@ -275,10 +325,11 @@ def dashboard():
     ensure_dashboard_files()
     # Ensure config is current (e.g. after app restart)
     write_user_config(tokens["refresh_token"])
-    # Run pipeline if no data yet (e.g. first visit after OAuth)
-    data_json = DASHBOARD_SITE_DIR / "data.json"
-    if not data_json.exists():
-        run_pipeline()
+    # Run pipeline if no user data yet (e.g. first visit after OAuth or redeploy)
+    if get_user_data(athlete_id) is None:
+        success = run_pipeline()
+        if success and DATA_JSON_PATH.exists():
+            store_user_data(athlete_id, DATA_JSON_PATH.read_text(encoding="utf-8"))
 
     return send_from_directory(DASHBOARD_SITE_DIR, "index.html")
 
@@ -291,6 +342,15 @@ def dashboard_static(filename):
     safe = Path(filename)
     if safe.suffix not in (".js", ".json", ".css", ".ico", ".png", ".svg"):
         return "Not found", 404
+
+    # Serve data.json from SQLite (persists across deploys)
+    if filename == "data.json":
+        athlete_id = session.get("athlete_id")
+        data_json = get_user_data(athlete_id) if athlete_id else None
+        if data_json is not None:
+            from flask import Response
+            return Response(data_json, mimetype="application/json")
+        return "No dashboard data yet. Connect Strava and wait for the pipeline to complete.", 404
 
     return send_from_directory(DASHBOARD_SITE_DIR, filename)
 
