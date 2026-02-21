@@ -9,9 +9,16 @@ import subprocess
 import sys
 import threading
 import urllib.parse
+from datetime import datetime, timezone
 from pathlib import Path
 
 from flask import Flask, redirect, render_template, request, session, send_from_directory, url_for
+
+# Pipeline status (updated by background thread)
+_pipeline_lock = threading.Lock()
+_pipeline_running = False
+_pipeline_last_run_at = None
+_pipeline_last_success = None
 
 # Add scripts to path for pipeline imports
 SCRIPT_DIR = Path(__file__).resolve().parent / "scripts"
@@ -232,10 +239,22 @@ def callback():
     ensure_dashboard_files()
 
     def _run_pipeline_background():
+        global _pipeline_running, _pipeline_last_run_at, _pipeline_last_success
+        with _pipeline_lock:
+            _pipeline_running = True
         try:
-            run_pipeline()
+            success = run_pipeline()
+            with _pipeline_lock:
+                _pipeline_last_run_at = datetime.now(timezone.utc)
+                _pipeline_last_success = success
         except Exception as exc:
             app.logger.exception("Background pipeline failed: %s", exc)
+            with _pipeline_lock:
+                _pipeline_last_run_at = datetime.now(timezone.utc)
+                _pipeline_last_success = False
+        finally:
+            with _pipeline_lock:
+                _pipeline_running = False
 
     threading.Thread(target=_run_pipeline_background, daemon=True).start()
     return redirect(url_for("dashboard"))
@@ -274,6 +293,28 @@ def dashboard_static(filename):
         return "Not found", 404
 
     return send_from_directory(DASHBOARD_SITE_DIR, filename)
+
+
+def _get_pipeline_status():
+    """Return (running, last_run_at, last_success)."""
+    with _pipeline_lock:
+        return (_pipeline_running, _pipeline_last_run_at, _pipeline_last_success)
+
+
+@app.route("/status")
+def status():
+    running, last_run_at, last_success = _get_pipeline_status()
+    last_run_str = last_run_at.isoformat() if last_run_at else "never"
+    last_success_str = (
+        "succeeded" if last_success is True
+        else "failed" if last_success is False
+        else "unknown"
+    )
+    return (
+        f"Pipeline running: {running}\n"
+        f"Last run: {last_run_str}\n"
+        f"Last run result: {last_success_str}\n"
+    ), 200, {"Content-Type": "text/plain; charset=utf-8"}
 
 
 @app.route("/logout")
