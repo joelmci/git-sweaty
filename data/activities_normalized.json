@@ -13468,42 +13468,82 @@
     "year": 2026
   },
   {
+    "average_heartrate": 164.1,
+    "average_watts": 229.8,
     "date": "2026-02-17",
     "distance": 17499.7,
     "elevation_gain": 140.0,
     "id": "17435170890",
+    "max_heartrate": 185.0,
     "moving_time": 1805.0,
     "name": "Zwift - Race: Stage 1: Zwift Games: Kaze Kicker on Kaze Kicker in Makuri Islands",
     "raw_activity_type": "VirtualRide",
     "raw_type": "VirtualRide",
     "start_date_local": "2026-02-17T20:13:26Z",
+    "start_latlng": [
+      -10.795746,
+      165.812859
+    ],
+    "summary_polyline": "p~{`Aqh`s^Ko@WWaDs@{@a@GU\\uAAi@kA{AoAm@eB\\_@Eo@k@c@iAEo@Zy@t@{@zAcAP]BeA]wB?a@`AcA\\_B`@QhCOlBa@bAe@vAiArCYvA]zEeChBi@dC]~AEfEh@v@@xAMtA]lAg@lAaApAYL_@CmAPy@p@_At@_@nAK`@Tb@p@b@JNEt@w@h@uA^oDx@wBTaCZSn@B~AtAh@KLOAi@m@mC@k@PYZKdBDjAOtBh@d@YXy@JkBQiCVi@`A[\\i@Dq@Um@q@o@_Bb@m@?o@i@g@kAw@gAy@QgB@mA\\Wn@F|@v@zBAz@]Te@De@ISQOs@Po@nCu@\\a@Ei@u@eBOcDLe@lAuAFWGUe@a@i@KiDb@e@C]SGOBa@~@iBCm@Se@k@y@g@Mg@Ns@v@_@BYSGa@CkBsCqIsB_CuCqBeAkA]}@yBmJeAwA_Bw@sBJgF`Bu@Bk@_@]_BUc@oCg@aBeAw@K}A@uEU[XQ|A[XiDp@qA@g@XQ\\SpBInEUp@qIvJ{@d@u@LaBIqDy@{Ak@mCBgCQw@a@cE{Dk@UeNq@s@HuBp@a@IaCsAcFWcALuCfBc@h@M`@@fDK`@{@zAUjB?P~@rAFt@I`@q@p@qAZuCpFuBnA_Df@w@f@u@rA}@lDEl@HZzD~Dt@@lAf@fALpAfAzBE^JVj@w@zA?PvBlAjBEbA\\Hd@?tCbA|@pAZ`@KfA{@b@Mz@@d@NR`@h@rD|BvBF|@Z`AUbCZv@ArA^d@n@L^GTYFe@KyBu@iEXyF^SxBUd@PfBdB~@b@TZh@bBDt@{@|CJ`AGl@uBbCGjAPn@RNp@@f@c@r@uCfAcBTqBb@]h@LtApBMl@y@dAQf@Hj@r@n@|DVvDqArCx@dAEdDs@xBLtAl@f@v@Bl@Oj@_AdBIl@DVd@TrBD`@^DfAVf@lAr@~BZ`@VFd@Mz@u@p@M\\XpANdBRZ|Ad@r@h@Rl@?`BLZd@VbCVn@XZf@`@jCv@\\hDIv@a@Z[Na@Eo@Om@g@g@_ACcAb@_@r@B|ApA~J`@lAj@l@l@DlDKn@LRPRlAOfFVfI\\^nBx@d@l@h@vA",
     "type": "VirtualRide",
     "year": 2026
   },
   {
+    "average_heartrate": 128.9,
+    "average_watts": 113.4,
     "date": "2026-02-17",
     "distance": 4669.6,
     "elevation_gain": 38.0,
     "id": "17435210677",
+    "max_heartrate": 155.0,
     "moving_time": 616.0,
     "name": "Zwift - Pacer Group Ride: BRAEk-fast Crits and Grits in Scotland with Taylor",
     "raw_activity_type": "VirtualRide",
     "raw_type": "VirtualRide",
     "start_date_local": "2026-02-17T20:44:10Z",
+    "start_latlng": [
+      55.658046,
+      -5.2298
+    ],
+    "summary_polyline": "u|trIxv|^RfABn@Ed@]`ACP@j@N|@@VAj@Uz@oAvCU\\KFKBMAKIIKq@kAa@eAMi@AUAgCGi@EOSY][a@Ok@KuAC]?e@LaAj@UJ]Dc@?YEWIiAm@}@QOGWSMSWu@E]Ac@@a@Da@J]NYZ[bAw@j@y@`@[d@Sh@KrAKb@GPGNOLUH[H{@@_@C_@G[KW]e@MWC_@@a@R_AL]NWRMTARDRLRPNVJ\\F`@NhBF^Vx@`AhCNPRHPAPI^]t@iANMNEN@NFLLJPZbA`@zADr@CZEVIPY^ITAXDT^xAL`AFl@En@Yz@EPCT@VRvAAn@Mh@Od@cAzBS`@KJMDMAKEW]s@qAYy@Ik@Co@?_BEk@GQS[a@]c@Oo@IgACa@@_@JgAl@YJc@Fa@Ai@OcAm@YGe@IWKUSS]Qs@Ei@@i@De@La@Ze@rAgAn@{@b@Yf@Ql@KbAGb@IPGNMLUHYJ}@@_@C]G]KW]g@MUCa@@a@Fa@X{@NWRMTATFRJPPNXJ^Fb@HdA",
     "type": "VirtualRide",
     "year": 2026
   },
   {
+    "average_heartrate": 142.7,
+    "average_watts": 166.1,
     "date": "2026-02-19",
     "distance": 38026.3,
     "elevation_gain": 59.0,
     "id": "17457319145",
+    "max_heartrate": 154.0,
     "moving_time": 4065.0,
     "name": "Zwift - Z2 on Tempus Fugit in Watopia",
     "raw_activity_type": "VirtualRide",
     "raw_type": "VirtualRide",
     "start_date_local": "2026-02-19T19:59:12Z",
+    "start_latlng": [
+      -11.636811,
+      166.972143
+    ],
+    "summary_polyline": "bq_fA{{bz^qB{Ht@aHwBaFv@cA|CCt@yF~BM~DlBL~B~B|@aAvCv@vAdIUlCwCgAaFxCyCJgEmBoFuFwEOwAjAmEjEiBz@wAIeE_EmFzBcCEaDpIoT^cE{@cCaHuCcAoBIgBpIcTzCs@dEl@nC_EnDQhBeA`@}DaDiF\\cAdAw@`AI~@b@dHbK|@E|@y@tAqEtAHtAdAJxErChBPbAUn@eC`Ac@~@A|KuA~R`EpF~@pBxFh@nLyCjBn@v@zFZxL]hBgB`BMjB\\lFv@pB`F`@hGtA`BnA`@lCnAjAbAi@|CiJbA_A~CpA`@pC~EVdDnDxDw@x@qCk@_B}BaAuBn@eB~ByEEq@yCcDyAgAr@_DnJ_Ap@iAaAa@mCiByAkGuAaCHaBs@u@mCScG|BwCTqCoA{ReBaAcMzCuGu@SuAiD{Da@uAvAqR@uKf@{@~B{@RcB_D_C@qDgAcBeCUoAhEgBdAsAcAuE{HwAm@eBd@}@bBdD|FAvAk@`BmBz@}CJmC|DmEo@yCx@oAjE}FbMAjBdA`ClH~Ct@nBe@xEoIbTH~C{B`CXbAhDxDDrDcA`BgEdBkAbF\\rAzF`FvAdENbCe@hBgCzBHzA~@xBkApBeAr@cE\\uCa@KoAfCsEnGeBbCiAfAiCOiCkAkDsGgGMmAtAaF~D{A|@wAIiEqDaEKo@vByBEcDnIcTb@yEw@yBkH}CaAwBCeBrIyS|Cs@|Dp@nC_E~CMpB}@l@gB?aBcDsF`@cAtAu@hBZdFlIjAz@nB{@~AyE~ARhAbAHvEfCxAZlA]v@yBv@i@hAAbKqAzSfEpFn@fBzFj@vLyCbBh@p@nDf@fMQzCeBzAYpAVpGx@zBxAn@bCIjGrAhBtA`@tCpA`A~@m@tC{IhAkAxCfAr@dDzENxCjDvCWvAqBI_CsBwAiC\\sBfCwECa@[WcCaDsAiAz@{CdJ_Ap@cAw@k@}CaBoAoGyAgCHwAo@o@iB]iFHaBhBeB\\}AQ{J{@_IiBeAaMzCkGo@a@gB}CgDg@{AtAcRB}Kf@cA`C{@NgBwCqBGmEaAqA_C[_BzEeBv@iA_AuEyHyAq@gBd@}@xA~CpFD~Ai@hBmB|@yCHsC`EaEm@_Dp@yIfTHpB~@nBlH|Cr@vBg@rEmI`TFbD{BdCbEnFHxD_AzAkEfBoAfFZnA`GfFtAzDP~B_@hBoC`CFvAbAvBw@dB}AhAuHRo@k@Ao@jC_FpJyC`BsBDcCsAqEuAwB}DwCU{@jAiFtFuCZaE",
     "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 128.9,
+    "average_watts": 354.1,
+    "date": "2026-02-21",
+    "distance": 8445.4,
+    "elevation_gain": 0.0,
+    "id": "17477271313",
+    "max_heartrate": 144.0,
+    "moving_time": 2717.0,
+    "name": "Afternoon Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-02-21T14:42:23Z",
+    "type": "Run",
     "year": 2026
   }
 ]
