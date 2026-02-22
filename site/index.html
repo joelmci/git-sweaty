@@ -186,7 +186,7 @@
         color: var(--muted);
       }
       .stats-year-bar-row > .stats-year-bar-track {
-        display: block;
+        display: flex;
         width: 100%;
         min-width: 0;
         background: rgba(15, 23, 42, 0.8);
@@ -195,12 +195,53 @@
         overflow: hidden;
       }
       .stats-year-bar-row > .stats-year-bar-fill {
-        display: block;
-        height: 100%;
-        min-width: 0;
+        flex-shrink: 0;
+        height: 20px;
         border-radius: 6px;
         background: #6366f1;
-        transition: width 0.2s ease;
+      }
+      .stats-period-selector {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-2);
+        margin-bottom: var(--space-4);
+      }
+      .stats-period-btn {
+        font-family: inherit;
+        font-size: 12px;
+        padding: var(--space-1) var(--space-3);
+        background: rgba(15, 23, 42, 0.45);
+        color: var(--text);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        border-radius: 999px;
+        cursor: pointer;
+        transition: border-color 0.15s, box-shadow 0.15s;
+      }
+      .stats-period-btn.active {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+      }
+      .stats-period-btn:hover {
+        border-color: rgba(148, 163, 184, 0.5);
+      }
+      .stats-record-card-clickable {
+        cursor: pointer;
+      }
+      .stats-record-card-clickable:hover {
+        border-color: rgba(148, 163, 184, 0.4);
+      }
+      .stats-record-popup {
+        position: fixed;
+        z-index: 100;
+        background: rgba(15, 23, 42, 0.95);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        border-radius: 10px;
+        padding: var(--space-4) var(--space-5);
+        font-size: 12px;
+        font-family: "JetBrains Mono", monospace;
+        white-space: pre-line;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
       }
       .stats-year-bar-row > .stats-year-value {
         font-family: "JetBrains Mono", monospace;

@@ -4016,6 +4016,67 @@ function computeLongestStreak(activities) {
   return { length: best.length, startDate: best.start, endDate: best.end };
 }
 
+function filterActivitiesByPeriod(activities, period) {
+  if (!period || period === "All") return activities;
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let cutoff;
+  if (period === "1M") {
+    cutoff = new Date(today);
+    cutoff.setMonth(cutoff.getMonth() - 1);
+  } else if (period === "3M") {
+    cutoff = new Date(today);
+    cutoff.setMonth(cutoff.getMonth() - 3);
+  } else if (period === "6M") {
+    cutoff = new Date(today);
+    cutoff.setMonth(cutoff.getMonth() - 6);
+  } else if (period === "YTD") {
+    cutoff = new Date(today.getFullYear(), 0, 1);
+  } else if (period === "1Y") {
+    cutoff = new Date(today);
+    cutoff.setFullYear(cutoff.getFullYear() - 1);
+  } else {
+    return activities;
+  }
+  const cutoffStr = cutoff.toISOString().slice(0, 10);
+  return activities.filter((a) => {
+    const d = a?.date;
+    return typeof d === "string" && d >= cutoffStr;
+  });
+}
+
+function showStatsRecordPopup(activity, rect, units) {
+  const u = units || { distance: "mi", elevation: "ft" };
+  let pop = document.getElementById("statsRecordPopup");
+  if (!pop) {
+    pop = document.createElement("div");
+    pop.id = "statsRecordPopup";
+    pop.className = "stats-record-popup";
+    document.body.appendChild(pop);
+  }
+  const date = activity?.date || "—";
+  const type = displayType(activity?.type || "Unknown");
+  const dist = Number(activity?.distance);
+  const distStr = dist > 0 ? formatDistance(dist, u) : "—";
+  const time = Number(activity?.moving_time) || Number(activity?.elapsed_time);
+  const timeStr = time > 0 ? formatDuration(time) : "—";
+  pop.textContent = `Date: ${date}\nType: ${type}\nDistance: ${distStr}\nDuration: ${timeStr}`;
+  pop.style.display = "block";
+  const popRect = pop.getBoundingClientRect();
+  let left = rect.left + rect.width / 2 - popRect.width / 2;
+  let top = rect.top - popRect.height - 8;
+  if (top < 8) top = rect.bottom + 8;
+  if (left < 8) left = 8;
+  if (left + popRect.width > window.innerWidth - 8) left = window.innerWidth - popRect.width - 8;
+  pop.style.left = `${left}px`;
+  pop.style.top = `${top}px`;
+}
+
+function hideStatsRecordPopup() {
+  const pop = document.getElementById("statsRecordPopup");
+  if (pop) pop.style.display = "none";
+}
+
 /**
  * Build Stats tab: personal records, streak, YoY distance chart.
  * @param {object} payload - dashboard data
@@ -4025,36 +4086,70 @@ function initStatsView(payload, units) {
   if (!statsPane) return;
   const u = units || { distance: "mi", elevation: "ft" };
   const raw = payload.activities;
-  const activities = Array.isArray(raw) ? raw : (raw && typeof raw === "object" ? Object.values(raw) : []);
+  const allActivities = Array.isArray(raw) ? raw : (raw && typeof raw === "object" ? Object.values(raw) : []);
   const aggregates = payload.aggregates || {};
 
-  const container = document.createElement("div");
-  container.className = "stats-container";
-  container.style.cssText = "max-width:min(100%, var(--dashboard-content-rail-width)); margin:0 auto;";
+  let selectedPeriod = "All";
+  const periodButtons = {};
+  const prGridEl = document.createElement("div");
+  prGridEl.className = "stats-pr-grid";
+  const prSection = document.createElement("div");
+  prSection.className = "stats-section card";
+  prSection.style.padding = "var(--space-8)";
+
+  function computeStats(filteredForAverages) {
+    const acts = filteredForAverages;
+    let totalDistance = 0;
+    let activitiesWithDistance = 0;
+    let totalMovingTime = 0;
+    let activitiesWithTime = 0;
+    const rideWatts = [];
+    const allHR = [];
+    const allMaxHR = [];
+    acts.forEach((a) => {
+      const dist = Number(a?.distance);
+      if (dist > 0) {
+        totalDistance += dist;
+        activitiesWithDistance++;
+      }
+      const time = Number(a?.moving_time) || Number(a?.elapsed_time);
+      if (time > 0) {
+        totalMovingTime += time;
+        activitiesWithTime++;
+      }
+      const type = String(a?.type || "").trim();
+      const watts = Number(a?.average_watts);
+      if (type === "Ride" && watts > 0) rideWatts.push(watts);
+      const ahr = Number(a?.average_heartrate);
+      if (ahr > 0) allHR.push(ahr);
+      const mhr = Number(a?.max_heartrate);
+      if (mhr > 0) allMaxHR.push(mhr);
+    });
+    return {
+      avgDistance: activitiesWithDistance > 0 ? totalDistance / activitiesWithDistance : 0,
+      avgMovingTime: activitiesWithTime > 0 ? totalMovingTime / activitiesWithTime : 0,
+      avgPower: rideWatts.length > 0 ? rideWatts.reduce((s, w) => s + w, 0) / rideWatts.length : 0,
+      maxPower: rideWatts.length > 0 ? Math.max(...rideWatts) : 0,
+      avgHR: allHR.length > 0 ? allHR.reduce((s, h) => s + h, 0) / allHR.length : 0,
+      maxHR: allMaxHR.length > 0 ? Math.max(...allMaxHR) : 0,
+      hasPower: rideWatts.length > 0,
+      hasHR: allHR.length > 0 || allMaxHR.length > 0,
+    };
+  }
 
   let maxDistance = 0;
   let maxDistanceActivity = null;
   let maxElevationDay = 0;
   let maxElevationDate = null;
+  let maxElevationActivity = null;
   const elevationByDate = {};
   let maxTime = 0;
   let maxTimeActivity = null;
-  let totalDistance = 0;
-  let totalMovingTime = 0;
-  let activitiesWithDistance = 0;
-  let activitiesWithTime = 0;
-  const rideWatts = [];
-  const allHR = [];
-  const allMaxHR = [];
-  activities.forEach((a) => {
+  allActivities.forEach((a) => {
     const dist = Number(a?.distance);
-    if (dist > 0) {
-      totalDistance += dist;
-      activitiesWithDistance++;
-      if (dist > maxDistance) {
-        maxDistance = dist;
-        maxDistanceActivity = a;
-      }
+    if (dist > 0 && dist > maxDistance) {
+      maxDistance = dist;
+      maxDistanceActivity = a;
     }
     const elev = Number(a?.elevation_gain) || 0;
     const date = a?.date;
@@ -4066,36 +4161,23 @@ function initStatsView(payload, units) {
       }
     }
     const time = Number(a?.moving_time) || Number(a?.elapsed_time) || 0;
-    if (time > 0) {
-      totalMovingTime += time;
-      activitiesWithTime++;
-      if (time > maxTime) {
-        maxTime = time;
-        maxTimeActivity = a;
-      }
+    if (time > 0 && time > maxTime) {
+      maxTime = time;
+      maxTimeActivity = a;
     }
-    const type = String(a?.type || "").trim();
-    const watts = Number(a?.average_watts);
-    if (type === "Ride" && watts > 0) {
-      rideWatts.push(watts);
-    }
-    const ahr = Number(a?.average_heartrate);
-    if (ahr > 0) allHR.push(ahr);
-    const mhr = Number(a?.max_heartrate);
-    if (mhr > 0) allMaxHR.push(mhr);
   });
-  const avgDistance = activitiesWithDistance > 0 ? totalDistance / activitiesWithDistance : 0;
-  const avgMovingTime = activitiesWithTime > 0 ? totalMovingTime / activitiesWithTime : 0;
-  const avgPower = rideWatts.length > 0 ? rideWatts.reduce((s, w) => s + w, 0) / rideWatts.length : 0;
-  const maxPower = rideWatts.length > 0 ? Math.max(...rideWatts) : 0;
-  const avgHR = allHR.length > 0 ? allHR.reduce((s, h) => s + h, 0) / allHR.length : 0;
-  const maxHR = allMaxHR.length > 0 ? Math.max(...allMaxHR) : 0;
-  const hasPower = rideWatts.length > 0;
-  const hasHR = allHR.length > 0 || allMaxHR.length > 0;
+  if (maxElevationDate) {
+    const onDate = allActivities.filter((a) => a?.date === maxElevationDate && Number(a?.elevation_gain) > 0);
+    maxElevationActivity = onDate.length > 0
+      ? onDate.reduce((best, a) =>
+          (Number(a?.elevation_gain) || 0) > (Number(best?.elevation_gain) || 0) ? a : best
+        , onDate[0])
+      : null;
+  }
 
-  function addPRCard(label, value, sub) {
+  function addPRCard(label, value, sub, activity, clickable) {
     const card = document.createElement("div");
-    card.className = "card-stat";
+    card.className = "card-stat" + (clickable ? " stats-record-card-clickable" : "");
     const lbl = document.createElement("div");
     lbl.className = "card-stat-label";
     lbl.textContent = label;
@@ -4111,57 +4193,103 @@ function initStatsView(payload, units) {
       subEl.textContent = sub;
       card.appendChild(subEl);
     }
+    if (clickable && activity) {
+      card.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const rect = card.getBoundingClientRect();
+        showStatsRecordPopup(activity, rect, u);
+      });
+    }
     return card;
   }
 
-  const prSection = document.createElement("div");
-  prSection.className = "stats-section card";
-  prSection.style.padding = "var(--space-8)";
+  function renderPRGrid() {
+    const filtered = filterActivitiesByPeriod(allActivities, selectedPeriod);
+    const stats = computeStats(filtered);
+
+    prGridEl.innerHTML = "";
+    prGridEl.appendChild(addPRCard(
+      "Longest single activity (distance)",
+      maxDistance > 0 ? formatDistance(maxDistance, u) : "—",
+      maxDistanceActivity?.name ? `"${maxDistanceActivity.name}"` : maxDistanceActivity?.date || "",
+      maxDistanceActivity,
+      true
+    ));
+    prGridEl.appendChild(addPRCard(
+      "Most elevation in a day",
+      maxElevationDay > 0 ? formatElevation(maxElevationDay, u) : "—",
+      maxElevationDate || "",
+      maxElevationActivity,
+      true
+    ));
+    prGridEl.appendChild(addPRCard(
+      "Longest time (single activity)",
+      maxTime > 0 ? formatDuration(maxTime) : "—",
+      maxTimeActivity?.name ? `"${maxTimeActivity.name}"` : maxTimeActivity?.date || "",
+      maxTimeActivity,
+      true
+    ));
+    prGridEl.appendChild(addPRCard(
+      "Average distance per activity",
+      stats.avgDistance > 0 ? formatDistance(stats.avgDistance, u) : "—",
+      "",
+      null,
+      false
+    ));
+    prGridEl.appendChild(addPRCard(
+      "Average moving time per activity",
+      stats.avgMovingTime > 0 ? formatDuration(stats.avgMovingTime) : "—",
+      "",
+      null,
+      false
+    ));
+    if (stats.hasPower) {
+      prGridEl.appendChild(addPRCard("Average power (Ride)", `${Math.round(stats.avgPower)} W`, "", null, false));
+      prGridEl.appendChild(addPRCard("Max power (Ride)", `${Math.round(stats.maxPower)} W`, "", null, false));
+    }
+    if (stats.hasHR) {
+      prGridEl.appendChild(addPRCard("Average HR", stats.avgHR > 0 ? `${Math.round(stats.avgHR)} bpm` : "—", "", null, false));
+      prGridEl.appendChild(addPRCard("Max HR", stats.maxHR > 0 ? `${Math.round(stats.maxHR)} bpm` : "—", "", null, false));
+    }
+  }
+
+  const periodLabels = ["1M", "3M", "6M", "YTD", "1Y", "All"];
+  const selector = document.createElement("div");
+  selector.className = "stats-period-selector";
+  periodLabels.forEach((p) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "stats-period-btn" + (p === "All" ? " active" : "");
+    btn.textContent = p;
+    periodButtons[p] = btn;
+    btn.addEventListener("click", () => {
+      selectedPeriod = p;
+      periodLabels.forEach((k) => periodButtons[k].classList.toggle("active", k === p));
+      renderPRGrid();
+    });
+    selector.appendChild(btn);
+  });
   const prTitle = document.createElement("div");
   prTitle.className = "stats-section-title";
   prTitle.textContent = "Personal records";
   prSection.appendChild(prTitle);
-  const prGrid = document.createElement("div");
-  prGrid.className = "stats-pr-grid";
+  prSection.appendChild(selector);
+  prSection.appendChild(prGridEl);
+  renderPRGrid();
 
-  prGrid.appendChild(addPRCard(
-    "Longest single activity (distance)",
-    maxDistance > 0 ? formatDistance(maxDistance, u) : "—",
-    maxDistanceActivity?.name ? `"${maxDistanceActivity.name}"` : maxDistanceActivity?.date || ""
-  ));
-  prGrid.appendChild(addPRCard(
-    "Most elevation in a day",
-    maxElevationDay > 0 ? formatElevation(maxElevationDay, u) : "—",
-    maxElevationDate || ""
-  ));
-  prGrid.appendChild(addPRCard(
-    "Longest time (single activity)",
-    maxTime > 0 ? formatDuration(maxTime) : "—",
-    maxTimeActivity?.name ? `"${maxTimeActivity.name}"` : maxTimeActivity?.date || ""
-  ));
-  prGrid.appendChild(addPRCard(
-    "Average distance per activity",
-    avgDistance > 0 ? formatDistance(avgDistance, u) : "—",
-    ""
-  ));
-  prGrid.appendChild(addPRCard(
-    "Average moving time per activity",
-    avgMovingTime > 0 ? formatDuration(avgMovingTime) : "—",
-    ""
-  ));
-  if (hasPower) {
-    prGrid.appendChild(addPRCard("Average power (Ride)", `${Math.round(avgPower)} W`, ""));
-    prGrid.appendChild(addPRCard("Max power (Ride)", `${Math.round(maxPower)} W`, ""));
+  const hidePopup = () => hideStatsRecordPopup();
+  if (statsPane._statsHidePopup) {
+    document.removeEventListener("click", statsPane._statsHidePopup);
   }
-  if (hasHR) {
-    prGrid.appendChild(addPRCard("Average HR", avgHR > 0 ? `${Math.round(avgHR)} bpm` : "—", ""));
-    prGrid.appendChild(addPRCard("Max HR", maxHR > 0 ? `${Math.round(maxHR)} bpm` : "—", ""));
-  }
+  statsPane._statsHidePopup = hidePopup;
+  document.addEventListener("click", hidePopup);
 
-  prSection.appendChild(prGrid);
+  const container = document.createElement("div");
+  container.className = "stats-container";
+  container.style.cssText = "max-width:min(100%, var(--dashboard-content-rail-width)); margin:0 auto;";
   container.appendChild(prSection);
 
-  const streak = computeLongestStreak(activities);
+  const streak = computeLongestStreak(allActivities);
   const streakSection = document.createElement("div");
   streakSection.className = "stats-section card";
   streakSection.style.padding = "var(--space-8)";
@@ -4198,7 +4326,7 @@ function initStatsView(payload, units) {
     if (total > 0) yearDistances[year] = total;
   });
   const yoYYears = Object.keys(yearDistances).map(Number).sort((a, b) => a - b);
-  const maxYoY = Math.max(...Object.values(yearDistances), 0);
+  const maxYoY = Math.max(0, ...Object.values(yearDistances));
 
   const yoYSection = document.createElement("div");
   yoYSection.className = "stats-section card";
@@ -4213,7 +4341,8 @@ function initStatsView(payload, units) {
     chart.style.gridTemplateRows = yoYYears.map(() => "28px").join(" ");
     yoYYears.forEach((year) => {
       const val = yearDistances[String(year)] || 0;
-      const pct = maxYoY > 0 ? (val / maxYoY) * 100 : 0;
+      const dist = val;
+      const maxDist = maxYoY;
       const row = document.createElement("div");
       row.className = "stats-year-bar-row";
       const label = document.createElement("div");
@@ -4221,9 +4350,14 @@ function initStatsView(payload, units) {
       label.textContent = String(year);
       const track = document.createElement("div");
       track.className = "stats-year-bar-track";
+      track.style.display = "flex";
+      track.style.width = "100%";
       const fill = document.createElement("div");
       fill.className = "stats-year-bar-fill";
-      fill.style.width = `${pct}%`;
+      const pct = maxDist > 0 ? (dist / maxDist) * 100 : 0;
+      fill.style.width = pct + "%";
+      fill.style.maxWidth = "100%";
+      fill.style.height = "20px";
       track.appendChild(fill);
       const valueEl = document.createElement("div");
       valueEl.className = "stats-year-value";
