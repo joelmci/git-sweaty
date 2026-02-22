@@ -59,8 +59,10 @@ const footerHostedLink = document.getElementById("footerHostedLink");
 const footerPoweredLabel = document.getElementById("footerPoweredLabel");
 const dashboardTitle = document.getElementById("dashboardTitle");
 const tabHeatmaps = document.getElementById("tabHeatmaps");
+const tabStats = document.getElementById("tabStats");
 const tabMap = document.getElementById("tabMap");
 const heatmapsPane = document.getElementById("heatmapsPane");
+const statsPane = document.getElementById("statsPane");
 const mapPane = document.getElementById("mapPane");
 const mapContainer = document.getElementById("mapContainer");
 const countryCountEl = document.getElementById("countryCount");
@@ -3982,6 +3984,229 @@ function decodePolyline(encoded) {
 }
 
 /**
+ * Compute longest streak of consecutive active days from activities.
+ * @param {Array} activities
+ * @returns {{ length: number, startDate: string, endDate: string } | null}
+ */
+function computeLongestStreak(activities) {
+  const dates = new Set();
+  activities.forEach((a) => {
+    const d = a?.date;
+    if (typeof d === "string" && d) dates.add(d);
+  });
+  if (dates.size === 0) return null;
+  const sorted = Array.from(dates).sort();
+  let best = { length: 1, start: sorted[0], end: sorted[0] };
+  let current = 1;
+  let start = sorted[0];
+  for (let i = 1; i < sorted.length; i++) {
+    const prev = new Date(sorted[i - 1]).getTime();
+    const curr = new Date(sorted[i]).getTime();
+    const dayDiff = Math.round((curr - prev) / 86400000);
+    if (dayDiff === 1) {
+      current++;
+      if (current > best.length) {
+        best = { length: current, start, end: sorted[i] };
+      }
+    } else {
+      current = 1;
+      start = sorted[i];
+    }
+  }
+  return { length: best.length, startDate: best.start, endDate: best.end };
+}
+
+/**
+ * Build Stats tab: streak, YoY distance chart, personal records.
+ * @param {object} payload - dashboard data
+ * @param {object} units - { distance, elevation }
+ */
+function initStatsView(payload, units) {
+  if (!statsPane) return;
+  const u = units || { distance: "mi", elevation: "ft" };
+  const raw = payload.activities;
+  const activities = Array.isArray(raw) ? raw : (raw && typeof raw === "object" ? Object.values(raw) : []);
+  const aggregates = payload.aggregates || {};
+
+  const container = document.createElement("div");
+  container.className = "stats-container";
+  container.style.cssText = "max-width:min(100%, var(--dashboard-content-rail-width)); margin:0 auto;";
+
+  const streak = computeLongestStreak(activities);
+  const streakSection = document.createElement("div");
+  streakSection.className = "stats-section card";
+  streakSection.style.padding = "var(--space-8)";
+  const streakTitle = document.createElement("div");
+  streakTitle.className = "stats-section-title";
+  streakTitle.textContent = "Longest streak";
+  streakSection.appendChild(streakTitle);
+  if (streak) {
+    const streakVal = document.createElement("div");
+    streakVal.className = "card-stat-value";
+    streakVal.style.marginBottom = "var(--space-2)";
+    streakVal.textContent = `${streak.length} consecutive day${streak.length !== 1 ? "s" : ""}`;
+    streakSection.appendChild(streakVal);
+    const streakDates = document.createElement("div");
+    streakDates.className = "stat-subtitle";
+    streakDates.textContent = `${streak.startDate} — ${streak.endDate}`;
+    streakSection.appendChild(streakDates);
+  } else {
+    const empty = document.createElement("div");
+    empty.className = "stat-subtitle";
+    empty.textContent = "No activity data for streaks.";
+    streakSection.appendChild(empty);
+  }
+  container.appendChild(streakSection);
+
+  const yearDistances = {};
+  Object.entries(aggregates).forEach(([year, yearData]) => {
+    let total = 0;
+    Object.values(yearData || {}).forEach((typeEntries) => {
+      Object.values(typeEntries || {}).forEach((entry) => {
+        total += Number(entry?.distance || 0) || 0;
+      });
+    });
+    if (total > 0) yearDistances[year] = total;
+  });
+  const yoYYears = Object.keys(yearDistances).map(Number).sort((a, b) => a - b);
+  const maxYoY = Math.max(...Object.values(yearDistances), 0);
+
+  const yoYSection = document.createElement("div");
+  yoYSection.className = "stats-section card";
+  yoYSection.style.padding = "var(--space-8)";
+  const yoYTitle = document.createElement("div");
+  yoYTitle.className = "stats-section-title";
+  yoYTitle.textContent = "Year over year distance";
+  yoYSection.appendChild(yoYTitle);
+  if (yoYYears.length > 0) {
+    const chart = document.createElement("div");
+    chart.className = "stats-year-chart";
+    chart.style.gridTemplateRows = yoYYears.map(() => "28px").join(" ");
+    yoYYears.forEach((year) => {
+      const val = yearDistances[String(year)] || 0;
+      const pct = maxYoY > 0 ? (val / maxYoY) * 100 : 0;
+      const row = document.createElement("div");
+      row.className = "stats-year-bar-row";
+      const label = document.createElement("div");
+      label.className = "stats-year-label";
+      label.textContent = String(year);
+      const track = document.createElement("div");
+      track.className = "stats-year-bar-track";
+      const fill = document.createElement("div");
+      fill.className = "stats-year-bar-fill";
+      fill.style.width = `${pct}%`;
+      track.appendChild(fill);
+      const valueEl = document.createElement("div");
+      valueEl.className = "stats-year-value";
+      valueEl.textContent = formatDistance(val, u);
+      row.appendChild(label);
+      row.appendChild(track);
+      row.appendChild(valueEl);
+      chart.appendChild(row);
+    });
+    yoYSection.appendChild(chart);
+  } else {
+    const empty = document.createElement("div");
+    empty.className = "stat-subtitle";
+    empty.textContent = "No distance data by year.";
+    yoYSection.appendChild(empty);
+  }
+  container.appendChild(yoYSection);
+
+  let maxDistance = 0;
+  let maxDistanceActivity = null;
+  let maxElevationDay = 0;
+  let maxElevationDate = null;
+  const elevationByDate = {};
+  let maxTime = 0;
+  let maxTimeActivity = null;
+  activities.forEach((a) => {
+    const dist = Number(a?.distance);
+    if (dist > 0 && dist > maxDistance) {
+      maxDistance = dist;
+      maxDistanceActivity = a;
+    }
+    const elev = Number(a?.elevation_gain) || 0;
+    const date = a?.date;
+    if (date && elev > 0) {
+      elevationByDate[date] = (elevationByDate[date] || 0) + elev;
+      if (elevationByDate[date] > maxElevationDay) {
+        maxElevationDay = elevationByDate[date];
+        maxElevationDate = date;
+      }
+    }
+    const time = Number(a?.moving_time) || Number(a?.elapsed_time) || 0;
+    if (time > 0 && time > maxTime) {
+      maxTime = time;
+      maxTimeActivity = a;
+    }
+  });
+
+  const prSection = document.createElement("div");
+  prSection.className = "stats-section card";
+  prSection.style.padding = "var(--space-8)";
+  const prTitle = document.createElement("div");
+  prTitle.className = "stats-section-title";
+  prTitle.textContent = "Personal records";
+  prSection.appendChild(prTitle);
+  const prGrid = document.createElement("div");
+  prGrid.className = "card-stats";
+  prGrid.style.display = "grid";
+  prGrid.style.gridTemplateColumns = "repeat(auto-fill, minmax(140px, 1fr))";
+  prGrid.style.gap = "var(--space-4)";
+
+  function addPRCard(label, value, sub) {
+    const card = document.createElement("div");
+    card.className = "card-stat";
+    const lbl = document.createElement("div");
+    lbl.className = "card-stat-label";
+    lbl.textContent = label;
+    const val = document.createElement("div");
+    val.className = "card-stat-value";
+    val.textContent = value;
+    card.appendChild(lbl);
+    card.appendChild(val);
+    if (sub) {
+      const subEl = document.createElement("div");
+      subEl.className = "stat-subtitle";
+      subEl.style.marginTop = "var(--space-1)";
+      subEl.textContent = sub;
+      card.appendChild(subEl);
+    }
+    prGrid.appendChild(card);
+  }
+
+  if (maxDistance > 0 && maxDistanceActivity) {
+    addPRCard(
+      "Longest single activity (distance)",
+      formatDistance(maxDistance, u),
+      maxDistanceActivity?.name ? `"${maxDistanceActivity.name}"` : maxDistanceActivity?.date || ""
+    );
+  } else {
+    addPRCard("Longest single activity (distance)", "—", "");
+  }
+  if (maxElevationDay > 0 && maxElevationDate) {
+    addPRCard("Most elevation in a day", formatElevation(maxElevationDay, u), maxElevationDate);
+  } else {
+    addPRCard("Most elevation in a day", "—", "");
+  }
+  if (maxTime > 0 && maxTimeActivity) {
+    addPRCard(
+      "Longest time (single activity)",
+      formatDuration(maxTime),
+      maxTimeActivity?.name ? `"${maxTimeActivity.name}"` : maxTimeActivity?.date || ""
+    );
+  } else {
+    addPRCard("Longest time (single activity)", "—", "");
+  }
+  prSection.appendChild(prGrid);
+  container.appendChild(prSection);
+
+  statsPane.innerHTML = "";
+  statsPane.appendChild(container);
+}
+
+/**
  * Set up map tab and init Leaflet map + heat layer + country count when Map tab is first shown.
  * @param {object} payload - dashboard data.json payload
  */
@@ -3998,30 +4223,31 @@ function initMapView(payload) {
     console.log("[map] sample activity keys:", Object.keys(sample), "start_latlng:", sample.start_latlng, "summary_polyline:", typeof sample.summary_polyline, sample.summary_polyline ? "(length " + sample.summary_polyline.length + ")" : "missing");
   }
 
-  if (!tabHeatmaps || !tabMap || !heatmapsPane || !mapPane) {
-    console.warn("[map] initMapView: missing tab/pane elements", { tabHeatmaps: !!tabHeatmaps, tabMap: !!tabMap, heatmapsPane: !!heatmapsPane, mapPane: !!mapPane });
+  if (!tabHeatmaps || !tabStats || !tabMap || !heatmapsPane || !statsPane || !mapPane) {
     return;
   }
 
   function switchTab(paneId) {
+    const isHeatmaps = paneId === "heatmapsPane";
+    const isStats = paneId === "statsPane";
     const isMap = paneId === "mapPane";
-    console.log("[map] switchTab:", paneId, "isMap:", isMap);
-    heatmapsPane.classList.toggle("hidden", isMap);
+    heatmapsPane.classList.toggle("hidden", !isHeatmaps);
+    statsPane.classList.toggle("hidden", !isStats);
     mapPane.classList.toggle("hidden", !isMap);
-    tabHeatmaps.classList.toggle("active", !isMap);
+    tabHeatmaps.classList.toggle("active", isHeatmaps);
+    tabStats.classList.toggle("active", isStats);
     tabMap.classList.toggle("active", isMap);
-    tabHeatmaps.setAttribute("aria-selected", !isMap ? "true" : "false");
+    tabHeatmaps.setAttribute("aria-selected", isHeatmaps ? "true" : "false");
+    tabStats.setAttribute("aria-selected", isStats ? "true" : "false");
     tabMap.setAttribute("aria-selected", isMap ? "true" : "false");
     if (isMap && mapContainer && typeof L !== "undefined" && window.mapViewInit) {
-      console.log("[map] switchTab: calling mapViewInit");
       window.mapViewInit();
       window.mapViewInit = null;
-    } else if (isMap) {
-      console.warn("[map] switchTab: mapViewInit not called", { mapContainer: !!mapContainer, L: typeof L, mapViewInit: !!window.mapViewInit });
     }
   }
 
   tabHeatmaps.addEventListener("click", () => switchTab("heatmapsPane"));
+  tabStats.addEventListener("click", () => switchTab("statsPane"));
   tabMap.addEventListener("click", () => switchTab("mapPane"));
 
   if (!hasMapData || !mapContainer || typeof L === "undefined") {
@@ -4284,6 +4510,7 @@ async function init() {
     currentUnits = getUnitsForSystem(currentUnitSystem);
     syncUnitToggleState();
     update();
+    initStatsView(payload, currentUnits);
   }
 
   function setYearMetricSelection(year, metricKey) {
@@ -4959,6 +5186,7 @@ async function init() {
   });
   syncUnitToggleState();
   update();
+  initStatsView(payload, currentUnits);
   initMapView(payload);
 
   if (document.fonts?.ready) {

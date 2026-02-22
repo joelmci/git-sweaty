@@ -164,6 +164,24 @@ def _load_activities(
             "subtype": str(subtype),
             "hour": hour,
         }
+        distance = item.get("distance")
+        if distance is not None and (isinstance(distance, (int, float)) or (isinstance(distance, str) and distance)):
+            try:
+                activity["distance"] = float(distance)
+            except (TypeError, ValueError):
+                pass
+        moving_time = item.get("moving_time")
+        if moving_time is not None and (isinstance(moving_time, (int, float)) or (isinstance(moving_time, str) and moving_time)):
+            try:
+                activity["moving_time"] = float(moving_time)
+            except (TypeError, ValueError):
+                pass
+        elevation_gain = item.get("elevation_gain")
+        if elevation_gain is not None and (isinstance(elevation_gain, (int, float)) or (isinstance(elevation_gain, str) and elevation_gain)):
+            try:
+                activity["elevation_gain"] = float(elevation_gain)
+            except (TypeError, ValueError):
+                pass
         include_provider_activity_urls = include_activity_urls
         if source == "strava" and include_strava_activity_urls:
             include_provider_activity_urls = True
