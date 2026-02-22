@@ -4036,7 +4036,7 @@ function initMapView(payload) {
   }
 
   let map = null;
-  let heatLayer = null;
+  const ROUTE_COLOR = "rgb(255, 100, 0)";
 
   window.mapViewInit = function () {
     console.log("[map] mapViewInit: called");
@@ -4051,35 +4051,33 @@ function initMapView(payload) {
       attribution: "© OpenStreetMap contributors",
     }).addTo(map);
 
-    const heatPoints = [];
+    const allPoints = [];
     withPolyline.forEach((a, i) => {
       try {
         const pts = decodePolyline(a.summary_polyline);
-        pts.forEach((p) => heatPoints.push([p[0], p[1], 0.5]));
+        if (pts.length > 0) {
+          const latlngs = pts.map((p) => [p[0], p[1]]);
+          allPoints.push(...latlngs);
+          L.polyline(latlngs, {
+            color: ROUTE_COLOR,
+            weight: 4,
+            opacity: 0.3,
+          }).addTo(map);
+        }
         if (i === 0) console.log("[map] first polyline:", pts.length, "points");
       } catch (e) {
         console.warn("[map] decodePolyline error for activity:", e);
       }
     });
-    withStart.forEach((a) => {
-      const lat = a.start_latlng[0];
-      const lng = a.start_latlng[1];
-      heatPoints.push([lat, lng, 0.8]);
-    });
 
-    console.log("[map] heatPoints count:", heatPoints.length, "L.heatLayer:", typeof L.heatLayer);
-    if (heatPoints.length > 0 && typeof L.heatLayer === "function") {
-      heatLayer = L.heatLayer(heatPoints, { radius: 12, blur: 15, maxZoom: 14 });
-      heatLayer.addTo(map);
-      const bounds = L.latLngBounds(heatPoints.map((p) => [p[0], p[1]]));
+    if (allPoints.length > 0) {
+      const bounds = L.latLngBounds(allPoints);
       map.fitBounds(bounds, { padding: [20, 20], maxZoom: 12 });
-      console.log("[map] heat layer added, bounds:", bounds.toBBoxString());
-      requestAnimationFrame(() => {
-        if (map) map.invalidateSize();
-      });
-    } else {
-      console.warn("[map] could not add heat layer:", heatPoints.length, "points, L.heatLayer:", typeof L.heatLayer);
+      console.log("[map] routes added, bounds:", bounds.toBBoxString());
     }
+    requestAnimationFrame(() => {
+      if (map) map.invalidateSize();
+    });
 
     if (countryCountEl && withStart.length > 0) {
       countryCountEl.textContent = "Loading countries…";
