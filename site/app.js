@@ -4036,7 +4036,19 @@ function initMapView(payload) {
   }
 
   let map = null;
-  const ROUTE_COLOR = "rgb(255, 100, 0)";
+  const ROUTE_COLORS = {
+    Ride: "#E05C00",
+    Run: "#0066FF",
+    Hike: "#00AA44",
+    Walk: "#00AA44",
+    Swim: "#00CCFF",
+  };
+  const ROUTE_DEFAULT = "#999999";
+
+  function getRouteColor(type) {
+    const t = String(type || "").trim();
+    return ROUTE_COLORS[t] || ROUTE_DEFAULT;
+  }
 
   window.mapViewInit = function () {
     console.log("[map] mapViewInit: called");
@@ -4052,16 +4064,19 @@ function initMapView(payload) {
     }).addTo(map);
 
     const allPoints = [];
+    const typesUsed = new Set();
     withPolyline.forEach((a, i) => {
       try {
         const pts = decodePolyline(a.summary_polyline);
         if (pts.length > 0) {
           const latlngs = pts.map((p) => [p[0], p[1]]);
           allPoints.push(...latlngs);
+          const activityType = String(a.type || "Other").trim() || "Other";
+          typesUsed.add(activityType);
           L.polyline(latlngs, {
-            color: ROUTE_COLOR,
+            color: getRouteColor(a.type),
             weight: 4,
-            opacity: 0.3,
+            opacity: 0.4,
           }).addTo(map);
         }
         if (i === 0) console.log("[map] first polyline:", pts.length, "points");
@@ -4069,6 +4084,24 @@ function initMapView(payload) {
         console.warn("[map] decodePolyline error for activity:", e);
       }
     });
+
+    if (typesUsed.size > 0) {
+      const legend = L.control({ position: "bottomright" });
+      legend.onAdd = function () {
+        const div = document.createElement("div");
+        div.className = "map-route-legend leaflet-control";
+        div.style.cssText = "padding:8px 10px;background:rgba(255,255,255,0.9);border-radius:4px;font-size:12px;box-shadow:0 1px 3px rgba(0,0,0,0.2);";
+        const rows = Array.from(typesUsed).sort().map((t) => {
+          const color = getRouteColor(t);
+          const label = displayType(t);
+          const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+          return `<div style="display:flex;align-items:center;gap:6px;margin:2px 0;"><span style="display:inline-block;width:12px;height:3px;background:${esc(color)};opacity:0.4;border-radius:1px;"></span><span>${esc(label)}</span></div>`;
+        });
+        div.innerHTML = rows.join("");
+        return div;
+      };
+      legend.addTo(map);
+    }
 
     if (allPoints.length > 0) {
       const bounds = L.latLngBounds(allPoints);
