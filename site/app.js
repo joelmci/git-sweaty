@@ -4094,7 +4094,7 @@ function initStatsView(payload, units) {
       track.className = "stats-year-bar-track";
       const fill = document.createElement("div");
       fill.className = "stats-year-bar-fill";
-      fill.style.width = `${pct}%`;
+      fill.style.setProperty("--bar-pct", `${pct}%`);
       track.appendChild(fill);
       const valueEl = document.createElement("div");
       valueEl.className = "stats-year-value";

@@ -176,16 +176,20 @@
         color: var(--muted);
       }
       .stats-year-bar-row > .stats-year-bar-track {
+        display: flex;
+        width: 100%;
+        min-width: 0;
         background: rgba(15, 23, 42, 0.8);
         border-radius: 6px;
         height: 20px;
         overflow: hidden;
       }
       .stats-year-bar-row > .stats-year-bar-fill {
+        flex: 0 0 var(--bar-pct, 0%);
         height: 100%;
         border-radius: 6px;
         background: var(--accent);
-        transition: width 0.2s ease;
+        transition: flex-basis 0.2s ease;
       }
       .stats-year-bar-row > .stats-year-value {
         font-family: "JetBrains Mono", monospace;
