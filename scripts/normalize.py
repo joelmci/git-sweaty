@@ -83,6 +83,9 @@ def _normalize_activity(activity: Dict, type_aliases: Dict[str, str], source: st
         activity.get("totalElevationGain"),
     )
     activity_name = str(_coalesce(activity.get("name"), activity.get("activityName"), "") or "").strip()
+    average_watts = activity.get("average_watts") or activity.get("avgWatts")
+    average_heartrate = activity.get("average_heartrate")
+    max_heartrate = activity.get("max_heartrate")
 
     normalized = {
         "id": str(activity_id),
@@ -96,6 +99,21 @@ def _normalize_activity(activity: Dict, type_aliases: Dict[str, str], source: st
         "moving_time": _safe_float(moving_time),
         "elevation_gain": _safe_float(elevation_gain),
     }
+    if average_watts is not None:
+        try:
+            normalized["average_watts"] = float(average_watts)
+        except (TypeError, ValueError):
+            pass
+    if average_heartrate is not None:
+        try:
+            normalized["average_heartrate"] = float(average_heartrate)
+        except (TypeError, ValueError):
+            pass
+    if max_heartrate is not None:
+        try:
+            normalized["max_heartrate"] = float(max_heartrate)
+        except (TypeError, ValueError):
+            pass
     if activity_name:
         normalized["name"] = activity_name
     # Map data for dashboard map view (Strava: start_latlng, map.summary_polyline)

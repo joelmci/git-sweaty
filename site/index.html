@@ -153,6 +153,16 @@
       .stats-section {
         margin-bottom: 0;
       }
+      .stats-pr-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-4);
+      }
+      .stats-pr-grid .card-stat {
+        flex: 0 1 auto;
+        min-width: 140px;
+        max-width: 100%;
+      }
       .stats-section-title {
         font-size: 14px;
         font-weight: 600;
@@ -176,7 +186,7 @@
         color: var(--muted);
       }
       .stats-year-bar-row > .stats-year-bar-track {
-        display: flex;
+        display: block;
         width: 100%;
         min-width: 0;
         background: rgba(15, 23, 42, 0.8);
@@ -185,11 +195,12 @@
         overflow: hidden;
       }
       .stats-year-bar-row > .stats-year-bar-fill {
-        flex: 0 0 var(--bar-pct, 0%);
+        display: block;
         height: 100%;
+        min-width: 0;
         border-radius: 6px;
-        background: var(--accent);
-        transition: flex-basis 0.2s ease;
+        background: #6366f1;
+        transition: width 0.2s ease;
       }
       .stats-year-bar-row > .stats-year-value {
         font-family: "JetBrains Mono", monospace;

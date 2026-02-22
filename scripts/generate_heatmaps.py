@@ -199,6 +199,24 @@ def _load_activities(
             activity["start_latlng"] = item["start_latlng"]
         if item.get("summary_polyline"):
             activity["summary_polyline"] = item["summary_polyline"]
+        w = item.get("average_watts")
+        if w is not None and (isinstance(w, (int, float)) or (isinstance(w, str) and w)):
+            try:
+                activity["average_watts"] = float(w)
+            except (TypeError, ValueError):
+                pass
+        ahr = item.get("average_heartrate")
+        if ahr is not None and (isinstance(ahr, (int, float)) or (isinstance(ahr, str) and ahr)):
+            try:
+                activity["average_heartrate"] = float(ahr)
+            except (TypeError, ValueError):
+                pass
+        mhr = item.get("max_heartrate")
+        if mhr is not None and (isinstance(mhr, (int, float)) or (isinstance(mhr, str) and mhr)):
+            try:
+                activity["max_heartrate"] = float(mhr)
+            except (TypeError, ValueError):
+                pass
         activities.append(activity)
     return activities
 
