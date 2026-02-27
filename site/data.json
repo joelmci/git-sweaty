@@ -10474,6 +10474,24 @@
       "subtype": "Tennis",
       "type": "Tennis",
       "year": 2026
+    },
+    {
+      "average_heartrate": 134.3,
+      "average_watts": 348.3,
+      "date": "2026-02-26",
+      "distance": 7057.2,
+      "elevation_gain": 63.0,
+      "hour": 14,
+      "max_heartrate": 146.0,
+      "moving_time": 2451.0,
+      "start_latlng": [
+        51.051937,
+        -114.073579
+      ],
+      "subtype": "Run",
+      "summary_polyline": "khrvHbahwTbA|Bf@r@Tb@hAtCj@lAl@dAVn@^rAP`BFhAH\\RZd@VPLXp@d@|@BLN`@HJTFHLTbBPj@`@xB`@dB`AnFv@xDvAjIl@jBLVZb@Xd@Vt@Lj@\\xBNbBBdAFf@ZdABNAZShAG~@?ZBX?zGKjFOzDKnIOlA?dBB~BB`AFj@A~CWbC@xBC~@IxAQbBAt@DfBCr@MjCAbAL~DJbAL`@\\~@VxAXr@PXv@^JPJb@X`B`@hD@jCRlBHhADrB?`AAHsCnA}A|@I@IIAOBYAQQaAAONY@QGaCQcBCo@q@iDEs@CiAEg@Qo@UyAa@sBUmBU{@Uo@QkDAmC@wIC_DRyFHcBL_IH{BB_EDiAEoA?cBOeAC{AAcMRiCBq@Ea@Ca@Mi@EIQOISMo@ISo@{@kAmBc@k@oBkDWs@Qy@SaBWcBUwBEo@Kg@WgCAYBg@BOVi@@w@a@_DIy@SqAm@mBWc@Qs@_@w@Oo@Gi@Mc@Gs@_@}@uAwEyA_D_@m@w@iBk@eAM_@oAcCBS`@s@",
+      "type": "Run",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -19046,6 +19064,15 @@
           "distance": 7039.0,
           "elevation_gain": 56.0,
           "moving_time": 2379.0
+        },
+        "2026-02-26": {
+          "activity_ids": [
+            "17535471394"
+          ],
+          "count": 1,
+          "distance": 7057.2,
+          "elevation_gain": 63.0,
+          "moving_time": 2451.0
         }
       },
       "Tennis": {
@@ -19131,7 +19158,7 @@
       }
     }
   },
-  "generated_at": "2026-02-26T18:05:21.694020+00:00",
+  "generated_at": "2026-02-27T17:00:00.719323+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
