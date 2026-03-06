@@ -13707,5 +13707,26 @@
     "summary_polyline": "iirvHj_hwThB|Dl@j@P\\N`@Rv@`@hAp@zAX`@f@`ATx@Hh@NfCNr@LRl@j@^l@`@`Ab@v@FDPBHPXbBrAnG^|BZdBZtAX|Av@vDPrAZtAj@fBp@~@JTd@xAXpB`@hFHZLZDT?NM|@Gp@ElA?bDBfBUzJQhKEh@Gb@Cv@@`DDxAFlA?rBUhD?|BCbAYbE@lBC~@MtCAfANlEL|@^dAZ|AVt@HNLJj@ZPNHRLl@ZlCV~ABlCD`ATbCBvBGv@GH}Ap@YH]PULmAh@Ib@Fj@AVIl@BD@?DMDYDi@BcCMgCCeBUcDGg@[mAMw@IeCCWmAgGYiCI[Wm@ESS}C@oSf@iQ?oAHcCHoGEy@?gBM{AEuC?qCCs@?yB@aAZoDEIEw@IYg@{@UaAgD}EkBmDUk@[iB]_Dg@}DI}@QkAAQBi@Je@Te@@O?_@[iCe@yCm@wBUe@gAqCIo@K_@Gu@a@iAiA_E}A_Da@s@aCuF_AeBAEDUd@{@",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 154.3,
+    "average_watts": 379.8,
+    "date": "2026-03-05",
+    "distance": 7030.7,
+    "elevation_gain": 29.0,
+    "id": "17617381818",
+    "max_heartrate": 169.0,
+    "moving_time": 2176.0,
+    "name": "Lunch Run \ud83c\udf2c\ufe0f \ud83d\udca8",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-05T12:27:41Z",
+    "start_latlng": [
+      51.051649,
+      -114.073433
+    ],
+    "summary_polyline": "ehrvHfahwTfAzB^j@\\j@zApE~@xATb@Rp@N|@NrADt@Nr@X\\VNNN|A~CTFHFtBlKZpBb@~BTbAp@tDd@|B^zBj@fBR`@\\b@JRf@~A\\nBVjCFtABPTl@FZCf@O~@I~ABV?vCD~BGz@YjKGbFG|AGb@Eh@BnENrCA|ACl@MtAG~@@~BCl@GjAGd@IvA?rCOrDCdAJdDJbANx@Vr@^lBP`@LPXRNDNJRTHRt@fFFl@@hBBhARpBJ~AG~BMHc@Ls@^c@Nk@XWTs@ZGKBa@Ag@K{@@QHKBS?uAEcAQwBGa@i@iCOsCkAsGUmBKe@_@w@EWM{C@kNCiCl@uRAgADsAHeHCiAAkBI{ACiAImKFoAX{CIWI_Ak@eAMu@aBgCmA}A{AoC[o@IWSmAOaBa@}CMcBOwASkAAe@@]DWRa@Bk@SmBs@qEm@kBQYSu@i@}AM{@IYM_Ac@eAiAeEYc@o@yAy@wAaA_C{@_Ba@_AYi@AMBOh@_A",
+    "type": "Run",
+    "year": 2026
   }
 ]
