@@ -13770,5 +13770,26 @@
     "summary_polyline": "qumvHf}fwTS_AA]@w@?aBAaBCaAB_AF}I@oDAiBJyDCqAHgGAeB@mAEu@IQOC[@s@Lo@VEUQ}D?IFKJADBBJ@RKROHUDc@P_@FYHWPm@Ry@Bc@JSJ_@XUJa@LYBs@Vq@LKLo@r@eB~DOj@O`BIVOTAD@NLLHYPoCViA`@{@j@aBT_@Z_@TWNGbAUZA`A[b@_@VOv@O`AGp@YNEl@IXO\\IJO@QO[?MLiADOHGp@G~@?RCJJHL@FAh@BTAVH\\@BPHd@h@f@r@j@bAFFJ\\b@p@DRNZJd@BX@^N|@@PWvCc@dEKn@KbAGbBAhA@tAn@|K@TEd@ThCJ`CBNHRb@n@\\n@n@|@`AfBHVNdAP|A\\~APtAJNx@P~@Xj@LTBbCv@HBJAt@a@bCaB\\[TMh@]x@q@HQ@WFSd@q@\\k@t@m@r@gAl@oAt@oAL[`@e@h@mAJa@Fu@F]@aAJo@B_@Pu@NkAViALaARu@`@_ApBiCXY~@i@jAMl@Bb@T^Z\\f@X|@Jj@Bb@P~@h@|DH~@@^Fj@Np@b@rAXrAf@`EJtAJnAD`BCdBc@zFIxBs@vCGZ@z@DHNF?P[jEI|ASxBF^WbDMzB]zCOvBCr@Jn@b@hBVbBVbAXrB^dB\\|BZrARzAT|@t@~ENl@Jt@n@dDN`@FH`@Tz@r@AE[GSMa@OOOQ]Ko@Qc@oAgIk@eCc@yCk@iCQmAmAoGOiAe@eCA]Fw@\\sCNkBn@sKBy@Cs@LoAFaBJy@CMKEEI?a@Dc@PeAZwAXgFP{BHgCUeE]oCEm@Kk@Sw@Mq@m@uBGa@Ag@KiAs@mFS_AIo@Qc@k@}@[SYMa@Mq@Ac@Fi@TYPk@j@k@r@s@fAYp@Kb@I`@Gv@Y`AK`AQr@Af@O`@EVBp@En@Gr@ERo@rAi@r@Ud@_A|Am@nA[b@}@t@q@`AINGTEb@GLIDMNe@T_Ap@]XOJSRmCdBc@Ea@M",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 141.6,
+    "average_watts": 378.5,
+    "date": "2026-03-10",
+    "distance": 7038.6,
+    "elevation_gain": 25.0,
+    "id": "17677013044",
+    "max_heartrate": 153.0,
+    "moving_time": 2191.0,
+    "name": "Afternoon Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-10T13:20:28Z",
+    "start_latlng": [
+      51.051869,
+      -114.073574
+    ],
+    "summary_polyline": "chrvHjahwT`AxBr@dAR^f@`BXr@h@dA\\f@\\r@\\jAVtBH`AJd@TZTLLNp@pAVj@\\t@^J^zBrAlGLz@Z|AZbB~AbIPnAXxAV~@Xr@t@fAFL^pAZjBJdAHt@DfADl@^lAAl@Mt@MtADrBAfABhBO~GM`FKrGMt@Cr@?fAFzDHp@@l@AzACl@M`AG~@AjDI|AK`ACd@@xCGzAIrACn@?f@JnCHlAHh@^lAJp@ZfAT^LLRNb@TFJHT\\zB^tCFpDXhDH|A?b@C\\c@\\cClAe@Xo@VICCS@QAe@Oy@@QLW?kAAo@OsAGqAo@mDCo@CmAE[Ok@u@eEQsAY}AQ_@Mi@SeD?}CBcEC{Ff@eQRuOEqA@kAGc@EcAAaE@kAEsBAsB\\kE[}AGM[a@WiAe@m@}@wAaAqAuByDSq@y@{Ge@{ESoA?[F{@PUDOA{@k@oEMi@Is@_@oAa@y@Sq@]}@o@eD_@kAmAmE_BaDu@sAMOSm@c@eAcBeDAMDUXe@",
+    "type": "Run",
+    "year": 2026
   }
 ]
