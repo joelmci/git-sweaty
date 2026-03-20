@@ -10685,6 +10685,24 @@
       "subtype": "Ride",
       "type": "Ride",
       "year": 2026
+    },
+    {
+      "average_heartrate": 153.8,
+      "average_watts": 365.5,
+      "date": "2026-03-19",
+      "distance": 15099.6,
+      "elevation_gain": 98.0,
+      "hour": 14,
+      "max_heartrate": 173.0,
+      "moving_time": 4904.0,
+      "start_latlng": [
+        51.051531,
+        -114.073643
+      ],
+      "subtype": "Run",
+      "summary_polyline": "qgrvHlbhwTr@|A`@j@\\l@hA~Cr@jAt@xA\\|AL~@FzARp@NRr@j@|@bBH\\NXJJP?JLXnBtAxGPjAJ\\XdBf@zB`BtJl@xBhAjBh@dBf@tDP`DFVTf@@\\O|@MtABx@@nG]`NKfGOlB@lCDhB?^Fn@@p@AlBEp@QdB?fBC~A[dE@`CCfAKvA?hCJvBLvAl@|BPjAN`@LNVT`@TXT\\lBNnARhADj@BfCXhDDnA@`@Ep@G^IFkDjBgAb@GTD`@?f@KhAk@rCkCpE{@v@c@XuAf@}@RGJaCz@}@x@cAjAaAnBoAbDW`Bg@|Ay@hB}@bBWt@u@xAa@vA_AhEk@hDs@pC_@fAOdAs@vDu@zEIx@o@~CY`BCX_@zAwB|MSzDOpAWjAIrA?jFGnABTJTBX?dAC\\BX?|@}@tLEbAApCYrDM~@K\\Ij@CV?dAOtBIf@k@xBQ^WRo@\\OPgDbF}@hA_BzAgAhAg@^eAlA[f@{BpBi@n@iEjD}BvCgAfBc@l@g@\\mBp@e@VQRsAbCkAxAS^s@vA}AxDYf@_@bA_@tAo@nDQh@]n@EP\\i@Tq@r@gERu@|A}D`AoB^eAPa@lAkBRSxAaCFKPIbA_@f@In@_@tAoB`@u@tBoC|@u@d@YzAmAxA_BfA{@jAeBbBaBv@}@PItAsAxCaELYnAeBb@MXSJQZeAXmATcC?o@FyABY\\_BHo@NqDByANsDNmBNsANcC@cAEYH]@cAUs@AOFkBAoDB}Af@gC`@}Fr@}DHs@J_@\\yBd@uB^gCh@oCf@wDx@wEd@}Bp@uCXaAl@aDdBmH~@cC|@oBZ}@`AsBV{@`@mBNc@tAcDd@}@z@iA|@y@f@[|DuAz@Sl@[TU|@iAlBoDZuAR{AF[BmABY`@OH@`Bw@ZSjAi@HOBgAAiA[_EEgA?cBKy@Ow@MgAEKUcBU[{@k@U_@Qk@[}A[cAMcAMkC?gAB_BNcDAaCP_CHkBCcCZcD?gCIcBEyF@YLw@DqCLsERkJ@}ACeB?sDZmC@SC[YaAI_BQoB]}BU}@Ws@o@aAc@gAW{@yByLe@qBoA}G_AuEMgAg@Wk@eAa@aAcAkAMUE[M}AWcBMe@g@cAq@cAeBwEgAmBa@_AaAkBWq@",
+      "type": "Run",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -19320,6 +19338,15 @@
           "distance": 11098.4,
           "elevation_gain": 35.0,
           "moving_time": 3262.0
+        },
+        "2026-03-19": {
+          "activity_ids": [
+            "17784831599"
+          ],
+          "count": 1,
+          "distance": 15099.6,
+          "elevation_gain": 98.0,
+          "moving_time": 4904.0
         }
       },
       "Tennis": {
@@ -19442,7 +19469,7 @@
       }
     }
   },
-  "generated_at": "2026-03-19T18:01:05.770082+00:00",
+  "generated_at": "2026-03-20T17:11:52.291415+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
