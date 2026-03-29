@@ -13870,5 +13870,63 @@
     "summary_polyline": "qgrvHlbhwTr@|A`@j@\\l@hA~Cr@jAt@xA\\|AL~@FzARp@NRr@j@|@bBH\\NXJJP?JLXnBtAxGPjAJ\\XdBf@zB`BtJl@xBhAjBh@dBf@tDP`DFVTf@@\\O|@MtABx@@nG]`NKfGOlB@lCDhB?^Fn@@p@AlBEp@QdB?fBC~A[dE@`CCfAKvA?hCJvBLvAl@|BPjAN`@LNVT`@TXT\\lBNnARhADj@BfCXhDDnA@`@Ep@G^IFkDjBgAb@GTD`@?f@KhAk@rCkCpE{@v@c@XuAf@}@RGJaCz@}@x@cAjAaAnBoAbDW`Bg@|Ay@hB}@bBWt@u@xAa@vA_AhEk@hDs@pC_@fAOdAs@vDu@zEIx@o@~CY`BCX_@zAwB|MSzDOpAWjAIrA?jFGnABTJTBX?dAC\\BX?|@}@tLEbAApCYrDM~@K\\Ij@CV?dAOtBIf@k@xBQ^WRo@\\OPgDbF}@hA_BzAgAhAg@^eAlA[f@{BpBi@n@iEjD}BvCgAfBc@l@g@\\mBp@e@VQRsAbCkAxAS^s@vA}AxDYf@_@bA_@tAo@nDQh@]n@EP\\i@Tq@r@gERu@|A}D`AoB^eAPa@lAkBRSxAaCFKPIbA_@f@In@_@tAoB`@u@tBoC|@u@d@YzAmAxA_BfA{@jAeBbBaBv@}@PItAsAxCaELYnAeBb@MXSJQZeAXmATcC?o@FyABY\\_BHo@NqDByANsDNmBNsANcC@cAEYH]@cAUs@AOFkBAoDB}Af@gC`@}Fr@}DHs@J_@\\yBd@uB^gCh@oCf@wDx@wEd@}Bp@uCXaAl@aDdBmH~@cC|@oBZ}@`AsBV{@`@mBNc@tAcDd@}@z@iA|@y@f@[|DuAz@Sl@[TU|@iAlBoDZuAR{AF[BmABY`@OH@`Bw@ZSjAi@HOBgAAiA[_EEgA?cBKy@Ow@MgAEKUcBU[{@k@U_@Qk@[}A[cAMcAMkC?gAB_BNcDAaCP_CHkBCcCZcD?gCIcBEyF@YLw@DqCLsERkJ@}ACeB?sDZmC@SC[YaAI_BQoB]}BU}@Ws@o@aAc@gAW{@yByLe@qBoA}G_AuEMgAg@Wk@eAa@aAcAkAMUE[M}AWcBMe@g@cAq@cAeBwEgAmBa@_AaAkBWq@",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 123.4,
+    "average_watts": 155.0,
+    "date": "2026-03-28",
+    "distance": 4800.8,
+    "elevation_gain": 48.0,
+    "id": "17894251163",
+    "max_heartrate": 144.0,
+    "moving_time": 620.0,
+    "name": "Zwift - The Classic in Watopia",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-03-28T17:02:33Z",
+    "start_latlng": [
+      -11.646552,
+      166.930946
+    ],
+    "summary_polyline": "t|afA}kzy^TlALz@FhBDh@Jd@P^`@j@~@dAt@f@jAdApAnAz@bAb@Xd@Lp@Dj@C`AUtAi@d@U`Aq@ZORCTBLPPh@d@dCz@pDx@zBXn@`@n@d@r@^b@\\Zh@^j@Xl@Rf@Jf@Bf@Ed@Kd@Qb@[lBmBhAwAb@e@tFyDb@c@^e@j@gA^kA~@kG^}Ax@sBNk@XqAFe@Bi@Ck@I_@Oa@Y_@s@o@k@]o@Ys@Sw@OoAMs@EkACqCBoCLqBNSASCOKKQAUDk@Z_BBw@?u@Ew@Ks@KYMUSQWMq@UyBk@gCeAoBq@k@Ok@Km@CSBk@HmAXsB^c@Dg@@c@Au@KaHsAeBQq@E",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 179.9,
+    "average_watts": 271.1,
+    "date": "2026-03-28",
+    "distance": 11410.9,
+    "elevation_gain": 94.0,
+    "id": "17894409171",
+    "max_heartrate": 191.0,
+    "moving_time": 1066.0,
+    "name": "Zwift - TT: Stage 6a: Zwift Games: Epiloch",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-03-28T17:17:45Z",
+    "start_latlng": [
+      55.63883,
+      -5.218658
+    ],
+    "summary_polyline": "otqrIfb{^kBESJOVK^G`@Cb@AxD@hALdAZt@~A~Bh@dAHXT|AHXXp@t@xATv@D\\HbAFvDChAMfAM\\QRSHUEc@_@UAOLKZMbCIXMPe@Hu@GQDOJMRWn@YrAMz@C`AB^H\\JXPPNHpAHbB^bDCPHPPLVRz@J~@D`AJ~D@zCGx@Mv@IRMNOFcBIaANm@Xy@t@s@fAUh@Ql@Kr@CZ?pAEXGTo@`Ag@`@[Nm@F{@AkAMq@DOJUl@MPOHQ@OEOOKWG]G}@KYOMOGuC_AkAKmF@e@NOTKZUhBK^OXuIfJi@l@w@pAiBvDa@v@i@j@UJWDm@Gk@]SY_@}@e@kB[cAe@w@USo@YYAs@JmA\\w@@YIYSW[S_@Og@UuASgCSsAq@kBaBcDw@mBi@yBSyACk@?k@JuAt@yFRaAZk@TMb@?`@XRZFRBTAl@Gh@Ob@UXMDg@OYY{@mA]WOE_@J{@`AOJSBQEOQMYq@_DOYSMWHSXu@dBWV[J[IUW_AyA_BsC_@_AKe@Eg@AyBCe@M_@c@g@g@Ug@KsBCe@HoAr@_@Jm@Bi@KwAu@cAQKGYYUc@Mq@CY@u@Ls@Te@\\]z@o@v@cANM`@Sd@M`CUTITQN]Hc@De@@i@Eg@Mc@e@o@Mc@@k@Hg@Ne@Na@XSXCVFVRTZNb@Hh@JvAVlA`AhCP^TNX?j@a@dEmGf@c@RGTBRLRTp@nARRTHj@IpA_AT?RLj@pAPNTBh@Mx@a@fCyBl@c@^O`@A\\RLP`@~@p@rBVf@ZT`@CZYVg@xA}G`@wAZu@^i@`@_@d@Sv@QNKNQXk@To@TqALuAHuBJw@ZiAVe@\\]j@Y\\C\\BLFX\\jA|CNLR?PQJ_@LiAHe@L]RU`A[RQLYTcAPSRKR?RJZt@PPRBdBMf@Px@d@d@P`Ch@bIhAzDBPDX`@Nr@@\\CxC@~@B\\Nv@Vn@tAnBr@rAFVZpBVn@r@tAVp@FZH~@DbADrDGhAI`@KXQTSHSCe@]QGQHMVE^G`BEZMTOJQBgAEOF]b@]jAUtAG|@B~@FZLTLPPHjAFrBb@hCIb@NNPVr@TzAF`AHbD@~CC|@Kz@GVMRMLa@DcAKaAJ_@Nm@^u@z@m@jA[~@Kp@AX?nACXITSb@c@h@[Ti@T",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 150.0,
+    "average_watts": 198.8,
+    "date": "2026-03-28",
+    "distance": 179.3,
+    "elevation_gain": 0.0,
+    "id": "17894445824",
+    "max_heartrate": 191.0,
+    "moving_time": 2022.0,
+    "name": "Afternoon Ride",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-03-28T17:02:40Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
