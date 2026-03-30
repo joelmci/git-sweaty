@@ -13928,5 +13928,20 @@
     "start_date_local": "2026-03-28T17:02:40Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 115.9,
+    "date": "2026-03-29",
+    "distance": 529.2,
+    "elevation_gain": 0.0,
+    "id": "17905776014",
+    "max_heartrate": 166.0,
+    "moving_time": 3519.0,
+    "name": "Afternoon Tennis",
+    "raw_activity_type": "Workout",
+    "raw_type": "Tennis",
+    "start_date_local": "2026-03-29T13:02:57Z",
+    "type": "Tennis",
+    "year": 2026
   }
 ]
