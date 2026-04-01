@@ -13943,5 +13943,26 @@
     "start_date_local": "2026-03-29T13:02:57Z",
     "type": "Tennis",
     "year": 2026
+  },
+  {
+    "average_heartrate": 146.5,
+    "average_watts": 355.5,
+    "date": "2026-03-31",
+    "distance": 10190.1,
+    "elevation_gain": 41.0,
+    "id": "17931237764",
+    "max_heartrate": 162.0,
+    "moving_time": 3431.0,
+    "name": "Afternoon Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-31T15:58:31Z",
+    "start_latlng": [
+      51.051946,
+      -114.073591
+    ],
+    "summary_polyline": "ihrvHfahwTnAjCp@`ARb@f@zAd@fAZp@n@`AZr@R|@Hl@RfCJXPXd@^LNVn@Zd@d@fAHFL@HLZhB`@bBfAxFT`APlAd@xBf@xCXxARrAThAt@vBJRh@r@f@zA^bC\\~EHd@P`@BN?XUrAEr@?b@BFCrCBjBAn@c@rRE|BMjA?nBFfDHdA?jACrAOlAE`AAnDGbAEZGr@IjABxBAj@IbBAvCFrBLxAHd@Z|@TpANj@Tb@PPp@\\LNFJN`Al@vEBpCJxAPbBBh@@t@EhAALGLiA`@q@^u@Z_AZEJAVAbAMbAi@jCWr@SXsA`Cq@t@gAn@oAd@e@HSJm@N{@`@GHOFmAbAs@|@eAxBgAhCOl@WtA[|@eBlDcBdE]dA{@|DQpAm@nC_AbDYpA]dBGh@UpAaApGe@tBEf@@Af@kCdAiHl@cD`AmEZgAXiAf@yCNk@n@uCVy@r@kB`B{Db@w@Zu@ZcAJo@Je@|@aCx@eB^o@j@{@fAgAn@a@TIPKp@STIvA_@`A_@VQn@q@n@{@nA_CTe@ZuANaAJ_ADyADEXGNKnCoA|@YBCBU?mBa@mFAm@?gAGaA}@_GGMMOm@[MKS]Oc@[}A]gAUmBK{C?g@RgFCqA@cAD{@Jw@JeBC}BB{@TgB@Q?cCIqAEiC@yCLiAJoFPcHBsCFkA?i@CyBBqAAeBLqALm@Ak@Wo@EWKuBI_AMaA]kBe@uAm@_AYq@Oc@]sAS{AWiAeBkJyAkHQeAK_@g@uCGKUIMKe@_AUm@U]q@y@OMKSEOE{@U}BSu@Ys@cA}AUg@mAoDk@_A",
+    "type": "Run",
+    "year": 2026
   }
 ]
