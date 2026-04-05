@@ -10836,6 +10836,24 @@
       "summary_polyline": "bobfAqz_z^W_Ai@w@g@c@a@OQCQ@a@Jk@^U\\M\\K^APDr@F^L^lF`Ln@fAANYT}@XaH|@mAV[NWRO\\CN@NDNJJNF^DbBMlH_A^?NBHJELKH[LmARsJz@MFCN?NBNJJbAHb@AhC[f@?~ADx@J^HZPJJFLHb@DpAHj@HRZd@~@dALPPl@@TAVITONUFeARWJKT@Xd@zATh@NPRJTBj@EPHJPBRGRONS@k@CU?U@UDMP@TPJTDRJHRATQLUDUAk@Qe@WWCW?UBm@L{@Z_@ZWb@Y`@a@XqAx@]XY\\]p@[hAUlAc@~CM`BCz@@lAh@xHBz@Az@ElAOjAUfAa@tAe@~@kAfBwBbEY\\_Al@Y\\Md@]pBO`@INYZ]V_Ah@s@Xc@LQDe@Be@AgAMeAGQB_@LQ@MICOJKn@YXGzAOLEBE@ECUS_@KIWCOBuAd@yB|@UDKAWG_@Q[YcAu@u@s@GSAk@Du@J_@FIJCx@ELEHOBOCuAL_ACo@[kCM]SU",
       "type": "VirtualRide",
       "year": 2026
+    },
+    {
+      "average_heartrate": 141.6,
+      "average_watts": 339.7,
+      "date": "2026-04-04",
+      "distance": 21573.1,
+      "elevation_gain": 172.0,
+      "hour": 13,
+      "max_heartrate": 167.0,
+      "moving_time": 7208.0,
+      "start_latlng": [
+        51.025119,
+        -114.102026
+      ],
+      "subtype": "Run",
+      "summary_polyline": "kqlvHnplwTzAGD{@EwDR]Fa@HGhIBfFERKDOBwNr@O^QnBCJw@@oCTc@fg@F~@IlUF`ARVGd@k@|A?t@P^Vt@bA`DfDbAr@x@|BlA`Aj@Bb@Ol@g@|@qATOtB`@x@d@d@\\nASfB?hB{@Aj@i@|Aq@hAkAfE]fCE`FQb@k@`@ELS`DFtFAxIBTRNh@FdEFNHDL?pIEr@RxALX\\HtG@ZXjB`DFz@kA`JO`BAlAd@mD`Bh@`@gD@\\SbBCp@Ld@j@v@dATZGJEfAyBZOPDnHbMrFxIVn@?bDGx@JtG@jL@pEI|@@zKLl@@|HK`BBxGI`LDp@OzACdADfMEdGD|BE~]Pz@GnABNLFj@Io@JS^BhBp@nBThBCPmAbBa@bCCdGRhHPp@^FVWjAaDf@i@jG_AfAJxCfBZ\\~EtLvCbIjF|QJx@DdA[dEBrAx@vElDfVZbAzAfBLBJIb@w@Ji@?i@Q_AQmFMwAFm@r@k@\\g@OgCVkE@oDL{AZs@dBUl@oAZkAVgCn@{BJeBf@aBVuBfBgEfAiExBiE|FoSRiBIyAYkB?k@h@eDDuCh@cBB_@l@{CFwAJaKhAiJl@iC~B{Dr@sBrHiY~@oCfAaC~EyTj@wEFgCAcAJ{C^{AP]VoAd@kAFc@QsBQm@]uCWs@g@i@k@UoAIu@WsAPmC}@g@Cm@BCc@RyBBsIm@{EDY^e@x@a@|AkAtBmADi@GsAFa@T]z@YRYD{Bh@{AJu@xAiB\\o@j@aDl@_B~@oDh@uFEcE]kBRgJKuIUa@aBiBmAq@mOkFaB}@qEeBiCTwA~@w@lAe@nAeC|IIDWi@OAMD_@h@]N_CuAg@y@Qd@o@l@i@^m@Hq@I]Y]k@uBXqDIa@e@wAwFqBf@qAsAmA_@}BEiAT{B{@[@mAr@o@RoEOo@z@{@?uBzA_AOk@Jy@}@g@w@ISMaAc@m@Si@e@e@Oo@Au@o@mAa@Tc@Fk@M_@c@e@qB]m@gC_AaBY{B@{@Lo@ImB^mNrI_G`DcBBaBXoA_A}Bo@WNuBfC]Fu@Io@g@qA{C{@m@gFmFq@Y{@Iw@@a@d@[F_AOwFJuZWwIP}PEUP@~Bc@bBKJuDNo@ImCFqCIoFJc@{@Q}AB}KIOwDFwBGY\\GTBnM",
+      "type": "Run",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -19507,6 +19525,15 @@
           "distance": 7049.6,
           "elevation_gain": 33.0,
           "moving_time": 2391.0
+        },
+        "2026-04-04": {
+          "activity_ids": [
+            "17980123314"
+          ],
+          "count": 1,
+          "distance": 21573.1,
+          "elevation_gain": 172.0,
+          "moving_time": 7208.0
         }
       },
       "Tennis": {
@@ -19658,7 +19685,7 @@
       }
     }
   },
-  "generated_at": "2026-04-04T15:34:01.486187+00:00",
+  "generated_at": "2026-04-05T15:35:03.965400+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
