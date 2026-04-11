@@ -14063,5 +14063,26 @@
     "start_date_local": "2026-04-08T20:01:22Z",
     "type": "Tennis",
     "year": 2026
+  },
+  {
+    "average_heartrate": 141.6,
+    "average_watts": 335.1,
+    "date": "2026-04-10",
+    "distance": 10072.9,
+    "elevation_gain": 36.0,
+    "id": "18056700250",
+    "max_heartrate": 151.0,
+    "moving_time": 3524.0,
+    "name": "Lunch Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-04-10T11:02:48Z",
+    "start_latlng": [
+      51.051787,
+      -114.073971
+    ],
+    "summary_polyline": "_grvH~bhwTh@jAz@pAHTp@xBd@dAx@rAZn@^bBPhCRv@JN^XJPTd@V`@Lb@`@r@^NHNRpAn@lCLv@~AjINfAXjAx@lEJx@`@nBVt@Zt@p@dA`@lA^rBJx@VdEZhA?b@W~AEdAD`@?rC@dBWbKQ~JAXMt@AXFvFHxA?`CY~CAjA@`BGzAKx@EbA?dCC`AKhBCdCPbDJx@FXHCBVj@lCN`@T\\HFh@TLJJXRdAj@jEFxDX~CBfAGfBADG@MJ]JOJg@TwAv@[FYLGDINALFN@H?n@OrAe@vBIR}@zAw@xAm@r@s@f@oAd@s@PmAb@K@MJa@Jc@Xu@p@{@hAiAzBcA`Ci@lCUv@uBdEc@pAu@bBc@~A{@vD_@~Bm@bCs@hCi@pCiA|GWlBSr@CLB?Lm@^iCfBoKTeAv@qCv@eEz@wD^wAp@kBb@eALSNe@pAeCX_A^_Bn@gB`AwBd@}@b@u@z@aAb@_@dB{@fCs@dAc@VMZYn@u@jBcDN_@bAyEDi@Ae@Bi@MeDCeBCe@MqAE_Ao@gDMqC_@cBe@iCe@aDMa@Qc@ESGm@KeC@sGAw@@qBC{DNcGNqCDgCDgA?{ALmJAyA@gAM}AEyC@wBE{B?aCRkCLg@ESQsAM_@UQGMMs@KOa@g@q@gAmAaBkBcDQa@Qk@QqAQkB[uBw@uG@i@BUFULUDM?o@Es@[uBEg@GQC_@Q}@W}@Mm@OSw@kBAEC@A@Pv@BdABVJ\\@@r@w@dAwADA@GdAoAXe@z@gADWEUK]IIO?ODQLOBSGUSIg@MmBSqAOo@m@qAcAaBSk@o@uBi@_Ag@s@[u@sAoCOi@",
+    "type": "Run",
+    "year": 2026
   }
 ]
