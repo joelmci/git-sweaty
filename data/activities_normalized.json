@@ -14105,5 +14105,26 @@
     "summary_polyline": "c~lvHfmmwTBjh@E~Da@\\{CBe@ZiGCiK@ODGRBjEr@jNN~EEjTFda@E`AFxFEj@AfDDbBE~EFxR?bGKfJHdBEfIHp@DB?XWxBg@|Aa@hC@dSGp@?n_@FfFIlBQl@Cj@@ja@Ij@SNcDFWzOAxGXpEr@|AlCXxAYjACR]Bg@QOk@?wBb@{Ac@mBh@}AQsCZaEI{I\\oIdAqAGqAl@q@l@]D]\\Sr@Ed@@b@Lj@MkAH{@JYPYn@QhAeAp@YtC?`Dk@xD]`HUdELlB_@bBRvBi@nAb@vC_@nDr@bDY|Cb@vHCrDp@lBSlADjAX`Af@pBTxApBx@d@dAFVX|@\\tEl@hBnBjBM`@Fz@x@r@WHKDe@MoCU}@Lg@AuGNaB@mALy@TuDH}BAsCQ{DScAFe@FJ[_BAqBm@cKf@UTBB]}@_Pg@{DBQNOtCI~@JbM@l@k@bNGHyKCuf@ZcAAsDHeA@aF@YJIAsApNa@X\\jGj@~AM\\]rAd@pAPPs@l@WjO@zBN\\MpEDlCKbCBf@p@d@Dvb@BNFTx@p@IMjAm@fAl@pBR|APH`A}BZcBbAaCnAgBbBmA|B}DfB_BfAIv@g@tAuDbAwDXuBx@cCRmDx@mC?k@TkBCeAh@iCKkDLwB?eEd@sBn@eEl@wBrAqC~@cCtBwHp@_AdAyEl@yFLm@~@kBbCyCXm@XwAZaDl@qALs@AOIMqBD_B{@{AYAKKLq@CsB^E`@Lz@EJg@`@c@Hm@sCGwAyCuCg@s@iA}BqAeDo@mDm@aF_CgPaAgCqDyG_H}Jy@eBwAgEm@q@gAk@gBsAgAuAOm@s@mG_AyCWByA~DO@bCeI|CoIt@aBj@y@J{Ar@wAh@o@HVI`@]t@C\\Dd@d@d@~@rAHTBt@JT|AtBp@Cv@R`C_Bv@Al@y@rEL~BeAZ@jBv@`B_@vAHr@To@QcBG_BZoB_AqCfAoEKo@z@cADsBxAw@Sk@LkB{BQsAw@{Ag@i@I]Aw@s@qAaA\\k@Kc@m@_@cBYq@eBq@wCm@aDTWOi@?cBb@eAf@qKzGwGnDiBDqAVwA}@}Bo@[TsB~BWJs@IaAs@eAkC_As@{AcB_As@kAwAm@WkBKm@f@YLgAUaFJyWGq@Iu@a@iEMyARmCUgAWoBh@eF?UNiAFORCT?xDSXmEEuLEaCJMSC{EUcA?mFyGC",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 130.9,
+    "average_watts": 364.3,
+    "date": "2026-04-13",
+    "distance": 7077.4,
+    "elevation_gain": 29.0,
+    "id": "18094477460",
+    "max_heartrate": 140.0,
+    "moving_time": 2292.0,
+    "name": "Lunch Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-04-13T11:22:10Z",
+    "start_latlng": [
+      51.051565,
+      -114.07336
+    ],
+    "summary_polyline": "ghrvHbahwTfA|B|@rA\\x@x@hCbAfB\\p@Tn@Jd@Jr@LtBNb@V\\\\Vd@|@Tj@Xh@JXJJL@JJ`@lBX`B\\~AjArG\\xAd@vCp@`DFh@RjAd@dBZp@f@n@JRf@`BVbBPdBPfCJd@LZBn@SvAIfADt@AtBBlC[zMMpGOtACZ?~@FbD@n@Fr@A|CUtCCzDYhE?hCMnDAzAHjCJpAHh@Z~@ZdBPb@NTLLn@ZLLJR\\fBb@tDBhC^tFC|B@CBb@@aCCi@_@eFCqBG_AW{AYyBMe@OWu@_@UYQc@[eB_@gAKi@QqE@u@A_ANmCCaCBk@H}@PcC@_EF{@NuA@mBAe@KoAGiF@e@NyA`@aRJyCCoABaBC}@@sBTwBAWYkAIgBU{B[iB[mAQa@s@aAk@yAKg@Q_AE_@[aBYaBoAgGo@uDwAcHQoAGMGCKAOMuAwCa@c@WSMSI[ImAMsA_@wAuB{DSu@i@}A[o@u@eAyA}CYs@",
+    "type": "Run",
+    "year": 2026
   }
 ]
