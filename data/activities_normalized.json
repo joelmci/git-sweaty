@@ -14126,5 +14126,26 @@
     "summary_polyline": "ghrvHbahwTfA|B|@rA\\x@x@hCbAfB\\p@Tn@Jd@Jr@LtBNb@V\\\\Vd@|@Tj@Xh@JXJJL@JJ`@lBX`B\\~AjArG\\xAd@vCp@`DFh@RjAd@dBZp@f@n@JRf@`BVbBPdBPfCJd@LZBn@SvAIfADt@AtBBlC[zMMpGOtACZ?~@FbD@n@Fr@A|CUtCCzDYhE?hCMnDAzAHjCJpAHh@Z~@ZdBPb@NTLLn@ZLLJR\\fBb@tDBhC^tFC|B@CBb@@aCCi@_@eFCqBG_AW{AYyBMe@OWu@_@UYQc@[eB_@gAKi@QqE@u@A_ANmCCaCBk@H}@PcC@_EF{@NuA@mBAe@KoAGiF@e@NyA`@aRJyCCoABaBC}@@sBTwBAWYkAIgBU{B[iB[mAQa@s@aAk@yAKg@Q_AE_@[aBYaBoAgGo@uDwAcHQoAGMGCKAOMuAwCa@c@WSMSI[ImAMsA_@wAuB{DSu@i@}A[o@u@eAyA}CYs@",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 152.5,
+    "average_watts": 399.2,
+    "date": "2026-04-14",
+    "distance": 10110.8,
+    "elevation_gain": 52.0,
+    "id": "18110309266",
+    "max_heartrate": 176.0,
+    "moving_time": 2970.0,
+    "name": "Afternoon Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-04-14T14:12:33Z",
+    "start_latlng": [
+      51.050875,
+      -114.073174
+    ],
+    "summary_polyline": "ahrvHjahwTfAxBl@z@R\\N`@Rr@t@nB|@tAb@bAHb@\\zBF`AHb@P\\f@`@bAvBXp@JJZJDRNfA^tAv@vDx@vEt@nD~@bFNnARdATx@\\x@v@lAJh@Zv@`@rBRxBHlBFZPh@D`@QrAEt@CnDBbC?t@g@bVOrAAVDxEJxB?vBCr@UlBCp@BxBI|AS~BAz@BdBM|BAzA@z@JnCHv@BP^vATtANb@JV^`@b@VPPPj@VrA`@bDFpD\\bEDfAEz@IVs@^cA^w@d@a@La@TMLEPDt@MvAg@`Cc@~@_@h@aAhBKHSDUZc@^SHg@V{@\\}Ab@WNq@X}@r@}@`AY^_@t@cAbCQZW~@SnAc@vAO^[h@_@z@SX]l@iAbDOp@Yt@_AlEa@`CkAxDWlAg@`DS`A]rBOlAYfBFw@Lo@J{@`BcJ`AyDRk@\\qBlAmF^iAPu@v@oBv@mBZi@x@mBNg@h@iCXu@^s@Rm@~@iBv@gAj@o@PEb@]x@e@dBe@^OnAa@f@Yr@u@Xa@hBcDHSx@{E@qABOpAi@v@g@l@Wj@SNIF_@?u@D]a@uFCoA@]Cs@aAyGU[e@UQMUYOa@Qs@Is@Wq@Om@MiAKkCAs@DyBLuB@yCV}DBs@A{B@_@VsB@aDIy@?kAGwDBq@JcAj@aWAaBA}AB}AAw@X{BAWCQKWMe@GyAQqBOgAWuA_@mAIOg@q@Q_@k@cBScAOeAQw@cBaJKY]{Bo@}CeAcGMSUIKKoAqCcA}@GOIWCw@KgAOcAUu@}AsCg@wAQm@c@kA_AsAsAsC",
+    "type": "Run",
+    "year": 2026
   }
 ]
