@@ -14252,5 +14252,26 @@
     "summary_polyline": "gslvHrqlwTREfBGPBLFFR@`AC`D@rICxSLj@BXAdA@HDDdADl@?`@NL@~DE`HBh@Cv@K\\CfGDtGAv@FXFd@NhAB~EGNBJJDR@f@E`IB|@Cd@GLIFW@e@Cg@DgA@g@AcAB[NKJQZK`@IxA?NDJLNBHFZDl@@lDCr@F\\@TEz@BhETbFJZ@JETc@~@IXCz@D|@HZRPLDJAv@Uf@CHENWV@j@GZBHN@p@Dp@H`@HLj@b@rA~AfDjEbAvApAdBF?N]PS\\IP@b@b@Zd@\\v@Pz@?HCP_@eB[o@U[g@a@QEG?IBMLQd@E@ECwAmB[i@SQ_@i@eEiFuAuAISCUAoA@OCI_@Kg@JYEG@KPGBmB\\QCOKKSIi@CC_@AEECI?qCOSKe@GAk@BQFs@DCA@I`@BDA@GgCA}CBsACoGBsACgD@a@CmAY_@A]?WHy@FyAY_AK[KOKIIGBMNIEWBY@SQG@UV[RQEKF?In@_@@CAC[VG@MCo@AI?]P]D]?sBRi@@_@FaACwA@[Ey@A{CDeA?UCKBe@^IBsCTg@Lq@HKFM@KAWKc@Hu@Bu@?s@B_A?k@Ok@@YCCD?DB@FCf@@?Hm@?AB?D?pB@DD@b@EBD?DC?cD?oABy@AcBBcAAMEQWyAkAGAE@IJEBGCKOSEsBAODc@Ei@?oBDiAEO@GBOT?CGCUAKKG?QB[?oBAaC@c@CGJCbBEJmAAmC?IDCn@I\\SVKDi@EkAFm@?[DKHGLCP?d@FNFHVDJEDO@wAIuEGSKMmBB_AAsABKA]Qa@Im@?g@DQAOIUe@KIOGcAGa@M_@W[a@OIOCMFi@bAa@f@k@l@SFSByAEQIEIAOj@kDFcARwAZyCHkD?gBGwAQuCGoCEm@y@qFQa@WQg@YUWGMUu@WqA]kAIk@GgAIeDPeF?cCDo@PoBDuA@aDTwC@oBIoCGuENkBVeL@wAPcGCsB?yEVkBBg@CQSq@Ia@IcBMqAK}@YeBWy@Oc@KK_@g@a@_Aa@sAmAaHmD}Qi@aCQsAGISEUYoAuCMc@OaA?wASeBOs@_@qAiAgCEw@@w@U}@Eu@@a@",
     "type": "EBikeRide",
     "year": 2026
+  },
+  {
+    "average_heartrate": 119.2,
+    "average_watts": 177.1,
+    "date": "2026-04-24",
+    "distance": 8508.1,
+    "elevation_gain": 65.0,
+    "id": "18237930137",
+    "max_heartrate": 138.0,
+    "moving_time": 1125.0,
+    "name": "Well I tried.  Kids had different plans",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-04-24T05:43:40Z",
+    "start_latlng": [
+      -11.664252,
+      166.947569
+    ],
+    "summary_polyline": "xpefAuj}y^f@H`@L\\RTRh@p@dBvCZ^j@d@^T`@Nj@Nz@LrCZnBLdBDxAGvAY`AW|FuB`A[bAQn@CV?VD`B\\zAn@r@LfBHp@?jAKVFPNHVAXMn@DVNRTHXA|@a@TEl@Fh@Jh@Pb@THPATIROLSFU@qAASBQFMLIPER?RDRJN`@VtAr@\\Xf@d@l@t@d@hA\\fAB\\?\\Cz@OdAUdAAh@BJPTfAp@TRPXRh@FZ@ZEZ]v@EVBTJd@@PMTUR_@NW@MCg@MoAi@]GO?OBMFe@r@e@`@ILAP?PJ^PXTVbAl@VVDNA^BNVj@?NKJQAo@]S?QDOHKNCRDPf@dADRIPy@\\OLIPATDj@DRJPLLb@TnAZPJJPBj@El@?j@RvANh@JR^^hAp@PL\\b@Vd@Tf@ZtAJPLNd@TrA\\d@TNNb@x@LNRJRDbBLpAf@`@F^Gx@c@^KxABPCp@[PCv@FbATZRN^H^Bt@BPHNT\\\\VNDR?NEz@i@PEb@Ed@@b@HPHJNPb@Rz@Rb@LLd@Rd@HnA@f@Af@Id@ONMj@gAPMRAT@d@Jb@PLJHL@REb@?PFNJL\\P|@Zz@^^FP?^Gj@Sf@[R[ZmAl@yADOC_@K]OYs@u@a@WsAi@QMOSMm@Cq@Bq@Hs@Rq@^y@h@s@h@c@VMXExAGj@Kl@SZQ\\SVYP_@Fa@DyACa@GOMKMGqB_@OIcAq@]Ma@?]HgAd@UDS?QEUOeAiASISEUDSLGNUv@IJWFUASGKIu@sA]YUGm@Gg@Ak@BUFMHORIV?PBPb@x@HZ?HGPi@t@KZBXL^BPANIV]j@QLIBUAy@IQ@WH",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
