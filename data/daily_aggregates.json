@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T16:20:00.157807+00:00",
+  "generated_at": "2026-05-01T15:58:41.628981+00:00",
   "years": {
     "2013": {
       "Hike": {
@@ -8456,12 +8456,22 @@
         },
         "2026-04-30": {
           "activity_ids": [
-            "18319881138"
+            "18319881138",
+            "18325116177"
+          ],
+          "count": 2,
+          "distance": 23423.6,
+          "elevation_gain": 222.0,
+          "moving_time": 4636.0
+        },
+        "2026-05-01": {
+          "activity_ids": [
+            "18334332149"
           ],
           "count": 1,
-          "distance": 11250.5,
-          "elevation_gain": 99.0,
-          "moving_time": 2082.0
+          "distance": 10443.8,
+          "elevation_gain": 108.0,
+          "moving_time": 2560.0
         }
       },
       "Ride": {
@@ -8799,6 +8809,15 @@
           "distance": 11042.1,
           "elevation_gain": 48.0,
           "moving_time": 3416.0
+        },
+        "2026-04-30": {
+          "activity_ids": [
+            "18323635839"
+          ],
+          "count": 1,
+          "distance": 11275.2,
+          "elevation_gain": 42.0,
+          "moving_time": 3895.0
         }
       },
       "Tennis": {
