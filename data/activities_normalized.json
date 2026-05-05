@@ -14504,5 +14504,26 @@
     "summary_polyline": "c~lvH~fmwTD|e@EdFB|EIXWd@ULaY@M@KNFzFt@rOJzFGdGBnPEzEDbJCxEBbJE~BHhj@E~GDzIGxALhA[rCc@hAY`BEx@Wv@Aj_@CvAA`V@th@G`@SNwCAKHAxCQ|EC`MVhEr@~AvCXtC[VSDs@YO_Dd@}Aa@aCd@qAQmB^sDM{JZwHdAuBCgAh@iBjAWl@IjASVK@_@}@w@l@]U[Lm@IWx@GFyAKe@i@qAg@uB{BwCkAo@y@qD[iCJwBGw@\\gD\\oCQsB?iCXgASqDh@mCI{F`Aa@^_@|ASXaBHxAGPKz@qCt@QtEo@lCDvDe@zARjAUlAE|EPbDYfA]~FGzCV|@bAlC`AdCfCbAZh@j@rARNKTy@r@N^a@Pi@b@[FFb@hBJJRER}AVq@z@]j@k@lAm@lDGpBa@pD]fJ[fDLnB[|ARhBe@vA`@rCc@nDp@tDUbDb@dHCvDp@xASxADjC~@pBT`BvBn@`@x@FxHvAz@r@j@fAR?bBw@t@}@Ho@^]b@}@CwCDaDR}B?i@Lw@\\_G@{AG}BQyCUiAHwAl@IHOmB}^Q{B[mBAa@JSn@[|ASpLDhRC\\QFQ?{@DoVCo`@J{A@gFBSHCGeADMbMQn@KTZpG^zAENYHAhAb@vATFENo@j@S~KCnFPXMfEJ`FMFHBd@f@Dde@DRRDt@z@ODd@El@q@h@ETPt@Xp@T`BFHX[p@yATqAVw@t@aBdA_Bd@g@dAo@zBwDbB}AfAKx@e@tB{Fj@uB^iCn@sBRgDx@uCTwCAgAf@wB@m@IiBNeFCmBnAuHp@kCvCwGd@uBdAqDl@y@L]bAkEn@_GNi@jA}BxAiBr@kAt@yFt@iB@YGUq@IcAHkCmA}BGWJk@vAq@x@q@ZuBr@mDi@kCyAo@m@cAk@qBo@yBImTDa@qA@oCI_@qAkBaNcUUGWH}@lBa@ZwAWQO[o@Iq@ZuCCMe@jD_Bk@k@`EA_@^mDfA_I?aAuBwD_@YcHASIGm@B{KEYU_@{AQoQAc@U[?iDXkNGEW@wJO_BAgPGy@@qS[eA?}CCM}@@c@s@oB]mDh@y@AkB]wA\\yDB{CSgDP{BWiBR_AOy@@}A]wBj@_F?_@P{@DMNGf@AjDSVqDBk@VsEBgBIkENc@Qa@iAe@E",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 149.0,
+    "average_watts": 442.8,
+    "date": "2026-05-04",
+    "distance": 5060.3,
+    "elevation_gain": 75.0,
+    "id": "18380062847",
+    "max_heartrate": 162.0,
+    "moving_time": 1433.0,
+    "name": "Quick jaunt to pick up my bike",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-04T20:11:54Z",
+    "start_latlng": [
+      51.025973,
+      -114.101977
+    ],
+    "summary_polyline": "w~lvHtemwT?xECpABnE?vGBxA@nFElKBt@@pDCZCDQBm@?e@C_ABc@XSBc@?EFqAGyABu@C_@DmCEa@@}AAQBu@CQBGNBv@A|ADrATtF^dGDhADrC?rGEtAAjCDjAAhDCbBJd@E|AEzDBpA@zBCxABxFAr@?fFBJEdBA|FBvG?fJ@j@AbB@hNCvFB~JDx@BBA?GtAKv@Md@a@bAGf@Op@Eh@B`ECbJ@nAAdA@n@?bHEdHBf@?vDCdF@jABFCj@?HFLHDdC@hBIrCa@p@G",
+    "type": "Run",
+    "year": 2026
   }
 ]
