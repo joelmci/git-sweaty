@@ -14566,5 +14566,26 @@
     "summary_polyline": "islvH|alwT@SCQHBFATJh@@ZCh@@FAR?DFAtCD^CzEBnCCvDB\\Cz@BbBCnBBXBFT@`@Gf@DVAXFb@?HBFR@|ALd@@^DV?`@BHDBf@CP?JBNAp@?VCZBn@@d@CFBx@GBBFXFJ`AAHFBRBbBAx@@xIB@X@^Av@Kx@Ah@Fj@@ZHt@?VEP?ARBPBDNDl@G`@Bn@CN@PDP`@RNT@\\ERIRBDJJh@Jp@?hBAlBC`@Ih@M\\_@dBEFSISMw@y@OEKDEFM\\Y\\MXGGc@s@ECIDOXc@h@g@\\QHkBf@gA@a@CS@CAAEAyAGOm@Cy@DMCW@[COBIAWBIGGYGAA@?HHXKrDD|@Ef@c@EWI]@m@E_@Dc@CQ@GFEN?zCEDO@",
     "type": "Walk",
     "year": 2026
+  },
+  {
+    "average_heartrate": 82.6,
+    "average_watts": 189.6,
+    "date": "2026-05-10",
+    "distance": 7106.7,
+    "elevation_gain": 57.0,
+    "id": "18457616182",
+    "max_heartrate": 101.0,
+    "moving_time": 1000.0,
+    "name": "Afternoon E-Bike Ride",
+    "raw_activity_type": "EBikeRide",
+    "raw_type": "EBikeRide",
+    "start_date_local": "2026-05-10T14:32:38Z",
+    "start_latlng": [
+      51.023788,
+      -114.102133
+    ],
+    "summary_polyline": "khlvHhglwTtDBzAFlACt@DLCDEBK@c@DiKA{ADUHOJGLCZAhBDLCJIFO@S?eDDUHQLGNAfACbE@bACrB@h@BrCCx@@j@BlFCxBDlD?v@CzNBxCBF@HLF?VIH?^PH@XAHIR[JIf@Cn@?TB`@J^Vt@t@d@p@~AvAd@l@j@ZRPTh@`@nAZb@l@b@j@HL?LC`Aq@x@oAJMLGL?LBd@P~@Vb@XTVLHL@JA|@UpAD\\ENEhBeA`MuHJEZ@LC`AUl@SlAi@x@g@JEr@M~@EtA?\\BdATxBr@ZXJPLd@Pt@Rh@PTRLRD\\ARIVWt@jAPFDABGPo@?YEGE@GD]b@m@dAGRGdAGRkAxBMb@c@dAgAtCqCfIc@|ACRBFD@BChA_DVa@FGFCFDJRl@xBRtAb@bEDRVn@TX`ClBz@`@ZR`@f@\\r@r@|BdAxBXb@LLX^f@~@fCpDvDtGjAlCV|@RjB~@lFpB`Od@rBxAtD\\r@`@p@T\\fAfAjAdAHNDR?h@DTf@`C?PCLi@Js@`@[Ai@KuAM[KuBqAo@i@mAw@IASBqA_@cBA_BBg@CEDAFDz@?`B^nFLhC",
+    "type": "EBikeRide",
+    "year": 2026
   }
 ]
