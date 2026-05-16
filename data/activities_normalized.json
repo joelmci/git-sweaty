@@ -14671,5 +14671,26 @@
     "summary_polyline": "s~lvHbimwTBhp@IrAcARaDBkSGSNK\\GfBHjD|@nR?~_Aa@PeKBmw@ISHEZFv`@MZaW\\_IaB}AC_NzEoHL}@f@s@bAY~@Q~ACxHk@rHKpuBWjBg@rA[RiDD{Af@mAKaBiA_A}AeAeAw@gCkAo@sAIwI|@kB_@sF_HqC{CyBU{A_ASo@QAc@a@{DkFYB}@x@a@CkCcHQEaE~F_CdF{A~DaA`F}@fC{@lFW~NsAjL[NoI?kApKs@bCkInOqRz\\qDjHi@d@mAB_AkAc@eBKoEcAcHwA}DAa@LWJFANaBpAoH~EwQHSr@o@pHg@|BqUnq@eGhR]zDWdQDdyAKv@wF`NCbAxCtExIlIpD`Ez@p@pAXv@n@`@SPyCNy@`BgEjAmF^]z@CvI~ChDp@V^Ft@g@pIg@~AaAx@}BZ_Bp@oAvAu@jBiDnUiBhLy@jMJpAb@x@fGbCLb@k@hIL`BqBnI}CvI[tCExBHvBzAjKFtAQ`Bh@lCJvk@b@nCfCdI\\`BN|BCxBHlCIxBUfBk@fB_IpQuIdR}@dE_@bG@tLJlB`@hCf@bBlHxQr@rDNfDCdZNpIzCzPb@`LVpC`ArEzC`Ip@~C^lC\\pHBhd@JvBd@jBt@pApAt@vA@RVHp@?lm@KdAq@|AoRrXIXTj@VPxABzgBEfBp@rBc@`CI|pAB^ORm@@w@EelCJmE`@aDtAsExh@gsAbU{h@vXmw@x@eDFyAMuDFoAIa@e@OWi@sC{RwBkR]uE[yJYqAH}BEcGNyOrA}[VMhATf@b@R`AHhDr@rAz@dCfB`D~@lAxCvBfDHtBcAzI_G|CcAvBoBzDgCd@s@vBsIv@aAl@QtERpAq@bDmCfAOzAf@hChCtAPtAeBpByHZmC~@cPvBkRJsBLW[lA@\\X}BrIoZEy@[_Ae@]gAGOSKuDN_Dt@qB|BoC`CoFdA{Ej@qEjAgQzA}PXgQZcJT{B|@kEn@kB~A}Gr@w@nBY^k@@kJt@{BBeDK{@q@[?m@rFE~BeBx@iAx@{CZqG|BoOEoN_@eCy@cBgAgA}@[aJK_@WMuF[mDkEaTu@wFk@{GSuE@}AM_ABuFTaIIaPPq@NKjAKxFQhSBf@QNUL_ABqYKuKc@m@}d@F{DOwFw@_IEm`@DwIv@{C?WY@ez@LuBfAoE@gjCGcDw@gOG{FR]ZCpVDlACPSHy@@mK?od@",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 147.2,
+    "average_watts": 348.0,
+    "date": "2026-05-15",
+    "distance": 10057.4,
+    "elevation_gain": 97.0,
+    "id": "18520809692",
+    "max_heartrate": 164.0,
+    "moving_time": 3269.0,
+    "name": "Afternoon Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-15T13:06:13Z",
+    "start_latlng": [
+      50.496029,
+      -116.020652
+    ],
+    "summary_polyline": "cefsHlfccUcAGYB]NY\\Yn@_@fAgApC]v@i@xAs@nAa@d@{ApCc@n@E\\EfLCfAKv@Gv@@lEIpAAfBKNM@i@?UH_@FIF_@D[r@CxJEdABFA\\Il@{@nEA~MCdD@bAEhB@XDLJFn@AVB\\CZDRCJB@F@`CEzEB~@?fBKlGMxEATBJ@cEBg@J{FAoA@c@AoADgFAoAA]?IFIhAE~B?fA@jAA|@Db@?d@@r@AnCFtE?lDFrBA^DnC@|AHhBAPA`A@f@AhBAnBJrACtCDbBAZ?TDT?TBZARGb@GRq@T_@T]b@e@\\Sf@Wv@YvBe@^Sv@Uz@IXBVFl@?nAJr@AXCZ@PDXNTF^CVKBEJs@T[RMl@k@^Uz@aAx@gAZq@Ns@nBsEf@u@h@gAPMf@cAz@}@JQ?MEFOf@s@x@w@nAgApBuApCi@rAG`@Uj@a@d@MVa@h@i@n@mBzAGLI`@SXKFe@HOGSSYEi@D]AWBqAMg@Bq@Mi@@k@H_Bp@aBZyAh@k@b@c@b@[d@O^GXIHOD{@H_CCeCAo@BqA?o@GU@SAu@?uBCm@DcCGq@@mBIm@BUAs@?GAWBmAAW@KAkBAg@CQ@YC}ABeBGcBCiCBe@CcA@WEi@AwCAi@C}@DSAC@CL@tBCxE@p@@tBItCG|DInC@VBcCH_GHgB?KCI@oBCu@FuIAGIC{@BcBCCAEOA]B[AyDBcB?kF@mAA}D@SL_@r@uDGc@HSDYBaCAs@?uCAyA@GLQRg@JGPG\\ClACPGHQBOCIAODy@A_D@e@A{ANiANq@B[BeGA_C@}@HWpAwBv@{A\\e@f@{@p@gBb@{@j@eB",
+    "type": "Run",
+    "year": 2026
   }
 ]
