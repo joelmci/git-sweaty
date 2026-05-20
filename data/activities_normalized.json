@@ -14692,5 +14692,47 @@
     "summary_polyline": "cefsHlfccUcAGYB]NY\\Yn@_@fAgApC]v@i@xAs@nAa@d@{ApCc@n@E\\EfLCfAKv@Gv@@lEIpAAfBKNM@i@?UH_@FIF_@D[r@CxJEdABFA\\Il@{@nEA~MCdD@bAEhB@XDLJFn@AVB\\CZDRCJB@F@`CEzEB~@?fBKlGMxEATBJ@cEBg@J{FAoA@c@AoADgFAoAA]?IFIhAE~B?fA@jAA|@Db@?d@@r@AnCFtE?lDFrBA^DnC@|AHhBAPA`A@f@AhBAnBJrACtCDbBAZ?TDT?TBZARGb@GRq@T_@T]b@e@\\Sf@Wv@YvBe@^Sv@Uz@IXBVFl@?nAJr@AXCZ@PDXNTF^CVKBEJs@T[RMl@k@^Uz@aAx@gAZq@Ns@nBsEf@u@h@gAPMf@cAz@}@JQ?MEFOf@s@x@w@nAgApBuApCi@rAG`@Uj@a@d@MVa@h@i@n@mBzAGLI`@SXKFe@HOGSSYEi@D]AWBqAMg@Bq@Mi@@k@H_Bp@aBZyAh@k@b@c@b@[d@O^GXIHOD{@H_CCeCAo@BqA?o@GU@SAu@?uBCm@DcCGq@@mBIm@BUAs@?GAWBmAAW@KAkBAg@CQ@YC}ABeBGcBCiCBe@CcA@WEi@AwCAi@C}@DSAC@CL@tBCxE@p@@tBItCG|DInC@VBcCH_GHgB?KCI@oBCu@FuIAGIC{@BcBCCAEOA]B[AyDBcB?kF@mAA}D@SL_@r@uDGc@HSDYBaCAs@?uCAyA@GLQRg@JGPG\\ClACPGHQBOCIAODy@A_D@e@A{ANiANq@B[BeGA_C@}@HWpAwBv@{A\\e@f@{@p@gBb@{@j@eB",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 132.3,
+    "average_watts": 350.9,
+    "date": "2026-05-19",
+    "distance": 6044.9,
+    "elevation_gain": 27.0,
+    "id": "18574563421",
+    "max_heartrate": 158.0,
+    "moving_time": 2039.0,
+    "name": "Afternoon Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-05-19T15:55:58Z",
+    "start_latlng": [
+      51.051823,
+      -114.073614
+    ],
+    "summary_polyline": "ahrvHnahwT`@t@Rj@x@lAZl@JTb@|AN^Vh@p@~@h@lARx@N|@FlA?`@Nh@PVt@n@d@bAV^\\~@JHNBDBBJLz@R`AXbBp@|Cz@tE|@hERvA\\bBFp@VrAPj@`@jAz@jAX~@b@|BLnAH~@HlBFTTh@BN?XSlACn@Gj@D`AA`CDhBErA@n@GhA]rPMx@CXDtGHdAA`CWpD@bBCnAYlE?XBlAC~@KvAGbCDnBThCd@dBNbALb@LXNVPPHB?EWQMOMc@a@oBUq@UkBK{C@_CN}CCuABgAR{BD}@@q@A{A@k@T{BB_A?yAIkAGyAEmB@q@@k@Lu@@WF_DPaGJeHPmEMkAAk@@_ANwAF]@WAQUo@Ie@IgBWeCM}@S_AWy@KSw@gA[y@U{@WuAKs@UaASaBiAkFgA{FQm@YoB[cBEKM_AIIUCIGa@}@Ka@Ua@MKU]q@u@Kc@YqCg@qB_AcBm@oAq@_CQa@Q]m@u@i@oAiA{BEOUg@Gg@@YHi@",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 95.0,
+    "average_watts": 195.0,
+    "date": "2026-05-20",
+    "distance": 4890.3,
+    "elevation_gain": 45.0,
+    "id": "18582126083",
+    "max_heartrate": 116.0,
+    "moving_time": 733.0,
+    "name": "Morning E-Bike Ride",
+    "raw_activity_type": "EBikeRide",
+    "raw_type": "EBikeRide",
+    "start_date_local": "2026-05-20T07:48:11Z",
+    "start_latlng": [
+      51.026619,
+      -114.102055
+    ],
+    "summary_polyline": "cfnvHjylwTqA?wABO?KIGOEi@D_CE}GBaFCm@GSIKME_@AoA?]KKKq@}AIIIEaAAiAPoFAYEu@BwB?y@GEEQ?_@SW?s@F[Dc@P_@`@m@pAMJOFM@mCKoABYBoAS{DIi@Ey@MMDyAEg@@MA]Mq@@{@G{@?IAGGMQI]@gBEcAHgGFqEDk@AoBCCo@?e@C{@FwBC_@FWRMBEWSAu@?SCG@MNG?KGYC_AAMPQx@EFC?EEAK@_CFm@PcA?WAWYw@EUEcAM}AWqBWwAMi@Sc@e@i@IQa@kA]oAWeB[oAoA}GaDePI{@O[WGKKs@iBi@cAIa@EwBG{@Mw@Qw@{@iCwAcDe@kA",
+    "type": "EBikeRide",
+    "year": 2026
   }
 ]
