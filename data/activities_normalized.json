@@ -14734,5 +14734,26 @@
     "summary_polyline": "cfnvHjylwTqA?wABO?KIGOEi@D_CE}GBaFCm@GSIKME_@AoA?]KKKq@}AIIIEaAAiAPoFAYEu@BwB?y@GEEQ?_@SW?s@F[Dc@P_@`@m@pAMJOFM@mCKoABYBoAS{DIi@Ey@MMDyAEg@@MA]Mq@@{@G{@?IAGGMQI]@gBEcAHgGFqEDk@AoBCCo@?e@C{@FwBC_@FWRMBEWSAu@?SCG@MNG?KGYC_AAMPQx@EFC?EEAK@_CFm@PcA?WAWYw@EUEcAM}AWqBWwAMi@Sc@e@i@IQa@kA]oAWeB[oAoA}GaDePI{@O[WGKKs@iBi@cAIa@EwBG{@Mw@Qw@{@iCwAcDe@kA",
     "type": "EBikeRide",
     "year": 2026
+  },
+  {
+    "average_heartrate": 121.2,
+    "average_watts": 200.8,
+    "date": "2026-05-20",
+    "distance": 18024.9,
+    "elevation_gain": 206.0,
+    "id": "18588425669",
+    "max_heartrate": 164.0,
+    "moving_time": 3118.0,
+    "name": "Afternoon E-Bike Ride",
+    "raw_activity_type": "EBikeRide",
+    "raw_type": "EBikeRide",
+    "start_date_local": "2026-05-20T15:56:44Z",
+    "start_latlng": [
+      51.051238,
+      -114.07616
+    ],
+    "summary_polyline": "umrvH`ifwTIy@@aCUmAEk@EeFFwAnAmDfCiIn@sCPsB~A{Ff@k@n@uAViBn@qCZeCh@{BTgCh@qCLyDPaAf@cBNiCN_Ar@kCr@yDZaALMtBoFJcAHe@|CyJvAoFr@kAhBoHdAwCP_ATgC`@kBd@gAb@k@h@Yx@K`ABbAVzB^lCtA`@b@hBdAtAhAr@~@\\r@\\R|@fCXb@zAnDb@t@fAvAl@xAd@VdBbCPj@QfAHT~@RlAnA~@f@~C~@~BCb@TLn@BdAAlAKbCi@fCo@bBUvACd@FXf@d@Zh@l@bCfChHT^b@X^d@ZNvEdAXAd@Sr@i@l@w@ZM`DR\\RBJGVw@DWNy@tBeAdBu@`@s@dAeBnAi@jAiAdAq@|@{@n@s@hA]ZOfAHb@OjAEvBXvCCrABrBT|BFtAVf@h@`BT\\|A`Bh@v@~@NNSb@_FTgAdA{Cp@eA\\_@vC{@bB}@nBUbDaAHEHWG]M?CRLfEfAYz@GRJJh@?pBM~GRzBOzIEfJItDB|@PJlFHHx@Lz@F~AFb@|DbHZ`Bp@dFNb@pAf@jFxAv@DdHeFTSV_Ar@qApAsAxAuCjBuCXs@La@LuA@_APuA`@{BR}@PyA\\gA`@s@lBeCjAm@nBIhAn@v@xAhA~HZbDnAjFj@zEXzDGpCo@vJq@|CYpC[`BBNf@VBHEn@D^}@jNq@nG?d@|B~L~EzYb@`BR`@jBpB~BlApAB~C_@nEmA\\NhCbDJBTSx@qBZgAH@B\\JRhACj@i@vAwBn@k@dC]XNzAhBHh@^r@R`Al@x@b@`B?LKHQe@MHATXxA@ZEJE@I[M?GhAWzAOVq@f@GLC^@jcAHdCAXQ`@C|A@fKK`B?~B?x\\E`@?vAGvCStBTlB?hGGnCKx@LT?t@Ob@Pn@Al[OVaCDY\\o@RIHK^FpAIb@yChAq@iG{AeL@KHMj@SVA@IOB^UUb@BAI@@RBA@KLDPSURWBH@IKDHC@?ULAG?@F@KMEAg@I_@q@h@c@Ik@aAkIwKcBuBgAeAQo@A{AQSwABQT{B^YSSw@MKY?c@T{@A[EyAs@{GG_ES?Gr@@@iBu@CCIzA??ISQmK?eDa@GeN?MLQ?QISo@[wAK]OGQEg@C_ID}b@Aa@IUDWDwJAoCIaBByCIc@WM}CC",
+    "type": "EBikeRide",
+    "year": 2026
   }
 ]
