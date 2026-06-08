@@ -14964,5 +14964,26 @@
     "summary_polyline": "o~lvH~hmwTFrWOpZkZN_@f@ChG~@tTClu@wc@Je@\\IxE]f@i]GUVGz@H|^Kj@kVZiLiBcN|EqHNkAl@m@~@g@nCGjIi@vIKdsBS~Bg@~A{IbA}ByAiCiDe@oBo@i@oB]qJbAiBo@eJiL_E{@sHeJoB`AqCiHS?iEjGcDrHkApEu@jA_BxH[pQoArLk@Z}HHsAfKo@vBqb@`w@k@d@cABoA{AYgAOsEiA}HwA}DTm@BVu@r@kI|F_RN[t@oAzKwY~z@sCbKi@|UD`xA[~AcF|LGbAxAbCh@Fh@dAtApANGh@~A~IdJlEnCh@c@XaE~AmEjAeF`@i@hAAlNjEb@fAg@bJa@|A}B~AgD~@iApAw@rBqGna@{@|LFxAf@pAzF|BXh@m@tHHbCoBdI}CvIa@dGR`DtAtJIjDd@jCJxj@`@bDpCfJ^zBDfMiAdFyQv`@iAfDaApHIvMP|Db@bCnIvTt@xDNdEDlb@xDhULxHd@tEtE|MvAvJPtELfg@fArD`A~@`Cf@TrA?lk@_@`DsOlU_CtCyC`Acg@KcBy@iBqBsEeL_BwBgBmAuBi@k@LQl@?zcG@pk@Rhv@m@x[@biAVxI?blOq@fEiEdJu@lCYrDF`M[j@mhDK_@X?biFCzJl@rGhDlGl@rBzArJLpEw@|FqG~Nc@nEEj{DMdLc@hCkA~CcIpIkBnDw@|CqC~^Wx]NpHt@zDbPh[lB|Fr@lE\\pHBfp@JqCGal@_@yHo@yD}AcFeNoW_B{Do@eGC}JNkVhCu_@r@qC`BiDdJgKlAgD^yCNggEj@eFpGwNr@}FIeDiByLs@sBuCaFs@yF?}tF`@g@hgDF`A}@IqL\\gEn@}B`EyIv@gEJ_PAueMAqu@UouAn@q_@Wqp@Gkm@FTB_cG\\c@t@FlDhBhBfCrE|KjC|BhCt@tvC@dBl@bEi@xqA?fAi@?}~BD{LXaBSIG_Ad@iF|AkFxe@gmAlXqo@bW}s@bBsGCsIgAqAuCsSsBqQ{@sQWuAXy]hAk[|@aCbA}L@qDd@u@JwB?}c@U}[@uj@Nq[Ts@vJSp^?h@uA?sg@Rk\\I}hA_@aEg@iBaG}J_AeDSqC?wQSoBT_Ax@Y`IQR]DyAGmDkCYu@}A[sJTuSdDId@eAHmADmaBJyApAwGMiID_`CgA{YJk@v@KzXMN}BAkn@",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 84.7,
+    "average_watts": 176.0,
+    "date": "2026-06-08",
+    "distance": 11228.0,
+    "elevation_gain": 106.0,
+    "id": "18837624380",
+    "max_heartrate": 115.0,
+    "moving_time": 2035.0,
+    "name": "Morning E-Bike Ride",
+    "raw_activity_type": "EBikeRide",
+    "raw_type": "EBikeRide",
+    "start_date_local": "2026-06-08T08:18:02Z",
+    "start_latlng": [
+      51.024779,
+      -114.102407
+    ],
+    "summary_polyline": "colvHjqlwTF?HFDBBL@pBFlAHz@@jAE|CDTFFF@\\Cv@D`BEJDDJ@N?v@@T@FHN?fCDBPB^PPB|A?pADHDJT@|DEhH@b@XFfB?l@CLGD?DD?FDJNFl@GrAAnDDfEAJ@FJFZDJTLZ?ZGJGTBHHH\\LvAAtEGf@Wv@]bBCf@@d@Er@D`@J\\GXDd@AZ@FHBBFTfC@~AHfA@l@AzGEd@MZQT[L?ZDHJJBRC`C@FTRRADDBFJp@DJNJV@t@Ur@EFGFSZ?p@CL?HDFF@H@v@Dt@N^lAjAlBbCn@p@lBfCVb@PP|@nADDDAZo@FAj@XJKDAZ^T^Tt@DJ@ABHIF?CHRHr@D?AF?AB?G@B@C@@JB?EG?B@?@AC??B@ACDHGBD@ACD@HE@EC?CHGEQ?E?DBACGYVUHQRKAAE?QSm@[u@[i@eLaO_@a@q@i@IQESE_A@c@AMEIGCOAw@DSAKTGBaANm@NSCEEMQQw@EC]?EGEKA_@BiBCKMMAYEIGAi@BWHo@B@@EE@Eb@BDA@C_@EgDC]BsCCiABeBAoBBeCEgBBm@GgAW[?[?e@Jm@DaCa@_@KSGWUSXIEm@NGCKUGEe@b@KF_@JEC?Il@_@DEAE[VaAEu@RkEXm@Hy@Cw@B{AEqDDuAG_@LYVMBc@@UFoADs@Ry@LO?]G{@LkA?gBD[Ag@Mm@@SEEB?HD@f@CDBAFg@CCDAxBBBj@A@DqGFyDAK@UJe@@kGCEKGyACMGEGAoC?aAD[AI@OTACSAGCEGGC]@}@C_@BIEKKOBOE_@Fi@?}@GKBGFGJCJAhAALKPmAE_C?MHEn@ERIPKJMBs@CqBF]JKLGT?T@THLJHJ@LCFQ@kAGyEGWMMOCk@B{@A[DqB?MCIKMEyBCMEMIYa@OKcAKWGWMUQg@e@SESFMPKVMRc@b@_@d@QNSHS?e@Ei@?UKEG?]d@qCJ}A^gCLiABo@BmDCkBYuEC}BIcAw@eFISKKw@g@W[ISg@_CY}@OgAKeCCkAD_BJ_D?{BZuE@aEP{ABm@@qCImAGoFBq@JaAJcG^{NG_JHs@P_A?WCSW{@WyDKcA[oBc@oAm@{@Sc@Yw@W}@eBqJe@yBgAeGq@eD]iBOoAIMKAKGY_@i@yAg@mAEQI}@EyAGk@OaAW}@k@cBmCsG",
+    "type": "EBikeRide",
+    "year": 2026
   }
 ]
