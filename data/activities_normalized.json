@@ -15132,5 +15132,20 @@
     "summary_polyline": "o~lvHfimwTAlUD~JCrOI^oBP{VCYNKr@AdDx@bPJdED~fCGzB}@dDOrBGz{@B|f@Mx@ST_DBS~HItH?~DVnEd@rAPTrBLTLBrFC^QR}HBaAf@O^Ef@HxB?pQDjAPvAv@lCdEzGjA`CZnAXrCBtRGn]Jdl@Gnk@DrDQd@ODkBD{ZCYJQb@G`HSlG@lPVxKErVMP[@_IE_@`@I`APt^CfZDdLOfDc@rEKrDGZk@|@G\\C`Cw@jMi@zPExJFjHIfAO\\g@ZyAH{AWkAaAsBgEw@iAeAs@mB]qqCBcE@UNI`@AtB@lSEzPIb@IL}@\\]j@E|DIbB{BtM}@fGgLz`AUHcR?uUNc@@dFH`b@U\\PDRiCnSgD~P{BdNC|BBnQIvAUpAc@`AuA`Bc@t@a@jB]dDErDBj`@OrBm@|Ai@b@WF_PCs@Hm@d@aDlFiAxA{IzGw@pAYbAKrB?d_ADfIAtFGtAOr@k@~@gRpXEj@Nb@fANrJ@r}AAb@Br@f@vEi@prABZSHSFs@?cDIctBDsVJeBVuBVmA|@qCtg@cqAvVal@~W{u@v@cCPiAFcBOcDFsAKc@a@GYi@gAcIaBcLgBgPy@sOB_@WiAHwACeHP{Qd@mLf@sJPa@D_@lAPd@f@Nx@?tBHj@n@hAx@pBHf@pCvElBhBp@^jDLnE{BtGiEnBo@dAk@nAoAnEyCd@cAfBoHN_@j@m@p@SlCV|AK|D}CpAc@t@Fr@ZrCnCx@TZEl@m@d@{@hB}Gb@{Cz@ePz@uIlAmJp@aDfG}S^kBAkAU{@c@_@eAKOGIQEkENmCVw@^q@pAuAd@s@zBgFlAmFd@cDb@iIzBaXLgDFkHJiAFcEXyGRgB`A}EhCcKRERa@RKpB_@P]DyACqGx@aCD{BGuAQ[c@ICk@PSrCRlAKtByAn@o@Xi@^gAVoA`@{HpBuMFoCIsJ]uB{@oBaAaAgAc@cJKYSIqE[}Da@iCwCuM_@wBk@yEg@cGW_FKiEB{ET{GAqIGsFB[LUb@MpH]xSDREZm@D}@D{WOeMDy{@DeRH_EL{@Ia@WaD[uAg@}AkAoBAYBWvBeEL?TVzBbEXB`@e@z@iAf@kALm@RqMJi@ZOhCCxAq@lAwAb@iAZsAL_BDcKCmYHeP?{VO}U?e\\KYw@Su_@@mHEyBYeOCsFN{K?sCLkAVqBCIeDD_d@Eu@IU",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 95.6,
+    "date": "2026-06-17",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "18963847372",
+    "max_heartrate": 142.0,
+    "moving_time": 2480.0,
+    "name": "Afternoon Weight Training",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-06-17T14:57:46Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
