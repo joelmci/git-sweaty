@@ -15168,5 +15168,26 @@
     "summary_polyline": "m~lvHbqmwT@xg@MnBeZHm@`@ArDdAxVDrcBK\\ig@DeTOyGc@aW\\gKgB{N~E{F?sBt@u@jAa@bBKrJi@fGKnvB}@fEoJv@aBkAaAaBu@q@eAyCsAm@wAKuIdAaBe@sJkLwB]mAi@wA{AqEcGuBbAkCcHYKaE`GsBpEaBhEcAnF{@`C{@xEWtOoAdLmITc@VmAzJs@bCeb@hv@y@n@{@AkAqAc@oBEwDiAqHwA_EDi@PGAV{ApAsH~E{QNS^i@tHi@jCaUfp@gHjUQ~BUlPD|yAsClIkBdEEnAhDbFdObO|@n@dCdAb@e@H}BVwAtAeDpAuF`@g@n@C|L`EhAH`@bA]tHi@hCeAbAaFvAwAbBi@zA_Hpc@q@pKDbBp@jA~F|BN`@m@lIPp@Cp@uBlIuC`Ig@pGLtCvAdJJ`BSnBh@pCH~j@d@bD~CtKNnBD`K}@|EoTnf@_AzFQtMJzEh@lDdIvS|@~DPlD?t_@PpDjClNjApSl@pCxDxKr@xD\\~DRtFAf`@JtDj@zBp@fAhAp@dBPRt@Bvm@IjAk@jA_Q`WaB|AoBb@sf@EgCmAqAoAsAeCaC{GqBqCeEiBo@C]t@?ntG@xXRrw@k@tXAt`AXn[?vfOc@dD}EnKq@pCUjDFdMUb@yREe@e@C^UDqqCAoA]AJPXM`F?lnFPnDf@|BrCpEh@`BfBbLPdEq@zFyGhOc@xEIbeE_@fE{@vCy@zAaIlIwArCy@lDkC~\\QpHCfULjGh@dEnPh\\|AlEt@bEh@~HPjs@Cmp@_@gJy@{EmA}DsN_X{AcEo@eGCcQXsRtC__@~BsFhJmKjAgD^yCLghEX}CpFwLbAwCb@sFYkE_B}JcEkIc@qBQ{CBitFRc@T?rhDNRs@MwLTuDp@oC`FiLb@iGD{}EOeQRyAdeDGvMGTY?}iIFiwFZk@fAEpqA?|AGd@a@JmAFq|BNcRGuyBFwULaCbBeHrd@wjA|Yor@jXwv@|@iDFqCEuE[o@eAh@XgAiG{e@{@eRYaBRi[nAg[NKBqANoAZo@|@kLDwD|@i@YceA^q@lHJf@c@Qya@AuQ\\_QfAYb]B\\g@Hu@Aqf@Ts]KiiAQwBo@uC_GyJ_AyCWgD@{OWkDLq@n@]~HA\\ILc@GiGgCa@y@aBYkE?_ERmRpDWd@{BDebBR{Br@}BLmBB_c@CeeBaAiTGgFZc@vUCrC[PoMKmd@",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 136.4,
+    "average_watts": 169.6,
+    "date": "2026-06-21",
+    "distance": 40046.7,
+    "elevation_gain": 399.0,
+    "id": "19013559804",
+    "max_heartrate": 161.0,
+    "moving_time": 5917.0,
+    "name": "Zwift - Intervals icu: Zwift TT Bike \u2014 Aerobic Base + Tempo",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-06-21T10:08:04Z",
+    "start_latlng": [
+      -11.664256,
+      166.946839
+    ],
+    "summary_polyline": "tqefAoj}y^bHvHxDrAbMf@fRwEbG~AvF@t@dD`Ca@~Cx@GfA}CPg@pA`HdHb@tBg@jG~C|E{@bFkFs@oBjBhC`E^xBiCBf@fCqA|@GnAlD|Bd@nG~CpC|A`EvFvD~FfAfJkAvAn@dBjEpEu@nBjDlBd@|CSlCgBvAl@`@vBrEdAbB}@vA}EkF_FHaF|BeDlHoBd@}DeGwCyDt@oCoBcCnBoB_C}BSwA|@n@bC{@bBe@nDmGfAcF}BuAeBt@}CqCcCOqJfAk@zHpC|GMx@g@N}B~BNdA{@KoDaD_D{G@iU{Hk@oCcGsBw@zC{@hAuEcBkAj@SpB|C|DWxE{At@}D_AeBfBhC|Db@pBqCVn@zB_BbB^`BpCjAv@hHvC`CbBdE~E`DxFnA|JiAjAf@zAhElFk@bBhDpBb@fCMzCoBtAh@VrBvEpAnB_AxAwEoFcFHcF`CgDfHiBh@eDU_AkFqB{Dr@yCoBoBnB}B_CcCQoAr@l@nC{@|Ac@nDoGhAiFaCoAaBt@}CqCcCQqJfAm@|HpCbHOfAcDzBPhAaASoDeD{CsGBiU{Hq@sC{FoBy@xC{@hAqEcBmAh@Q|BvCnDUzEuAz@}DcAeBbBfCjE^rBmCFh@lC}AbBXnAzCzAl@vGvC`C`BfEpFlDxFhAlJkAlAb@nBrEpEs@vBrDrB\\hCSfCkBvAf@d@|BvEhAjBcArAsEmFcFF}E~BiDdHgBn@eD]iAoFmBkDv@}CqBoBnB}B_CcCQsA|@p@fC{@|Ac@nDoGhAeFaCsA}Ar@gDmCwBO_KfAg@|HrCfHS|@_D`CNbA}@OqD}CyCaH?kU}Ha@gCcBwAkD]iB~EqEaBqAj@OxBxCtDWxEuAv@eEaA_BbBfCdE`@lBmCRh@jC}A`Bb@zAnChAt@fHtC~B~A`EjFjDtFjArJmAvAn@fBjExEs@bBfD`Cf@pG_CtAf@d@~BvEfAhBcAtAsEmFeFH_F`CgDdHiBj@wDaG_D{Dt@yCqBoBnB_C_CqCOcAz@p@~BiA~F_ItAyGgEp@kDqC_CVgDo@iEhAw@`IrCdHQ`AaD`CLbA{@W_EwCmC{G@sU_I]eCqCkB}CFmAlE}F{Aw@nCxCrDOdFwA|@{DeAiBdBfCdE`@tBmCLj@fC{AdCpDhCd@lG|ClCzA~DtFtDzFjArJkApAl@nA~DjFi@jC`EhEFdDwB~An@\\vB|Fx@xCeGiFaF?sEdCyDnHsB`@}DqGwCoDv@iCmBmA|A",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
