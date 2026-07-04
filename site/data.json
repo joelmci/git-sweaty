@@ -11938,6 +11938,24 @@
       "summary_polyline": "i~mvHlylwTkBAcFBsAC]GO?oBJk@EeBF]CMAKGGMUy@KMMGiA?kA@{ACaFFi@IMIAGMII@CBAHDnB?j@ELMNa@?e@WYUWa@IUSeAEq@?o@HiCI}@CUU_@sAwAQUM[K]E]A]?_AI[IEYCsA@iES_EKo@Mg@BgAMi@@eAEwBAQACCEQBcBIaCB{DCaADkB@qF?GCAU?aACY@KAmA@c@CaAJUPG?MSYAo@@QASPQKYCmFB_ACcA?c@CGBEV@RLfA@Z@lJBxCHtA@xADbA?pBEhEEbA@nBi@zQBjCCtLBzAFtAAv@Tp@Dd@CHEFi@D_@?I@GHANEvCENIFi@GqABMIGOCUEyF@mK",
       "type": "EBikeRide",
       "year": 2026
+    },
+    {
+      "average_heartrate": 82.5,
+      "average_watts": 201.7,
+      "date": "2026-07-03",
+      "distance": 5760.4,
+      "elevation_gain": 96.0,
+      "hour": 11,
+      "max_heartrate": 117.0,
+      "moving_time": 1085.0,
+      "start_latlng": [
+        51.050273,
+        -114.107539
+      ],
+      "subtype": "EBikeRide",
+      "summary_polyline": "kqqvHr|mwTOrFGZ?LBHDDD@BEH{A?eAF]HEr@IPCJBFDPd@F`@@t@DLXVDLl@zCHd@BpADz@VxAXpAPfCJrCCPGHEL@JTdA@hAB?LMp@U|@e@fAe@j@[D@@DA|AEv@SvBW`BKxAe@rC?RJJVJdAFR?LC~AaBZs@JIJCTFb@d@p@V|AVHDPVJRJHT@d@Kp@@JDNNl@J~BCT@`BEHBLNHlA@x@DtAAxAGTKBMAMKEGEWBc@JQLKLChBETEFB@HWjFB\\VhA@^Gr@Op@CVAr@DXNNZHd@A\\BfABnAEn@?FBJPDh@@xAE|ADVFFRD^BtAAd@LhAAV@b@?H@NPF?d@KnECtA?h@AbB?ZBbECfABbBGrA@j@C|@BjFClABx@CdBDN?DBFK@[@wLDuEAgFIiD_@mG[_HCuDBUHMJGd@CtE?r@@bCAh@Cb@IXJRDj@Id@Hx@CnADj@CXBJCJKJg@?SCoG?sBBY@q@E_ID_BAKBOEkAAgS",
+      "type": "EBikeRide",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -20535,6 +20553,15 @@
           "distance": 5209.3,
           "elevation_gain": 49.0,
           "moving_time": 1219.0
+        },
+        "2026-07-03": {
+          "activity_ids": [
+            "19166453610"
+          ],
+          "count": 1,
+          "distance": 5760.4,
+          "elevation_gain": 96.0,
+          "moving_time": 1085.0
         }
       },
       "GravelRide": {
@@ -21252,7 +21279,7 @@
       }
     }
   },
-  "generated_at": "2026-07-03T16:24:29.371517+00:00",
+  "generated_at": "2026-07-04T16:02:33.662492+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
