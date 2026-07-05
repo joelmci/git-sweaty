@@ -15336,5 +15336,26 @@
     "summary_polyline": "kqqvHr|mwTOrFGZ?LBHDDD@BEH{A?eAF]HEr@IPCJBFDPd@F`@@t@DLXVDLl@zCHd@BpADz@VxAXpAPfCJrCCPGHEL@JTdA@hAB?LMp@U|@e@fAe@j@[D@@DA|AEv@SvBW`BKxAe@rC?RJJVJdAFR?LC~AaBZs@JIJCTFb@d@p@V|AVHDPVJRJHT@d@Kp@@JDNNl@J~BCT@`BEHBLNHlA@x@DtAAxAGTKBMAMKEGEWBc@JQLKLChBETEFB@HWjFB\\VhA@^Gr@Op@CVAr@DXNNZHd@A\\BfABnAEn@?FBJPDh@@xAE|ADVFFRD^BtAAd@LhAAV@b@?H@NPF?d@KnECtA?h@AbB?ZBbECfABbBGrA@j@C|@BjFClABx@CdBDN?DBFK@[@wLDuEAgFIiD_@mG[_HCuDBUHMJGd@CtE?r@@bCAh@Cb@IXJRDj@Id@Hx@CnADj@CXBJCJKJg@?SCoG?sBBY@q@E_ID_BAKBOEkAAgS",
     "type": "EBikeRide",
     "year": 2026
+  },
+  {
+    "average_heartrate": 170.1,
+    "average_watts": 238.0,
+    "date": "2026-07-04",
+    "distance": 25244.4,
+    "elevation_gain": 628.0,
+    "id": "19181175533",
+    "max_heartrate": 190.0,
+    "moving_time": 3759.0,
+    "name": "Go on Pog, you do the mountain stages without me",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-04T12:10:23Z",
+    "start_latlng": [
+      50.187605,
+      -119.3906
+    ],
+    "summary_polyline": "}mhqHxpuwUb@_CJ}BUyDc@iDAe@FMzKtM~A`C`DvG~@hA~JrJpAvAzFxJbCrDN`@Hp@HzGTtBh@xAtBrClArBf@hAv@bCZh@b@VtCn@fAd@rEzDvFrClJ~BxEfCfDVpCvAfOrG|A|@xE~DbBlA`@x@Nt@KhGDfANbAfAbCrB~CbBjGj@xExAnCtCjDl@b@tDf@fEnB~BTr@f@R`@j@xBbA`Gr@pBp@x@tBp@vAhCZVhCjAx@zAh@p@lA`@n@b@~D|FtE~J~@hCjAfEHr@FjCJf@R^|FhG~AtBlDfHnAhB~@n@bBh@pTbFbBx@dEnCxHxC\\VfAjB~AxET~ANvFN~Ad@rAp@x@\\Nx@J~DGnBa@fCeA|@u@\\_Ab@qBRYp@OVH`BnApCfDjBzArAv@tBz@rNpDrBbAlBpATZPdAEb@MZuHlEo@h@QZId@BrAl@tBx@fB|@xApB~BfA`AfBj@n@l@rDdI`CjIf@bAzCzBl@l@nCvF`@f@t@f@bDnA|A|AlK~SvAxBt@RhBGbALzBnA|@VzGHhBi@vDkCvAm@|GIjDm@zAs@rC{BhBiAhBm@jB?dMrAFOqCQuIeAiBHoAb@kGpEyAp@cEl@oFAqBv@gDbCq@ZaANgGG{Ae@qBeAmAK{AFg@M{A{BgK{SsAuAmD{A_Am@oB{DcAeBg@e@cD_C[q@{BaI}A_D_B_Ea@_@cBi@mAaAgCuCkBuDq@cCAg@FYGUNAz@cAfI{EDQCmAQm@UYqCkBaBw@gLsC{CcAaB_AyAmA}DqEkB_Ag@B]`@S`@g@vB]n@qCvAyAd@oBL{C?}@Yk@y@c@wA]iIYuBaBuEiAgBs@c@oHoCaGuDkMuCoGaBeBm@y@o@s@eA}DeIgE}E}@kAoAcAWa@Im@OyD]_A_@gBkBcFkDwHo@gAoCyD_Au@sAc@_@e@{@eByCwAa@g@u@_BkCgAu@cA{@uCa@sCmAmEu@m@}BS}A}@gBs@sDi@o@_@eCqCq@yAs@eAs@uFyAeF]y@gBkCaA}BIk@EuANoEC_ASu@i@aA{A{@aBcB{BiBaB}@kS_JmD]uEcCwJiCmFiCkE{D{@_@iDy@g@[_@m@s@aCo@yAiAeBaBwBk@eAQ}@GaAMkHIq@Qo@cKoPcDiDeJyIo@kAaCmF_NaQYaAa@?GVLnB~@bHBnAGtAo@`D_AtCcA`AkAX",
+    "type": "Ride",
+    "year": 2026
   }
 ]
