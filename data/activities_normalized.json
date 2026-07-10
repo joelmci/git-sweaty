@@ -15399,5 +15399,26 @@
     "summary_polyline": "|v_fAcl~y^sAyA}@uBm@aF`AaCvHeGMiAgCkBQq@`C}@oAqOn@eDzByCpG_CnS{CtAkAfCaG|AkAlBi@tBA|Ad@zAlAbEnFxCt@pH{@v[yI`CKh@fAKbP_@vCsCnJEdIWnBoBf@{H?w@uA}CcKwAqAgAAyAvAIvBpHrPeAh@aKzAgAjAPp@r@NnKqAz@NeAl@iLdAWj@r@f@bG[rEr@b@tDtBpCPz@Ov@eCx@^lCWp@u@IaDcD{@Yq@h@yAtEk@TmCkEu@UyLjIqF{JsAc@cCDcA`@GtAd@xAzBzAIb@uCtBgAeA_ASYsAy@mAgBDk@v@Gx@vAx@JxBrBjA}@v@ElAsBb@eAUuFmLqJkDqDuBuB{BuA_EQgC^}ArH}Fj@cAS{@wCkCLc@`BYR_@oAqKHuDh@iBhAeBhDsBrX{EbA_AfCaGxDsBbCEjBh@zG|HvCp@|H_Ap[yIpBKn@`AGzOc@pDsCnJCvHUpBmBj@yH@_A}AsCqJsAwAuAEwAvAIvBnHrPuAl@iJrAkAdAHt@p@RnKqA`AJeAr@qLfAMd@n@f@zFY|Er@d@rDrBrCRx@]bAwBl@^lCUp@s@A{CaDgAa@o@h@yArEg@XmCiEu@[cKlGu@~@m@e@eEsI}Ag@uBFcAZOrA`@xA~B|ACb@sCzBoC{AYuA}@mAgBLg@z@Ax@zA|@?hBtBhAy@x@CnAsBd@eAQuFmL}A_AgHwBmDwBgBmBwA_EQgC\\}ArH}Fl@cA[gAoC_CJe@bB[R_@oAwKPgElB}DlDqBzD_AvRyC~@cAbCyFzAkAhBk@dCAfBl@nGrHtCt@lJmA`[sIpAEn@j@ExQsBvJaAdCEfJ]lAgB\\mHB}@kAwC}J{@iAaAc@w@Jw@l@e@hATdC~G`OaBp@iJpA{@t@Ct@dA`@~JoAfANgAl@sLfAIr@|A^tG[vCp@d@vDhB`CXlASt@eCz@`@xBKv@aA?yCaDiA[_DvGu@i@gBeDw@UwLjImFwJyAi@eCHcAb@AvAf@xAxBzAuCpCwC{AWsA{@kAkAE}@z@KdAxA|@?jBxBhA{@fAHx@kBl@gACu@o@qCiHmAkBuJiDyE}CoAeBeAcDQeC\\_BrH}Fl@cAS{@aCgBUq@`CaAoAaOb@yCjA{BxBaBxDoAhTcDrAkAlCeGjBqAlBc@rBDdBp@`GhHrBt@nJ}@n]gJ~@J\\h@@rF",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "average_heartrate": 127.6,
+    "average_watts": 144.3,
+    "date": "2026-07-10",
+    "distance": 36562.7,
+    "elevation_gain": 392.0,
+    "id": "19256553906",
+    "max_heartrate": 184.0,
+    "moving_time": 5612.0,
+    "name": "Spin with gramps",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-10T05:33:53Z",
+    "start_latlng": [
+      51.02538,
+      -114.101944
+    ],
+    "summary_polyline": "c_nvHn`lwTy@CGUCm@GUu@MaE@}AGGJCx@ETKRa@JkBCOGKQQkBECmBAe@PcHG}BHiBGICUS_@I}ALg@JUP_@r@Yt@QPSFeLYoEUiB@uFOKEIMIg@JkLKm@Eo@FkEFQ?K@i@IO_BDc@EsABYGoANg@GoACUPWKcAEmGDoACO@APCFEAGOKEcAC{@NGBCHB\\@pDEfJBrA?|PA`F@tDCd@ygHbys@FBn@IvBDPFJXBXN|DDpC@zaACxFBbK?j\\BLD?BOCSG@A`CDnQCrKBxCCxJ@|RC~LBnJBjACrB@l^AhEBjHEvQ@jNCjF?hMDdAEdHBhOC`CAlZBnBA~R@tC@ZChIBpAAdC@vBEzCDlDCt@AbL@zBAlOBxACzHBdHAtC?jTAx@Gz@Mz@_@tAiEzIYx@[vAStBClB@pBGTPj@?JC?Ce@EO?OBCB?D~C@rBGXMNG@qRCMEQQGLKFcA@aqCCIAQYM@BDHGId@?LDdACbABtE?nHBTCd@AjF@vQCr@?dD@`@AnBBpFAtLC|BAdE?dMDv@@hFCj@?tJD`AElBBfGCzMCv@Hf@Aj@EPBz@A`A@`h@CjBBz@?pECxB@hIC|LL|Cb@~BVn@j@fArAjB\\v@ZbAbBbLH|A@~ACn@Q~AYxAQf@Qf@m@fAe@nAo@bAsAvCc@pASzAMlC@nCCfI@dCAh@@|BEnC?p@J`AEFCA?EDc@BgB@uQEKCDAlKBhQCtVDtIErDBra@EnA?dA?pIBh@CxCBxKAxB?pe@ApDIfBSdBUdAc@nAWj@}@rAiC|Bq@r@u@~@}A|Bw@hBWz@_@vBg@fG?FBBFKR_DVqCPy@d@wAt@}AdA}AfBwBlCaCx@eAz@iB@MHSVoAVwBHuB@yGIeHA_GF}CB{IAqKAg@@oBAyF@eIhCaoDS]E?Rh@dA~A\\|@b@`BX~BBDB?@EK_Aa@sB?GMECIBG?GIOOg@i@eAcAuAw@iB_@gBMyACw@CeQDgRAke@@kv@@cFJ]AOGGG@CHA~@?NFH@yDAcB@sIAuJB}IAaX@s@AeGDk@@}CG{@@sE@c@C}ABa@?wH@gADO@GPGvoC@`VDjAc@LSIcMFiBJ}@P}@f@yA`EwIX{@X_BHwA@eGCuDBeDCkfAD{tCCeV@q[CkkCEyIIi@GOIGQDIN@JBDTBFJF`@D~@?de@DHDC@}DCuX@ix@",
+    "type": "Ride",
+    "year": 2026
   }
 ]
