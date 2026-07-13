@@ -12028,6 +12028,54 @@
       "summary_polyline": "c_nvHn`lwTy@CGUCm@GUu@MaE@}AGGJCx@ETKRa@JkBCOGKQQkBECmBAe@PcHG}BHiBGICUS_@I}ALg@JUP_@r@Yt@QPSFeLYoEUiB@uFOKEIMIg@JkLKm@Eo@FkEFQ?K@i@IO_BDc@EsABYGoANg@GoACUPWKcAEmGDoACO@APCFEAGOKEcAC{@NGBCHB\\@pDEfJBrA?|PA`F@tDCd@ygHbys@FBn@IvBDPFJXBXN|DDpC@zaACxFBbK?j\\BLD?BOCSG@A`CDnQCrKBxCCxJ@|RC~LBnJBjACrB@l^AhEBjHEvQ@jNCjF?hMDdAEdHBhOC`CAlZBnBA~R@tC@ZChIBpAAdC@vBEzCDlDCt@AbL@zBAlOBxACzHBdHAtC?jTAx@Gz@Mz@_@tAiEzIYx@[vAStBClB@pBGTPj@?JC?Ce@EO?OBCB?D~C@rBGXMNG@qRCMEQQGLKFcA@aqCCIAQYM@BDHGId@?LDdACbABtE?nHBTCd@AjF@vQCr@?dD@`@AnBBpFAtLC|BAdE?dMDv@@hFCj@?tJD`AElBBfGCzMCv@Hf@Aj@EPBz@A`A@`h@CjBBz@?pECxB@hIC|LL|Cb@~BVn@j@fArAjB\\v@ZbAbBbLH|A@~ACn@Q~AYxAQf@Qf@m@fAe@nAo@bAsAvCc@pASzAMlC@nCCfI@dCAh@@|BEnC?p@J`AEFCA?EDc@BgB@uQEKCDAlKBhQCtVDtIErDBra@EnA?dA?pIBh@CxCBxKAxB?pe@ApDIfBSdBUdAc@nAWj@}@rAiC|Bq@r@u@~@}A|Bw@hBWz@_@vBg@fG?FBBFKR_DVqCPy@d@wAt@}AdA}AfBwBlCaCx@eAz@iB@MHSVoAVwBHuB@yGIeHA_GF}CB{IAqKAg@@oBAyF@eIhCaoDS]E?Rh@dA~A\\|@b@`BX~BBDB?@EK_Aa@sB?GMECIBG?GIOOg@i@eAcAuAw@iB_@gBMyACw@CeQDgRAke@@kv@@cFJ]AOGGG@CHA~@?NFH@yDAcB@sIAuJB}IAaX@s@AeGDk@@}CG{@@sE@c@C}ABa@?wH@gADO@GPGvoC@`VDjAc@LSIcMFiBJ}@P}@f@yA`EwIX{@X_BHwA@eGCuDBeDCkfAD{tCCeV@q[CkkCEyIIi@GOIGQDIN@JBDTBFJF`@D~@?de@DHDC@}DCuX@ix@",
       "type": "Ride",
       "year": 2026
+    },
+    {
+      "average_heartrate": 134.6,
+      "average_watts": 198.2,
+      "date": "2026-07-12",
+      "distance": 25962.4,
+      "elevation_gain": 39.0,
+      "hour": 12,
+      "max_heartrate": 181.0,
+      "moving_time": 2720.0,
+      "start_latlng": [
+        -11.636511,
+        166.972417
+      ],
+      "subtype": "VirtualRide",
+      "summary_polyline": "~o_fAq~bz^oAyFr@{DBgAoBcEGm@Vg@f@WrBLb@OZsEd@q@z@IfALnDfBNdCxBt@B\\cA~BJn@t@f@dBFtEa@nA}@`A_BCq@_AgBGgAXk@`CkBT_BIaBiBiF_BgB{CwBOuA`@_Cj@sA~D}AbA{ALeBSeBo@cA{BqBS{@zB_CSoBHo@nIeTd@cEMmAa@u@sFmBgA_Au@_BMcBf@aB~EaKjAcE~Cu@nBp@jA?|@k@~A{CdDKdB_Ah@aBCmB_DcF\\aAhAw@~@Gx@^hFpIbAv@j@A`As@fA{Df@g@|AZbAdABhEf@j@fBx@VfAWt@{Bv@i@`AE|KiApNGvCn@pAlCtCXxAXXrBFbCd@dM{Ct@Fj@d@n@bDf@hMSfDcBxAYdANhFv@bD~Av@bCI`Bn@tDj@vAbAn@dDnAz@bAu@pCuIbAgAz@D~A`AR`@Z~BdFVhCdDlCKjAu@Zu@LiAK{@qB_B}@GuAb@kBdC}EA_@[IcBSc@oA}@iASiAt@_DnJ}@p@iA_Ai@yCaBqA{Dg@{Am@wBJyAk@s@eBa@gFPyBhBaBXwAYoL[{D]yAg@g@s@Q{LxCw@@{Ei@c@gBoCwCs@oADyCjA}NBoKd@}@bCaARs@SgAmC}A@kDQu@sAgAwAQe@f@_ArD{@t@e@DmA{@{F}IoAOkAb@q@t@Mt@`DnF@tAe@`BgB|@oDRyAvCm@`@kADyBs@_Dt@wAtE{FdMDpBz@lBjAbAbF`Bf@r@L|@G|B[zAqIhTGn@RdB{BdCZdA`DdDVhBIxAaA|AsCz@u@j@k@vAa@hCXrAfBfApCvC~AnENxBa@fBiCtB@zAdA|B[`A{@bAy@f@}E`@{AKq@q@Bs@bCqEpBiA~C_@|BcAl@i@`@_BOqCmAmDuAmBsDkCUwAhAsEl@e@tC}@bA_BLcBUaBkDyDSs@xBaCIyCvIyT^qESkAe@k@}E}AmA_AaAyBA_B`GmM|@qDZ_@xCm@jBp@jA?z@m@xAsCdDOnBcAf@iBC{AaDgFHg@j@q@tAi@`AN`GfJnAr@r@Or@s@~@sD`@a@xAVfA~@Ll@K`CJl@dCtAZfAWv@yBv@m@fAAtKkAvNG|Cp@nAlCpCVxA`@ZpBBhCd@tL{Cp@Br@h@\\lAX|C^`MUfBcBxASf@ExBTfD",
+      "type": "VirtualRide",
+      "year": 2026
+    },
+    {
+      "average_heartrate": 111.2,
+      "date": "2026-07-12",
+      "distance": 314.1,
+      "elevation_gain": 0.0,
+      "hour": 14,
+      "max_heartrate": 158.0,
+      "moving_time": 3297.0,
+      "subtype": "Tennis",
+      "type": "Tennis",
+      "year": 2026
+    },
+    {
+      "average_heartrate": 94.0,
+      "average_watts": 181.4,
+      "date": "2026-07-13",
+      "distance": 11387.9,
+      "elevation_gain": 95.0,
+      "hour": 7,
+      "max_heartrate": 122.0,
+      "moving_time": 1767.0,
+      "start_latlng": [
+        51.025455,
+        -114.10198
+      ],
+      "subtype": "EBikeRide",
+      "summary_polyline": "wslvHrqlwTv@EbBCH?FDBL@lCCzABvWCxI@RFPJJJ@lGGnIDtEUxBBlBCnAFrAELDJJN^HJJD\\@NCZKJ@JHL^F`A@rBArBGj@Wz@_@dBCRBx@G`@Dp@JV?JIJFl@?V@HF@DDRrBBt@?z@FpAE|IGZITONSFGP?HBJRX@n@GvABHRPP@FBDHHl@RVLDL?z@Wj@ENUHER@l@GVBHHDJAp@@b@@RN`@p@j@|DxEdDfEh@v@FHHETa@JGLAJ?XHVNRVZj@Rj@Jl@?f@DBABBHACC@@DCFBAC?@BEE?@BC@LNF@ACBC?@BEIEa@?CDHBMKMA]GYi@cA_@i@g@g@MEO?MHYj@IAsBqCiG}HgAeAMc@Ai@?{@EKGEIC_@@YFUAWVkB\\M?UKIKCMIi@EGS@IAGGCKB_CAOQYEWEGGAc@DYFo@FEAAGj@ABAq@G_A?g@AuCDeJCcBDs@EyA@_@CkAW{@Cs@Je@Dg@Eq@QeAQ_@QKMGBMR[@a@ESQa@`@UJ_@FAG@Cn@a@BGAAYVIBm@IK@e@Nu@H{@DKD_BB[HwAAy@@{AGuBBq@Fm@Ag@EWHUVMD{CT]JsAP]KYH]D{C@y@Ce@Im@BWECF@DB@h@CDBAFA@MAM@ICE@?F@tBB@b@CD@@FC@SCo@Hi@EiAAm@DwA@m@D]A_@B_AC}@F]?SCi@@wACs@BI?EGCK?uACMIEI?{EAa@BKRG?GEMBMOgCB{DEKDEJAN?v@ANOTkCEeA@GBEFEp@ERKNMJMBg@EwBH[HIJEPAd@BPFJJFL?JGDS@gBG{DGUMMQAkB@iBDcAGWSKGOAM?k@H[CKIYa@OKcAMWGWMm@i@UOUAQJ]l@mAxAULYDgAA]KIIAOh@eDFgAb@_DNwBB}EIuBOuBEwCEo@YyAa@cDGSKMy@c@Y]Y}@WuA[_AIm@Gq@KqDDuBLeCC_B@s@ToCBaABaETgC@sBK}BE{ELmBFaDXwJ@aBHmCEsC?oDBw@TmA@UCUOc@Kg@_@eF_@aCc@qAe@i@Ua@[w@U}@m@sDaA}E{AmI{AmHKaAGOIKMAMKKO{AiDK}@AsAGaAGg@Sy@w@eCy@qBwC_Hc@eBWw@CQBMFEH@PHH@^KvAANBz@@jBLJANWBc@",
+      "type": "EBikeRide",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -20634,6 +20682,15 @@
           "distance": 5760.4,
           "elevation_gain": 96.0,
           "moving_time": 1085.0
+        },
+        "2026-07-13": {
+          "activity_ids": [
+            "19295167531"
+          ],
+          "count": 1,
+          "distance": 11387.9,
+          "elevation_gain": 95.0,
+          "moving_time": 1767.0
         }
       },
       "GravelRide": {
@@ -21191,6 +21248,15 @@
           "distance": 270.6,
           "elevation_gain": 0.0,
           "moving_time": 3609.0
+        },
+        "2026-07-12": {
+          "activity_ids": [
+            "19287498460"
+          ],
+          "count": 1,
+          "distance": 314.1,
+          "elevation_gain": 0.0,
+          "moving_time": 3297.0
         }
       },
       "VirtualRide": {
@@ -21351,6 +21417,15 @@
           "distance": 34854.4,
           "elevation_gain": 195.0,
           "moving_time": 4043.0
+        },
+        "2026-07-12": {
+          "activity_ids": [
+            "19286193060"
+          ],
+          "count": 1,
+          "distance": 25962.4,
+          "elevation_gain": 39.0,
+          "moving_time": 2720.0
         }
       },
       "Walk": {
@@ -21387,7 +21462,7 @@
       }
     }
   },
-  "generated_at": "2026-07-12T16:00:07.855167+00:00",
+  "generated_at": "2026-07-13T17:12:41.268281+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
