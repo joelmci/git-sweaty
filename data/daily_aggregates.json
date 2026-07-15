@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T16:15:26.037539+00:00",
+  "generated_at": "2026-07-15T16:22:32.627394+00:00",
   "years": {
     "2013": {
       "Hike": {
@@ -8613,6 +8613,15 @@
           "distance": 11387.9,
           "elevation_gain": 95.0,
           "moving_time": 1767.0
+        },
+        "2026-07-15": {
+          "activity_ids": [
+            "19324882648"
+          ],
+          "count": 1,
+          "distance": 11540.4,
+          "elevation_gain": 95.0,
+          "moving_time": 1866.0
         }
       },
       "GravelRide": {
@@ -8770,6 +8779,25 @@
           "distance": 36562.7,
           "elevation_gain": 392.0,
           "moving_time": 5612.0
+        },
+        "2026-07-14": {
+          "activity_ids": [
+            "19316612650",
+            "19317837926"
+          ],
+          "count": 2,
+          "distance": 4034.3999999999996,
+          "elevation_gain": 75.0,
+          "moving_time": 891.0
+        },
+        "2026-07-15": {
+          "activity_ids": [
+            "19323662322"
+          ],
+          "count": 1,
+          "distance": 68830.0,
+          "elevation_gain": 636.0,
+          "moving_time": 7964.0
         }
       },
       "Run": {
@@ -9179,6 +9207,15 @@
           "distance": 314.1,
           "elevation_gain": 0.0,
           "moving_time": 3297.0
+        },
+        "2026-07-14": {
+          "activity_ids": [
+            "19317727901"
+          ],
+          "count": 1,
+          "distance": 480.9,
+          "elevation_gain": 0.0,
+          "moving_time": 5452.0
         }
       },
       "VirtualRide": {
