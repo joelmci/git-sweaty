@@ -15576,5 +15576,47 @@
     "summary_polyline": "sslvHpqlwTNAd@GbBEH@HFDL@NAxB@hACtB@pAChBB`BCjCCjQ@JPd@LDlABl@RpABv@EvBA|BDXClA?tCOhBChBDhCCp@Fp@ANBHFVh@RLf@CXIL@HFL^Jv@@`CAnBGj@]lAUnACR?v@Kj@D\\Pl@CHEFD`@?f@NJLfAFpA?lAHl@@l@GvIOf@STSDCJ@\\BFJDBHA|B?LBHLL\\BLr@FLFJVHZEj@O\\CLEPUHCT?j@GTDHFBNAp@Bv@N^d@\\VV~FnHfClDFAPa@JKJEVBd@Nd@h@\\v@Pz@?l@BDF?@BDK?AM@@BGOc@KHL`@HBEJAl@ZTCBCNEVAICE?S\\u@XG@AEE@?s@B?EAGBMNCN@B?IEA?H@EFD?BCB@C?YDE@GGCC]E[EKa@u@]e@m@g@WMM?IDWj@QQcJoLe@g@g@a@KOGQCWA}@@QCOEKQGu@FWAOTGDS@o@Jc@LK?KAUOEMIm@GGS?KEGIEQ?c@DkAAQQ[G[EGk@FYHm@DCC?GDA^BDC?CGAa@@uBAyA@cFEaCDyAAqBB{AA_@CkAW{@EYH_AHc@G{@UeAOSISQSTIAo@?GAIOEA]^WN_@HCE@En@a@BE?E_@X}@EMB[LMBeETi@Hi@?i@Cy@Bi@Ek@A{B@q@BqAAM@e@\\MDkBL}Cb@WIi@H_@ByC?y@AYGe@@a@CEFBDVBVCBDGBg@AAh@?pADBf@ABFAB]AWBg@?i@Dg@IyAD}C?i@AU?SFq@?sABcAAuA@GCCIAK@eACQIIy@AqD?WDKLE@ICQ@KM[BcHEK@GHCNAbAANEHGBI@y@EmC?IJEz@U^KHMBYIwBF_@FMHKNET?XDRJLLFLCJOBs@EoFE[KQQCkABkAAaB@c@Ca@[[Ag@HM@KCMCMKYa@QISEk@Go@SWQg@e@UEQJYj@mArAUPWHsAAKAEC?CQGAYf@uCJ{A^_DL_BDmC?yBGkAU}CA{BGm@g@}DWsAKOy@g@W]Qe@a@gBY}@Km@Eq@MqD@_BL_DAqCZuEDaEDm@Hm@Dm@?wBGiAG{CA{B@YL_Aj@kWCkIH_APw@?k@]qA]qEa@iCa@sAm@_ASa@k@cBsAqHS_Ae@cCe@_Cc@gCsA{GQqAIKYGgB}DQsACcAGcAWsA_@qAe@mAgCeG",
     "type": "EBikeRide",
     "year": 2026
+  },
+  {
+    "average_heartrate": 100.7,
+    "average_watts": 249.5,
+    "date": "2026-07-15",
+    "distance": 4695.6,
+    "elevation_gain": 78.0,
+    "id": "19328513064",
+    "max_heartrate": 111.0,
+    "moving_time": 781.0,
+    "name": "Afternoon E-Bike Ride",
+    "raw_activity_type": "EBikeRide",
+    "raw_type": "EBikeRide",
+    "start_date_local": "2026-07-15T14:16:02Z",
+    "start_latlng": [
+      51.050661,
+      -114.075824
+    ],
+    "summary_polyline": "czqvHhhhwT?zAEVGLWHYAKEa@]g@}@IEG@CDC`@@X~@tBl@dBR|@Jh@Fl@FpCJj@pAzCV`@DBNBDDBHNz@vChOr@dDTfBnA~Gr@lBb@l@T`@^lA^`CZpELh@Pd@BTAVMdAKhB@VAh@BPHBDIR}@BEDClA@TJH?LMzA?HFDHFBLMTILAt@BjBCZBn@Ah@EDBCxABbIEfACpEGlCBPFLJDpBDl@Dh@?rADfALxBFvA@jL\\NCLIn@uAV_@b@Wh@OL?NGJ@XGF@NLFb@@DB@^IdCAvBC~@Bb@E`@G`@@VCb@JTBFAV[THb@AZB|@@HCRSXe@Rm@POd@HFBPd@FFD@R?BBBb@BLFLHHH@p@BdC@nAEj@ALBFD@HAr@BNHJFB",
+    "type": "EBikeRide",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 84.4,
+    "average_watts": 153.7,
+    "date": "2026-07-16",
+    "distance": 11292.5,
+    "elevation_gain": 100.0,
+    "id": "19337690974",
+    "max_heartrate": 110.0,
+    "moving_time": 2482.0,
+    "name": "Morning E-Bike Ride",
+    "raw_activity_type": "EBikeRide",
+    "raw_type": "EBikeRide",
+    "start_date_local": "2026-07-16T07:58:55Z",
+    "start_latlng": [
+      51.025405,
+      -114.101896
+    ],
+    "summary_polyline": "oslvHjqlwThAMhA?NFFNA~CBlC?lD@RNr@?PCtE?~ABvCEpI?PDJFDF@^CJBl@Tj@BbDGtH@nCKhBAlA@lBClADdAA^FHHP`@TNl@EXMJBHJDLLt@DrB?fA?x@En@Y|@_@hBCb@@`@In@B^Nn@ITD^?h@BBJ@LpAFpA@nADz@A|IKh@IPSPMDEDAHDVNTBJ@v@E|@DXJLZDFFBZJZRPJ@L?dAWXAHGLSFCN@x@ETHDJAh@FfADPFLl@d@TTnDlE`@j@ZZ|@jArApBDARa@JIVEb@J^VVb@`@~@Nj@C^?HFB?D@@ACBEBABDEA|@\\?@@EICO@s@UZABCODEDEN@F@CED?DFE?@BCB??EB?AD?ECDE_@EIC_@G[Ug@[i@w@w@YQM?KFSTCLEFGEmFeH}AqB{@cAs@k@KOIg@?qACMEKQEq@FWCIBIRIBq@Jm@NW?UKGIEMC]CKEGW@IEEMEa@DkBCKMQI[GEc@Be@Jk@DCGDCd@D@IuDG{L?sGDiB]MAy@AiANe@C}Be@]MKMG?MRE@KEYBSASOGBOP]Ta@HAG@Ep@a@?GAA_@XIAc@@KIEQCg@Bi@?yDEwEB}NEaF@uGAaK@}BCmLD}@AcABiJC[ISOIk@BKAEGKYCA?CBAEEEAEDM?A?@E?BAABACAAFB?EE@@???DAA?GA@@A@D@CCFBE?BDKCBAD@B@?BIIFDM?BE??B@CAA@B?CC@JF@EFD@EBB?AL?DZAFGFkCBiAAi@CmFF{DCaEDe@Cw@?QEECCIG_MGi@IMQIMAgAF{@AEGAIGs@IUGEaAGoCDgAAi@EGICKCk@EGW@IEK]IMYOMCMFGNQf@a@p@SF_CAOESHqG@[CWFiA@g@DyAG_@Q]GeAB]Da@PONORe@jAMNQHc@BoCMEBCDFT?REvBBH\\FANEREEFEBG?G@AGEG@?CGFCM?uCGSUKk@Eg@B_DOsBCcAKaDEo@Ky@CuABKAIGGMEc@JmFFaKAWMa@?{BACo@AcEB]EYF[POQ[CeA?EHIF[KmAEG@KVMv@CFI?CCCqCZmB@k@CUQc@EU]oEa@gCU_ASg@e@o@Ua@[u@Wy@YoAMqAs@wD}@eEq@cEi@uBYiBWmAOoAIIYIKOm@oAk@qAKg@G_AAi@IsASqAo@uBeC}F",
+    "type": "EBikeRide",
+    "year": 2026
   }
 ]
