@@ -15660,5 +15660,47 @@
     "summary_polyline": "rf`fAmr|y^Mj@@l@p@pAt@pC^^j@Fx@Qv@gBfAK~@g@j@@l@j@f@zDKxA@zASRcADSTMjBRx@jCxB~@\\`@AjFiBb@\\F\\sCb@e@TKPDTPJ~@Q~CVhAElCeAvAkA~@cEpBgBtCqFRy@SyAcCiCk@iCm@e@u@Su@LgAxCoB|BYDoAe@k@AuAjAa@Hm@Q_@_@k@}AGcALm@x@_Bn@g@pBm@dCJdBmB?q@mAoB{@QmAJqBnA{@PgBAuCm@{Dh@qB`AkAbA]`BuArAg@`AY|@An@x@fBn@~Bt@f@nAOdAoB`AEfAi@dAj@Pl@ZrCM`BBrAUTw@@[ROx@AbANf@xCbCp@Xd@A~EiBhAf@r@HpA]|BqA|@gCzCsCl@oADmBQeBuA{B_AeDm@_AgCeA{Dm@iJl@{A^y@h@s@zAqApASh@t@`Dx@fFx@hArARp@QTeAb@[zH_BZL\\nA\\TzB`@jAOb@wABgCgBcEa@i@aD}AmAO{BBiCz@kBfBWf@OhAFpAl@|Bl@nAx@n@pBv@z@N~@CbBo@hBcDCeBs@}BoA_AaBQmBV{@|@[|ABhA~@hBdAl@vAA`Ag@f@cAL}ASk@a@a@y@_@}@K}@NaAlAOBMKFi@v@sAhB]lBP`Ar@r@bBNjBQn@cAhBqAz@gBJgDgAiAkAeAmDCmAPiAfCiCtBs@|DDlA^zA~@d@l@^lA|@`BDpB_@jBWLu@BeBWk@[YgAk@U}H|Ag@h@Ov@q@NeAO}@oAq@uEs@cCBw@tA{Av@aBjAo@`B[vIe@hEt@rBbAh@fAn@bCzAjCPpBOnByAnB_BpAq@tBo@r@oChAmF|@w@j@HVVDdAQxCVnAKvB{@tAgAXm@h@wC^g@bByAjCeFN_AWoAcCkCc@aCq@g@}@So@NcAtCuBbCiCg@}AnA_@Fa@Ig@_@o@cBIeANo@z@aBd@]vBu@zBPnBoB?u@uAsBs@KsALmBnAaAP_BCsCk@yAHiB^oB`AgA`A[|AoAnAu@tAU~@?`@r@xAv@nCd@b@pAGXSj@yApAOv@e@n@Jb@`@h@rDK`BBrAKZyARQx@AnAPd@jCxBvA^pFkBxAn@dAG~C_BfAqClDmDZkACgCUgAsAuBy@yCs@aA}As@gCi@eBQwAJ",
     "type": "VirtualRide",
     "year": 2026
+  },
+  {
+    "average_heartrate": 135.5,
+    "average_watts": 185.7,
+    "date": "2026-07-17",
+    "distance": 7463.8,
+    "elevation_gain": 86.0,
+    "id": "19354356163",
+    "max_heartrate": 175.0,
+    "moving_time": 1047.0,
+    "name": "Afternoon Ride",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-17T13:07:50Z",
+    "start_latlng": [
+      51.025612,
+      -114.102039
+    ],
+    "summary_polyline": "i_nvHlylwTk@B_@EsABiACgCDa@CMIEOAW@gDCeD?}DDwCC[IWOKQCoBASKMQGYAk@HUAKEEkABq@C_@JEIg@BQCU@IAkAVO?]EqA?c@CgBF_BGYUg@G{@?c@HUJUPSTQX[x@SPUDsACw@EwDKsBIwCGe@IMS?uBBkEJgHDqIFsD?gFDaC?_@DiA@_CFiBJsRJqED}H@mID}DHmAJoHMSIA[@m@FQAEeB^BnA?JC@@@TIbAApAAvGG|FKdF@|BEtDIpKGrEIxABj@G|DKpSItCAzACNBbBWnW?XBTJLNHNBjEHn@AlENnAFd@@PBPANMp@}AJOVUTMVIP@n@G`@AD?DL?hCFPDDDC@KAwADQFKHA`BE|A@h@E\\Bf@Ad@@b@APEXBZE^BZFDCBMFEVHNAj@@pA?FC\\g@^{@LMh@HRf@LNRCDF?XBNFJJFTFb@@~BCTBhA?ZBNADBBH@JA^@RHPJFJ@f@C",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 148.9,
+    "average_watts": 202.4,
+    "date": "2026-07-18",
+    "distance": 116300.0,
+    "elevation_gain": 896.0,
+    "id": "19365066758",
+    "max_heartrate": 191.0,
+    "moving_time": 13331.0,
+    "name": "All roads lead to Luke\u2019s",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-07-18T05:22:01Z",
+    "start_latlng": [
+      51.025871,
+      -114.104288
+    ],
+    "summary_polyline": "o~lvHjumwTEtf@yZR[l@bAr]Ap}@sdAD_@rCBv]sWh@kKcBcN|E{HRgBfBk@lCEpIi@vGGfvBeA`EiJv@iFmFcAuCqAg@gLt@wAc@}JqLsEiAwGuIoBjAiDwHkElGmHzQuArH]xQoAfLwJx@q@rHgA~Dgb@nv@{AlAgBuBi@eHcAcH}AqEVm@wAnByH`FuQN_B~Lm^~fAk@pVBnxAiGtOBbAfDbFfOlOxDnBd@W\\}DvEgNrPfEb@hAi@dJa@tAoHzCcCrE_Gn`@cAbNJdBf@`AlGrCi@hIJlBuBxIyCjIc@xGhB`OIhDh@|CJjk@hElQNpMoA`GuSde@eAfGOzKFxFf@zDlIlTv@vDb@lj@vCtPbApQdFbPrApJXlm@bBtE~D~AFzl@i@vDmPpV_BdBkC~@gg@GqE{CiFeMkB{BaEaBe@TUtAE|aGVhaBk@rWAz^V~|@DvpGrCf@hpD?BpmEq@poAFtD\\`A~_@Oto@sBtlDG`LwArBvApTSlKl@tGpB`IfFvFtG|E`JvPfi@dF|LzWrd@dc@bb@fq@bXzFlFbk@hiA|eAd`Dx}@t|A~p@`r@|@jBdAjGY|K_Ch[_@l@qTaJ_j@e`@_Bk@glCb@e@h@KzEy@zCeLpMoCdH{@vJLdLlJv@tQwb@zA_KHuMf@a@v`CStLtJvUjNxHbGzSfIp@uCdBiV`@m@nADHqFm@u@]wDfEr@qAoAgC_@iAaGer@es@u}@i|AueAw_Dqj@ohAaCsDiCoBir@cYua@c`@aTs]iGoMiV_t@sF_JyFyFyFiDyGqBaSeAaJRiBaBqTjBukDVg}@zBgMCo@k@h@kiB@s}Vv@c@|wBC|Qs@RwRwC}Da@cBBsPnAsCvHyE|A{C^{E?a[XuC~A_DfHqB\\m@Qk]gCg@}eAEKubCVeTdBwG`a@ycAd^a{@bY_y@JoKmAcBaEqZwC{_@Ro[nAa[d@e@bBv@b@`G~HzMnBrArCFrNsIbDcAbHoF|CgKv@aA`GHjHoE|A\\fEhDx@Q`AwAhCiL`AyPlC{UpIe[SwCcCeA@{G\\oBhDuElBsEjBkJhD_d@zAyb@hCiKjEvEl@]BiYv@eCBuBG}Aw@iAnFS|DmD|@eD\\eHpBoMD}Me@_EsAcCqAu@qK[{@yM_FwV_BeVVqQKqNgBu\\eBgP}@s@wJaA}y@l@Cmv@NaFnA{GAiYl@qEo@mC@qdBiA}Zl[}@Bqq@",
+    "type": "Ride",
+    "year": 2026
   }
 ]
