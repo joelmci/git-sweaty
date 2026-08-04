@@ -15828,5 +15828,26 @@
     "summary_polyline": "kefsHhfccUmCp@}KbVo@j^wDfAoAb[TtUdlA`A~HoF`SeBpFwEnVkc@hUsL`h@rJtm@uAxL{TvCkLtGgL|\\_@`F_FzBcIlBuWpTsi@tAmVvBwG|ReIbM_XhLaHrLoMxBx@lF~MhBJjKaUzWyOfM}SdSiL`Z}o@bUw\\lEgLzF}G|LwTt[g`@~Vob@ve@ke@nKkI`dCogB`b@sMra@o\\dKeOpPiHtL}\\bS_UjKmt@lKuQvfAip@|O{NpUlHxHH~v@c\\`LDzHgGpXg@oXVeIdGuKEaw@|[eIGmUgHoPhO{eApo@}KtR{J`s@eSfU_Mn]aP~GqKhOaa@`\\ae@~OamC|nBgPlRaUhRgWxb@y[h`@{Td^aFzLeTd[gTtg@uEjH{R|K}LvSuWpOsKnU{AAyEgMuC_B}KtLkM|HgMbXaSjIsBfHcAtToTvi@uBdXmCbJwEhEoXYuCfAgGzKeDxL_LdTso@xA{g@aJkTpLkVlc@yFrF{KQaHjBgFnEolAcAEqVfAsLOg\\_PfK_GVqFbFsI]{GcLqKd@oKdGaG~HqAhO?fR_J~_@sHjTk@nPxDvQjM`FbOc@|D|E~AxGfCzf@sBd_@}F~LkBzJk@zc@p@hI|Sp_@fK|H|Ojp@zK|H~Q|UlB|EMdG_Lvr@d@nJdEnRb@fHQ`HcDnPr@bDrMxJhDbLAzJgCxZbF`[jBxi@hE`\\_Dlg@jCjUiD|NCfUfHjm@pGtL|PrP|Ldi@rOpNxH`NvAhGfDjDb@t`@xUzn@rFxGnS~MtH`RhGxHdNbMzIhArI|PzDhRkD|S|@rRvHpU|JlJvMd_@rG`Wr@?ZkH`BaFdF|GlH|@fGdHrA`MxAvCnXnJlC`CtLxUvHl@rGvGdBIeBCkIaHk@yGX|GsFm@kLiUcDsC_XmJqA_CqAoMiGgHuH_AkFoG{AdE]dIu@E{G_YgMs]mJuIsHyTgAuRnDyTuEqS{H}O{IoAeN}LkGsHoHgRgToNuFgHiRgf@cBmGOg_@oD_E_BsGyH_NiOaN}Lai@qR}RiF{KaH}k@F_VdDcMmCiW~Cig@gEy[mByi@_FoZ`CqYHoK{CkL}MeK_A{CjDeQLcG_@eHmEcTa@}IhL{s@ByEeMyTcTaQaPsp@}JqHmTe`@i@yHn@}c@xAeInGyNpBw^oCeh@gBmGmDiE}Fs@eGnA{MiFgCwJs@}JhAmLvGgQhJu`@D_ShBuPjFiGpK_GnKMbGzK|HZnH{FpFMrN{JfF[j@}PtKiUpA{@",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 89.5,
+    "average_watts": 183.4,
+    "date": "2026-08-04",
+    "distance": 5811.5,
+    "elevation_gain": 64.0,
+    "id": "19598650668",
+    "max_heartrate": 110.0,
+    "moving_time": 1182.0,
+    "name": "Morning E-Bike Ride",
+    "raw_activity_type": "EBikeRide",
+    "raw_type": "EBikeRide",
+    "start_date_local": "2026-08-04T08:33:35Z",
+    "start_latlng": [
+      51.024315,
+      -114.10214
+    ],
+    "summary_polyline": "cnlvH~zlwTAl^NxABDF@p@@p@XZ@~DI`I?tBKrHA`CB\\BJB^r@PHZEj@MJDL^Lv@DbDCpAEd@Ur@c@vBAT?z@CPAb@@PLb@@HIPD`@?b@@DJ@BHJv@F|A@nAFfA?bIGl@IVMP_@RAH?RRVBT@\\GrA@JBHJHX?DDPx@HLJJLBLAz@Ud@CX[HAP@j@EV@FHBJ?vAFf@HNd@XVVtBpCnCbDdCfDFARg@JIXKJ@JF^^\\d@Zx@Ll@?t@DBDJAE@BCA?H?AA?B?BJII?HB@@EFJ@ABIEM?ACLEGDSIECc@UeAEMq@}@UWWOKEM@IFIJM^GFIEqHyJ}AkBk@a@IMKc@Ag@?y@IQMCy@D[CKXG@q@Fw@RUEKEOWEe@CEECY?IGCK?gCAMQUC]ECe@Ba@Hk@BGA?Gb@@F?@EwBAYA{VB]CgAWu@?EIAKBaEAqCCk@AaB@KFG@GEUOSIGy@UYAo@DUIa@G{@?a@BK?IGCMC_@?sJAEG?Y_@WIWDY?c@?KGKBKGM[CwJFaACs@C{C@_FCiF@mBAeG",
+    "type": "EBikeRide",
+    "year": 2026
   }
 ]
