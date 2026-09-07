@@ -16159,5 +16159,26 @@
     "summary_polyline": "sslvHrqlwTpCKV\\Chj@RVrYQnNDxC^rb@?lIc@zs@@vBhCf@nAeBhPHCb@cD|Af@f@mDWvDx@|AtATZQfAyBb@CvPtXHb@CxBp@jBjWDzAd@xGhE|GrAx@r@t@~A^pD@|BSfCyCrMq@hBsAbBkDdBeAvBWlBCjBbA~F?dDy@|FiChEg@|Aa@`Ja@hCmAbCeFdEcBfCo@jC]xFaBxEs@v@s@XmCWIi@?skCj@k@tYLnBh@~EzCdGbAbAv@t@|AV|ANhDSfDoCzL}@jCsAfBuDpBcA|BQnB?lB|@dFDzCaArG{BtDq@nBSbBQ|F[|BaA|B_G|E_BjCg@vB]~F{AlEs@x@o@\\kCGUy@?kjCH{@f@SpWBzBXhGtDjGdAp@^t@dAZfA^xE]|EkDtNcBlCwDtBe@n@c@xAQ`BA`BdApGAjC]zCg@tBaCbEe@tASbBStGa@xBq@~AoGtFeA|Aw@|CY`Fk@`Cy@nBgBnA_CEOKGo@B}kC`@YbXBfBV|GxDhHzAv@~@^`Ad@tECfB]nCiDtN}AfCcE~BaA~BOpE~@xF?hC_@tD_@`BaC`Ek@jBc@rIa@pCiAvBuFtEyAbCk@lC[hFgBbF{@v@m@P}BMSi@DalCp@a@tWF|ARpH~D~Ev@hAh@lAzB`@tEQhEuD|Ok@lAcAhAiDdBq@fA[fAQnE`AtFCrDw@fFkCpE]dA]~CMhF_@xB{@hBmGlFmArBk@zBe@|G_BfE}AfA_CAY[Cs@AqiCJ}@f@Y|VH~BTxGnD~FhAbAh@fAzB`@|EUlEuDtO}AbCaE|B_AzBOlAC`C~@~F?bDy@nFgCpEe@tAUdBOhGg@rCu@zA{F|E}AbCm@~B]~F}ArEwArAmCBOEOk@?yjCL{@d@ShYPjCz@fEjCvGpAjArAl@`CNdFKhB_@hB`@z@Za@`@mC~@mDrA{Ap@uAfAgF?{AYy@{CcAsBVeBvAw@Ls@}E_EoEyCkH}Ec\\o@qBsEuI}G}JwCkHgE{C}@aA_@sAo@sF{@wCa@BwAxDO?xEyNvAuDpAeCTiBdAiBRC@X]v@_AoAs@`@s@I_@]s@iCc@g@{EmAsGJqLdGqJbGeE^yA}@_Cm@_BjBeAl@q@Ew@g@yAcDq@a@sF}FqDa@eAuAi@@Y|AWPi}@Km@h@BvD]l@gW?QjAMxHeE?",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 109.3,
+    "average_watts": 118.3,
+    "date": "2026-09-06",
+    "distance": 16727.3,
+    "elevation_gain": 257.0,
+    "id": "20065575082",
+    "max_heartrate": 157.0,
+    "moving_time": 4666.0,
+    "name": "Ice Cream Run: Backroads Edition",
+    "raw_activity_type": "Ride",
+    "raw_type": "GravelRide",
+    "start_date_local": "2026-09-06T10:44:09Z",
+    "start_latlng": [
+      50.571899,
+      -116.034102
+    ],
+    "summary_polyline": "sgtsH~dgcUi@zBc@r@[P_D^oBz@yJrJsCfDg@\\cAZ_@\\K\\WzBaAhBwBfGeCvFmAlA_AZiA?a@KeAcAUa@y@cCg@}DgDyFg@CMZK`CmA~NNn@pAtAVjAV\\f@nAPx@A|@GCFA@e@Go@w@sBSGClA_@fAeDxE_@Vg@J}@YSDOf@HbBE~@Mn@]v@}BbCmKzIaDnGuAjGa@p@c@d@g@Na@QWk@IiAMc@SS_@EqAbA_@G_@_@U@q@bAq@p@yClAgBNi@Is@c@iAbAmBPi@Xs@pAE^F\\b@`@Tf@FzAVjA@j@Ux@aAx@gAXcAUUg@BgAEe@S_@UGqDpAcADy@MWH[n@QhDCrBUb@sAh@_AF}AWmAu@c@q@UM[\\c@tBa@\\WUUcBOWSEUNMpAQn@c@Xs@IkBu@kCQwCN}BzAmA\\_JY_@P{@bAwBI@Hg@Xa@n@mA`D{BtCUW?cHM_DOo@c@Oc@`@Sj@SpASX[Ag@i@c@GmAXiAv@q@PcA?wA]s@JuBpBOBIRa@`@eBfADBzBgBZ]KBUd@mElCm@p@_A?Ln@CJ[W}G|B{Cf@}GdCuEbAyEbBiI|EWI?_@[uAQCABGKH?MABIGCGHDJCMHCOFFA?U?JJFIFFMI?FJE?D@DKMGLJANH?GBf@MTHhGsDXNJlAj@FtD}AlHmBlFoBfFgA`DcA^Wf@VBIOm@|@APWnC_BrBoBbCwBr@InBb@n@Cz@YdAu@bAWXBt@l@V@RUj@aCh@e@ZJT~@H`EGzFBLPJf@[|AyBrAoDh@u@h@SzALnAqA|@ExHXz@WxBuApAUtEJpBr@~@J\\Y\\uBXWVN\\lBZXPGPW\\sB\\YLD\\f@jBbAnATnAK~@c@R[DmBLgCHy@N_@f@OnBDtDqAVDNTFtBd@l@bAJnAc@d@_@X}@Co@UeAGeBy@aAG[ZmAd@o@zBc@vAcArAl@hCSvCsAvAoBn@\\XFxA_Ar@TNd@JjA\\p@f@Dd@Ud@k@d@iA`A_FdDwGfKuIpAoAp@}@Zu@NgA?_AK_AJk@XEv@Vn@K|A_BtAsB\\s@T}@?sAQ_AwAcBKq@|AsRJ[PKPF`DnFLb@PrBRt@p@vBh@z@h@h@l@PpA?dA_@~@gApAqClDwJ~@cBZ_CRa@jB{@|KmLdDwCbCs@fC]l@oA`@aC",
+    "type": "GravelRide",
+    "year": 2026
   }
 ]
