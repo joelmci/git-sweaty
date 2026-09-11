@@ -16180,5 +16180,47 @@
     "summary_polyline": "sgtsH~dgcUi@zBc@r@[P_D^oBz@yJrJsCfDg@\\cAZ_@\\K\\WzBaAhBwBfGeCvFmAlA_AZiA?a@KeAcAUa@y@cCg@}DgDyFg@CMZK`CmA~NNn@pAtAVjAV\\f@nAPx@A|@GCFA@e@Go@w@sBSGClA_@fAeDxE_@Vg@J}@YSDOf@HbBE~@Mn@]v@}BbCmKzIaDnGuAjGa@p@c@d@g@Na@QWk@IiAMc@SS_@EqAbA_@G_@_@U@q@bAq@p@yClAgBNi@Is@c@iAbAmBPi@Xs@pAE^F\\b@`@Tf@FzAVjA@j@Ux@aAx@gAXcAUUg@BgAEe@S_@UGqDpAcADy@MWH[n@QhDCrBUb@sAh@_AF}AWmAu@c@q@UM[\\c@tBa@\\WUUcBOWSEUNMpAQn@c@Xs@IkBu@kCQwCN}BzAmA\\_JY_@P{@bAwBI@Hg@Xa@n@mA`D{BtCUW?cHM_DOo@c@Oc@`@Sj@SpASX[Ag@i@c@GmAXiAv@q@PcA?wA]s@JuBpBOBIRa@`@eBfADBzBgBZ]KBUd@mElCm@p@_A?Ln@CJ[W}G|B{Cf@}GdCuEbAyEbBiI|EWI?_@[uAQCABGKH?MABIGCGHDJCMHCOFFA?U?JJFIFFMI?FJE?D@DKMGLJANH?GBf@MTHhGsDXNJlAj@FtD}AlHmBlFoBfFgA`DcA^Wf@VBIOm@|@APWnC_BrBoBbCwBr@InBb@n@Cz@YdAu@bAWXBt@l@V@RUj@aCh@e@ZJT~@H`EGzFBLPJf@[|AyBrAoDh@u@h@SzALnAqA|@ExHXz@WxBuApAUtEJpBr@~@J\\Y\\uBXWVN\\lBZXPGPW\\sB\\YLD\\f@jBbAnATnAK~@c@R[DmBLgCHy@N_@f@OnBDtDqAVDNTFtBd@l@bAJnAc@d@_@X}@Co@UeAGeBy@aAG[ZmAd@o@zBc@vAcArAl@hCSvCsAvAoBn@\\XFxA_Ar@TNd@JjA\\p@f@Dd@Ud@k@d@iA`A_FdDwGfKuIpAoAp@}@Zu@NgA?_AK_AJk@XEv@Vn@K|A_BtAsB\\s@T}@?sAQ_AwAcBKq@|AsRJ[PKPF`DnFLb@PrBRt@p@vBh@z@h@h@l@PpA?dA_@~@gApAqClDwJ~@cBZ_CRa@jB{@|KmLdDwCbCs@fC]l@oA`@aC",
     "type": "GravelRide",
     "year": 2026
+  },
+  {
+    "average_heartrate": 100.1,
+    "average_watts": 128.4,
+    "date": "2026-09-10",
+    "distance": 4363.9,
+    "elevation_gain": 38.0,
+    "id": "20123057744",
+    "max_heartrate": 131.0,
+    "moving_time": 1074.0,
+    "name": "Afternoon Gravel Ride",
+    "raw_activity_type": "Ride",
+    "raw_type": "GravelRide",
+    "start_date_local": "2026-09-10T15:07:34Z",
+    "start_latlng": [
+      49.28795,
+      -123.14042
+    ],
+    "summary_polyline": "miykHrgrnVf@?N@j@LP?vCd@P?tARFDx@?\\ELGn@_@fAk@\\U`Ai@ROZa@b@{@t@oA\\u@X]|AqCXa@r@oAh@s@X{@l@eARYJU@ITe@|B{Dj@}@j@kArDmGt@wAZ_@P_@dAgBlByCTSZOLJTl@\\vAZ|A`@jAb@hBdOrq@v@bDb@bCPn@N^dAtAAC@@?@?C@BPHLRN?j@Tx@BJ@`@EhGFd@C|B@|ALJATDDAA@?OKk@Ce@AeAHkEA{@Bo@DSIw@Ak@BiDFyCHa@?@EcD@oGGg@[{@a@i@CC@EWe@_AaA",
+    "type": "GravelRide",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 102.8,
+    "average_watts": 119.9,
+    "date": "2026-09-10",
+    "distance": 5313.8,
+    "elevation_gain": 45.0,
+    "id": "20124056516",
+    "max_heartrate": 160.0,
+    "moving_time": 1282.0,
+    "name": "Afternoon Gravel Ride",
+    "raw_activity_type": "Ride",
+    "raw_type": "GravelRide",
+    "start_date_local": "2026-09-10T16:54:53Z",
+    "start_latlng": [
+      49.2718,
+      -123.135115
+    ],
+    "summary_polyline": "y`vkHfeqnVJR@HEn@[l@IBk@BIJIZUd@AFBb@GXGLSJQb@AXD^CVWZe@\\AJDj@Nt@?HGJSPQFMAG@iAp@i@RMH[Fu@^SD[@cBm@w@K]KIKO[O{BQYGEI?s@LQDi@^KNG@WA_Ah@SBSHu@f@GHOBi@^[TIPATb@tBJTj@pCn@hCj@`BPl@RpABb@@hAKjAa@|AEXEx@Bb@HF\\@hCBPJt@DxA@b@JpC@JGJQBa@Fa@?[M}@@A@@LAd@LBAGsAIK]So@u@g@}@c@kAqAyFkAwF{FkWu@sDwCgMqBwJF[n@wAp@oABCD@DEHJLX|AdCt@xATZr@|ALr@CDC@AC@UGYe@s@Yw@K?I@u@lAKTYb@Sj@SXqCpCgBnBeB`BqAtAcAx@aAbAmEvE{ArAYNYb@iCpCqBbDeB~C_BnC[l@_@b@UReB`A{BjAUFS@g@?]Kk@GmFs@",
+    "type": "GravelRide",
+    "year": 2026
   }
 ]
