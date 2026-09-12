@@ -16222,5 +16222,47 @@
     "summary_polyline": "y`vkHfeqnVJR@HEn@[l@IBk@BIJIZUd@AFBb@GXGLSJQb@AXD^CVWZe@\\AJDj@Nt@?HGJSPQFMAG@iAp@i@RMH[Fu@^SD[@cBm@w@K]KIKO[O{BQYGEI?s@LQDi@^KNG@WA_Ah@SBSHu@f@GHOBi@^[TIPATb@tBJTj@pCn@hCj@`BPl@RpABb@@hAKjAa@|AEXEx@Bb@HF\\@hCBPJt@DxA@b@JpC@JGJQBa@Fa@?[M}@@A@@LAd@LBAGsAIK]So@u@g@}@c@kAqAyFkAwF{FkWu@sDwCgMqBwJF[n@wAp@oABCD@DEHJLX|AdCt@xATZr@|ALr@CDC@AC@UGYe@s@Yw@K?I@u@lAKTYb@Sj@SXqCpCgBnBeB`BqAtAcAx@aAbAmEvE{ArAYNYb@iCpCqBbDeB~C_BnC[l@_@b@UReB`A{BjAUFS@g@?]Kk@GmFs@",
     "type": "GravelRide",
     "year": 2026
+  },
+  {
+    "average_heartrate": 120.5,
+    "average_watts": 95.9,
+    "date": "2026-09-11",
+    "distance": 19166.7,
+    "elevation_gain": 191.0,
+    "id": "20136190035",
+    "max_heartrate": 173.0,
+    "moving_time": 3789.0,
+    "name": "Afternoon Ride",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-09-11T14:05:35Z",
+    "start_latlng": [
+      49.288138,
+      -123.141862
+    ],
+    "summary_polyline": "yeykHfhrnVvGz@t@?h@QhF{CvJuPVw@pPwYxEuHf@e@ZD\\x@dBdHzRl}@\\`AfAzAJ~@G`CBjHPMZApCJQl[KtMD^HJ|CFDh@M\\CSJD?GQGWENB?JZEJPIYCDPSML@I{`@kZ@}BEK{CMYKC_@lAwLDyFIa@y@EYHEEBGp@J|QBfGNV]DqAM{@NId@V@}AwAyAmAmC}BgKyMql@eCqLuAqCaCoDBAeEaH[y@uAqBqCoFLTJAdBuCX]e@e@oBkDmA}AG_@e@cAyCwE_AkBqC{Ew@eAgDwGk@w@MMYA_A{BwA_C{EcJkBuCMq@QK]u@SQOFSK?YIUa@[]k@Gi@_@s@YEcAs@a@{AEo@s@gBS_A_@oAIG?kDJMfDdu@SSe@sAuBuCIk@DSIG{@hCu@~@q@vAo@dFg@|BwAlEsBxDDf@n@pA|@zA`@rBHxBG~AOlAk@`BoEnISl@WC}BoDO?{@xDq@`BHLGv@@^jBvCH^gAfBEv@m@pA_@d@@d@Y~@kAzA{@hCaAx@MV[|AObDWdA[VQ@{C{@gB{Ay@cBOy@UaFV_CAo@cAmBiAmC[KWaB?w@Ns@b@w@rCsBbAeA\\cA@}@SiA]s@cCqB}@_Bm@{Bc@qCBkCd@gE@wAKw@Um@aBaCU}@K{AHaB~@yJBsBCg@e@kA}@y@qBSoA_@WBSPQf@I`BFTp@z@\\|@Tz@LbBIvBk@fHg@~BuEnOgAfBmDnE_@r@MdAFdEIxBq@dH[nB_@tAe@`Ac@d@c@V{@RaAl@oEjDqApA{ClG_AnEUh@oAv@sCNa@NoJpF]r@c@jDg@nA{@z@kD`BOTGt@HXJH|HbAbDn@~BbAv@n@Vp@@x@[nAq@vAw@v@c@Jw@Ce@Q}@oAo@k@}@Og@Hg@NcAx@_CTwAb@[f@Or@MbCHtAv@vAn@hBzAtG`DzKt@pA`C`Bx@dAPj@h@nC|ClIZl@hAv@bF~AlUuAfAHxAf@`Av@n@vAf@~EN~Cb@vAtBvArBpCh@RrAEpAa@pAAjBy@r@_AXeADg@A}Aa@mF?w@XcBdAyCbAuBj@w@j@yAnAqDfAeExA}Dx@{AbBaBvB}@|BAzAJzCp@~@?\\MzBqCl@gAn@wBRoAjAuC",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 102.4,
+    "average_watts": 79.4,
+    "date": "2026-09-12",
+    "distance": 3525.2,
+    "elevation_gain": 22.0,
+    "id": "20143198365",
+    "max_heartrate": 129.0,
+    "moving_time": 660.0,
+    "name": "Morning Ride",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-09-12T05:21:37Z",
+    "start_latlng": [
+      49.288196,
+      -123.141834
+    ],
+    "summary_polyline": "k~ykHdyrnV[f@a@~@cAxEe@pAWd@oBdCQLI@s@Di@IcAW{@OWCs@@u@Oi@?]CK@aAX[Ls@`@gAbAc@p@iAnBKDKCIIOi@E[@gCC{BMcECQSo@O]k@aAQi@c@qCIw@CqA?{@PwCGwBOaAiA_CY{@Oo@QoAe@gFc@{DCgA?QDe@Ru@Ra@dAsAFO@WCWUeAEP^t@HL@PABKe@IOCYUu@BoAFYHKx@aAL[Ae@EUE{@Ow@I_AWqASk@YsAAaAPaB?s@E]Ki@_@w@k@_BKaA@q@BYJ_@`@u@l@g@p@_@j@a@j@g@VYR_@Lc@D[?k@Eg@I[[}@MQ{@u@o@c@SQ]e@Wk@s@_DYkBAu@FgBF{@",
+    "type": "Ride",
+    "year": 2026
   }
 ]
