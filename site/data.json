@@ -12767,6 +12767,30 @@
       "summary_polyline": "s{{kHfgnnVcNf[gDr\\aOrKeFzN}Q|HmJhNvThIuDjNilB__Bz@iGhAtD{Grh@g|@tA_HteAeS`c@yExUmCdmBsDvaA}Nxj@zEtbCgBzs@eMhcAo@b{@{Lzx@}D`NqJrFkYoAcKzMqIvf@vDvr@mGbO}TbAmMaR_PiCwSeTea@wIsr@_u@a\\aLo`AohA}f@}EqTsMkXk_@aq@{Kss@|Ko`@hUyQ{BowApAaf@uD_[fSqQ{AcMlPab@hHkXR{L`VmHnEwVh@{S}MoPb@mo@bKe]py@{G`Gug@~Hk|@g@uMsP{v@e_@qu@gbAyIsUy\\mTyk@kJ{c@rD{tAiu@}LyOolAyZ_VeNgz@`B_H{IDuYaHkNaFp@}JhQiHr@iVwLaWmSiO~Fy]pAms@x`@gUv@cF_H_Jkc@ex@ok@eFsp@_NsXwFk_@oPof@i[gb@sRaL{Vcj@wt@}a@wp@ul@qt@uUyoAjXu}Af@wIcJiVix@wN}KuaDrIw|AnQcgAk`@}z@uMyF}JeH{c@yJ}Lud@zDk[qG}PbG_Mx]yn@xd@_a@jI}d@WyMrD{e@`o@sQhd@wm@rJqSfXe}@ba@u`@{EyXrHkYcNoSoAkQzImUuAuh@|Nse@fD}McDqSbLma@xHgUyOs_@rOwO{NiVsFuWxTsh@zIiQiFcTt@}VcXkm@iTg\\id@cRib@kTqHqPmSo[lH}Y_MeQrF}TGoR__@s{@q_@y[uDw\\ye@qc@{P{Vk@sc@uLav@nQc[aF}TjFuVfQ{HMmRyJcc@idAk^g^}EhDkS{FiO~B}SqH}Jtm@kUbKmQtZaW`P{HtRgk@hMoQrIqz@md@eE}\\gE}Daq@bV_UuJmi@pYcbAnK_@cGta@gR{CqH`@cHsF{BeDkSaMmHyVpDqCtIca@uJja@bK`CwIhWsDbMrHbAjM~HdH]hH`DlHea@nQFjHxRXxn@gLth@kYfUpJ|p@gVtEfElE~\\pq@za@~Kp@d[_G|]yOlHeRvVwOzPgZdV}KdJ}l@jT`HrO_ChSxFzD}Dql@wlAgt@mz@uRwcAmNsc@aGwh@dE}k@aFe]cKaZnBo]gHmo@`Be[aBwk@{GkTQgWkFcTwBkm@vBub@mg@ur@iXlDyGgE}JeZ^ac@wc@mm@Gwf@}FgYeMcOqP_Ao@q`@qJ\\",
       "type": "Ride",
       "year": 2026
+    },
+    {
+      "average_heartrate": 45.9,
+      "date": "2026-09-24",
+      "distance": 37.6,
+      "elevation_gain": 0.0,
+      "hour": 12,
+      "max_heartrate": 61.0,
+      "moving_time": 100.0,
+      "subtype": "Surfing",
+      "type": "Surfing",
+      "year": 2026
+    },
+    {
+      "average_heartrate": 52.8,
+      "date": "2026-09-24",
+      "distance": 0.0,
+      "elevation_gain": 0.0,
+      "hour": 12,
+      "max_heartrate": 79.0,
+      "moving_time": 746.0,
+      "subtype": "Workout",
+      "type": "Workout",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -22155,6 +22179,17 @@
           "moving_time": 13325.0
         }
       },
+      "Surfing": {
+        "2026-09-24": {
+          "activity_ids": [
+            "20314657748"
+          ],
+          "count": 1,
+          "distance": 37.6,
+          "elevation_gain": 0.0,
+          "moving_time": 100.0
+        }
+      },
       "Tennis": {
         "2026-02-04": {
           "activity_ids": [
@@ -22429,10 +22464,21 @@
           "elevation_gain": 0.0,
           "moving_time": 2480.0
         }
+      },
+      "Workout": {
+        "2026-09-24": {
+          "activity_ids": [
+            "20314657877"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 746.0
+        }
       }
     }
   },
-  "generated_at": "2026-09-23T18:52:50.605013+00:00",
+  "generated_at": "2026-09-24T18:51:00.965193+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
