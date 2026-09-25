@@ -16315,5 +16315,25 @@
     "start_date_local": "2026-09-24T12:16:21Z",
     "type": "Workout",
     "year": 2026
+  },
+  {
+    "average_heartrate": 80.4,
+    "date": "2026-09-24",
+    "distance": 1880.8,
+    "elevation_gain": 1.0,
+    "id": "20316731210",
+    "max_heartrate": 114.0,
+    "moving_time": 1332.0,
+    "name": "Afternoon Walk",
+    "raw_activity_type": "Walk",
+    "raw_type": "Walk",
+    "start_date_local": "2026-09-24T16:00:15Z",
+    "start_latlng": [
+      51.026016,
+      -114.096999
+    ],
+    "summary_polyline": "y`mvHtjjwTFs@AMO_@ASBWDEPKJMDOBk@Jg@JyARkAHeABYCe@BGF?LJJLFGHi@PyCDu@?eAK_BUa@UIc@U_FeDUUMWE_@@]ToBL_@Cc@@Cn@UZUHKDQ@m@AoAB_BAGGE",
+    "type": "Walk",
+    "year": 2026
   }
 ]
