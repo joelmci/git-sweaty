@@ -12808,6 +12808,24 @@
       "summary_polyline": "y`mvHtjjwTFs@AMO_@ASBWDEPKJMDOBk@Jg@JyARkAHeABYCe@BGF?LJJLFGHi@PyCDu@?eAK_BUa@UIc@U_FeDUUMWE_@@]ToBL_@Cc@@Cn@UZUHKDQ@m@AoAB_BAGGE",
       "type": "Walk",
       "year": 2026
+    },
+    {
+      "average_heartrate": 133.4,
+      "average_watts": 169.4,
+      "date": "2026-10-12",
+      "distance": 16436.3,
+      "elevation_gain": 70.0,
+      "hour": 20,
+      "max_heartrate": 150.0,
+      "moving_time": 1882.0,
+      "start_latlng": [
+        -11.659244,
+        166.927293
+      ],
+      "subtype": "VirtualRide",
+      "summary_polyline": "vxcfAkjyy^eAx@eBtBqAnAq@j@i@To@Lk@?{@OmAe@gAw@{@gA}@_B]u@q@yBy@mDa@qBUm@SMUAWF_B`AeBv@eAXs@DYAq@Ok@]s@}@}A{Au@s@mA{@aAiAg@aAKo@I}BIo@UcAs@}Be@s@eAmAiBmCy@aBg@sA_@eBGs@?a@LeARo@b@{@Bc@So@mCuEG_@?OPm@n@cAL[`@{BPk@TW~@m@\\c@lCcFnAuBZy@XkAZeCFyBEeAg@sH@eCPqB^oCX}A`@kAN[`@c@jCgB~@qA|@a@r@Qf@Cb@Fb@Z\\J^BZGRSBQCQSUo@SCOBETI^ChADTMN]@QEOYWQCk@FYIMK_@w@c@uA@[HKVKlAURMNSFc@Eg@Oc@{AgBUe@Kg@GiBGUMS]S_@KmBQaBA}C^mAKKOAQDQREjHm@pBUv@QLKHOESMKg@Cy@FeFv@_BPg@?QCOKIQ?QNc@\\YNG|A[~G}@t@UZY@QGSk@_AqFkLQu@Ae@Ju@P_@V]\\Ub@MPAb@Jj@b@b@j@P^pCvJXh@TV\\Hl@@nFIz@GZEXOPUNu@DqA?uGB[JYb@{@Pe@nAiFTwANyBFuKCmBESIQOMc@Og@?e@F_O`EMEIMs@wBo@yBE_@?ONYv@c@jGmBtPmEtP_EfFiAj@OXQF]SwACk@VqFGm@MY[c@oAqA}@s@a@g@c@cAa@sAYkAOaA@cA\\kC?mBJa@LQ^OnB]^Mr@m@f@WLQDWAUEISMm@Gk@PUGCICUJSRE~@GZQHSFm@N]BWKa@m@y@CKEoAG[SU{@SUWWm@Sm@Ia@?c@To@~@eA`@Qt@QZYJc@H_BPc@LM`Aq@tHyDd@[^_@Vk@Jk@?{AMuAKg@c@gAk@_A]WOGs@Mc@AuAFa@EMIEOI_BK]y@s@u@]_@G_@B]LUVo@zAuB~G[b@YLO?YMi@o@I]MaBQ_@YWiAu@q@SeBKa@Gy@a@_@Ia@?aAJ_@Co@Qg@]Yi@UoASsBEqBBaAH]RW`Aq@RWRk@Dq@@qCMsD_@wFK_AOo@Q]WW[Qa@EaALcCl@}DlA_APq@?}Aa@aBC_@GIKIaAM[sC{C[g@Sm@JuC~@}KHsA@sA",
+      "type": "VirtualRide",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -22448,6 +22466,15 @@
           "distance": 29427.3,
           "elevation_gain": 112.0,
           "moving_time": 3382.0
+        },
+        "2026-10-12": {
+          "activity_ids": [
+            "20562520958"
+          ],
+          "count": 1,
+          "distance": 16436.3,
+          "elevation_gain": 70.0,
+          "moving_time": 1882.0
         }
       },
       "Walk": {
@@ -22504,7 +22531,7 @@
       }
     }
   },
-  "generated_at": "2026-10-12T22:24:15.288406+00:00",
+  "generated_at": "2026-10-13T20:31:11.033171+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
