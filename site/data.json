@@ -12874,6 +12874,18 @@
       "summary_polyline": "p}afA}_}y^^vIUpCs@pCqFvJgBzAoAtEqAbA_C`AiFQoADt@m@hCa@Cg@g@a@sFdBwAYmC}BMg@LqBfBm@HcEk@yDmAq@aAd@gAF_AjBsATi@_@mBiF`@uBpBgCVsAfA_BcGkRS}Bh@{@bA[pATbBdBh@M@]qEyKqBmA{GuBoDwBqBaCsAwEG_B\\{AnHwFn@_AMy@oCyBMg@V]|AUJo@oAuL`@iF{BwC[kCn@uDbDaHj@yHQuDg@sCe@cAmAkAGmA_AeA]_CJsAxCsJ\\sE]mA{@mAiDy@o@_AsB_Iv@yGyBeFNg@l@_@rBLd@Q\\{E`@g@bAKbBZtB`Ad@t@BdBrAVf@`@cAbDn@fAfBPhFc@zB{BPaA_AkBIwAvCqCXsAGgBuB}FoFsESmA^cCp@{AvDyAdAyANaBOaBi@cAyCmD|BoCW{ANkAjIwSd@}DIkAi@aAwFoBeA_A{@wB@}AxFyLxAwExCu@pBp@fA@|@g@~A{CbDMlBcAh@eBAyAeDuFdA_BrAa@dA\\fFjItAbAh@G`A{@tAmEhAB`Ad@h@z@BdEfCvA\\~@WbAeC`Aa@`ACpKsAlSp@tAjCpCp@pBfGl@tL{Cp@Dr@h@p@xDd@tMUdCeBzAU~@H~Er@fDbB`AhCIxAl@tDf@fBrAf@xCpAz@bA_A|CeJj@g@x@AlBhAl@|C|DFjAp@lAlCRnDObAs@`A}KbGc@v@S~BuB|@uApB`@nCf@x@lA^NpB|@bB_@lBmB`@Iz@lBB^^Ql@mAz@kEtAm@`Jb@jCjAfDzDxDku@`c@HxApBpFjO_EbAIn@TTbAM|PkB|IeAlCEhJ_@pAmB^yGDeFhFmK~AkAj@xDfh@eBjAs@fAwA~HMfGh@nJe@zFeGzL{BxBi@jCmXp@iAaAKu@LcBfBm@HeEm@yD}@m@uAh@w@B_@Tg@tAuAVi@_@gB{EEu@ZeA|BuCn@sBoAaJ{CsKBu@\\k@zAc@}NmbAKmC`@}DuBiCa@kBTaDjDuHz@mGI{Ee@gDm@_BmAgAGiA{@aAa@iCPaBrCeJ^}DUoAy@sAw@e@eCg@u@uAiBoHv@iGkB{DIy@t@{@zC?h@qFx@c@bA@bE`B\\f@?fB|B|@@b@aArBZfApB^lFa@jA}@bA_B@g@}@cBMkATq@hAo@",
       "type": "VirtualRide",
       "year": 2026
+    },
+    {
+      "average_heartrate": 101.3,
+      "date": "2026-11-02",
+      "distance": 0.0,
+      "elevation_gain": 0.0,
+      "hour": 13,
+      "max_heartrate": 161.0,
+      "moving_time": 2742.0,
+      "subtype": "Workout",
+      "type": "Workout",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -22602,11 +22614,20 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 2172.0
+        },
+        "2026-11-02": {
+          "activity_ids": [
+            "20834283761"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 2742.0
         }
       }
     }
   },
-  "generated_at": "2026-11-01T19:23:17.688496+00:00",
+  "generated_at": "2026-11-02T23:00:11.660248+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
