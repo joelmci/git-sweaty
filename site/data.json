@@ -12886,6 +12886,24 @@
       "subtype": "Workout",
       "type": "Workout",
       "year": 2026
+    },
+    {
+      "average_heartrate": 139.0,
+      "average_watts": 354.8,
+      "date": "2026-11-03",
+      "distance": 6716.6,
+      "elevation_gain": 27.0,
+      "hour": 10,
+      "max_heartrate": 180.0,
+      "moving_time": 2243.0,
+      "start_latlng": [
+        51.0515,
+        -114.073658
+      ],
+      "subtype": "Run",
+      "summary_polyline": "ogrvHnbhwTt@~Ar@`AVl@Vz@`@fAdBdD\\pARxAHrAPh@V`@^V|AfDFFVHDHZfBd@rBn@dD@Nh@jCbAnFR`Ad@fCJz@^fB^dAXn@f@t@d@nAb@~BPlBLzBF^P`@DXA\\SfACX@fJWzJQ|JKx@C`@?jBDdDFp@Bl@AtBCj@SdBChEAh@UhC?bEM~BAhCFbCHt@R`ARd@Jv@Pv@P`@V\\t@d@JNLb@XvAd@xD@~BJbBJz@JhB?fB?DKJQLcAh@a@N}@f@aA`@E?IQDs@?SO_A@OJU?}AWiEo@}CGs@EeBoAuGWuBe@qACOS}D@{RXaJ?SCCFcAJyCDsEJgDBqFC]E}LAYCS@o@E{BBg@PcA?I]mB@]Ee@YoAOUI_@Qg@COYo@Ya@US{AaASWMc@q@sEc@mEWyAc@kBKkAM}@?cACi@_AuGm@gB?GMWa@mAM[SYO_@[uA?MDED?z@g@n@Sp@a@XKdAUHE@C@w@GcAK}@Qu@m@sBw@oBEs@B}@Qk@",
+      "type": "Run",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -22272,6 +22290,15 @@
           "distance": 42216.9,
           "elevation_gain": 148.0,
           "moving_time": 13325.0
+        },
+        "2026-11-03": {
+          "activity_ids": [
+            "20846412974"
+          ],
+          "count": 1,
+          "distance": 6716.6,
+          "elevation_gain": 27.0,
+          "moving_time": 2243.0
         }
       },
       "Surfing": {
@@ -22627,7 +22654,7 @@
       }
     }
   },
-  "generated_at": "2026-11-02T23:00:11.660248+00:00",
+  "generated_at": "2026-11-03T20:47:19.161263+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
