@@ -12904,6 +12904,18 @@
       "summary_polyline": "ogrvHnbhwTt@~Ar@`AVl@Vz@`@fAdBdD\\pARxAHrAPh@V`@^V|AfDFFVHDHZfBd@rBn@dD@Nh@jCbAnFR`Ad@fCJz@^fB^dAXn@f@t@d@nAb@~BPlBLzBF^P`@DXA\\SfACX@fJWzJQ|JKx@C`@?jBDdDFp@Bl@AtBCj@SdBChEAh@UhC?bEM~BAhCFbCHt@R`ARd@Jv@Pv@P`@V\\t@d@JNLb@XvAd@xD@~BJbBJz@JhB?fB?DKJQLcAh@a@N}@f@aA`@E?IQDs@?SO_A@OJU?}AWiEo@}CGs@EeBoAuGWuBe@qACOS}D@{RXaJ?SCCFcAJyCDsEJgDBqFC]E}LAYCS@o@E{BBg@PcA?I]mB@]Ee@YoAOUI_@Qg@COYo@Ya@US{AaASWMc@q@sEc@mEWyAc@kBKkAM}@?cACi@_AuGm@gB?GMWa@mAM[SYO_@[uA?MDED?z@g@n@Sp@a@XKdAUHE@C@w@GcAK}@Qu@m@sBw@oBEs@B}@Qk@",
       "type": "Run",
       "year": 2026
+    },
+    {
+      "average_heartrate": 127.9,
+      "date": "2026-11-04",
+      "distance": 1400.0,
+      "elevation_gain": 0.0,
+      "hour": 20,
+      "max_heartrate": 183.0,
+      "moving_time": 1777.0,
+      "subtype": "Swim",
+      "type": "Swim",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -22312,6 +22324,17 @@
           "moving_time": 100.0
         }
       },
+      "Swim": {
+        "2026-11-04": {
+          "activity_ids": [
+            "20865028255"
+          ],
+          "count": 1,
+          "distance": 1400.0,
+          "elevation_gain": 0.0,
+          "moving_time": 1777.0
+        }
+      },
       "Tennis": {
         "2026-02-04": {
           "activity_ids": [
@@ -22654,7 +22677,7 @@
       }
     }
   },
-  "generated_at": "2026-11-04T21:04:13.037917+00:00",
+  "generated_at": "2026-11-05T21:20:55.012813+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
