@@ -16464,5 +16464,26 @@
     "start_date_local": "2026-11-04T20:15:13Z",
     "type": "Swim",
     "year": 2026
+  },
+  {
+    "average_heartrate": 126.8,
+    "average_watts": 350.6,
+    "date": "2026-11-06",
+    "distance": 7024.8,
+    "elevation_gain": 26.0,
+    "id": "20886182897",
+    "max_heartrate": 140.0,
+    "moving_time": 2594.0,
+    "name": "Lunch Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-11-06T11:39:54Z",
+    "start_latlng": [
+      51.051712,
+      -114.073545
+    ],
+    "summary_polyline": "_hrvHnahwTj@tA`A|AZl@bAnCj@nARXj@hAZtARtAFlAHZ\\h@`@X|AfDFDTDFFx@pEj@fCdBpJ\\zAFb@f@~Bj@nDPj@\\~@x@jAb@xAVtAL`ALtAF~ANr@P`@@NA^S|A?bAAH?j@@BE~BDvACrA_@tNGlEM~@Ch@DvDDtAFd@@\\AdCUbCCnEEfAQnBA~@@jBOnCEdA@z@F`CJvANl@Rl@ZzANf@T\\`@\\\\PLLb@~Bb@fDFdD^tE@bBAXEN_@RkAd@qAx@WR[NECEMEaASy@@WJQAyAEoAKkAEu@]uASeAGm@C_BCUoAqGIcAKo@EU]}@G]Ec@?e@GcAAuCBiECmC?cCD_CZwI@gBDiAAs@NyGFoFIqI@m@EyC?yAEeB?UVyAIWMkAQ]OOKUMs@QYY]Q[}AuB}BiEWq@EWy@kGI_AQaAIiAU}A@_@XkADc@?WSqBSiAAg@GQOaAYcAUc@g@_Bu@aBK]Q}@BMf@g@FKvB}@bAW^GBC@OCuAIe@Ca@Ia@s@cC_A_CwA_DQe@c@iA",
+    "type": "Run",
+    "year": 2026
   }
 ]
