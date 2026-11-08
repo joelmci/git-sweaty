@@ -16485,5 +16485,26 @@
     "summary_polyline": "_hrvHnahwTj@tA`A|AZl@bAnCj@nARXj@hAZtARtAFlAHZ\\h@`@X|AfDFDTDFFx@pEj@fCdBpJ\\zAFb@f@~Bj@nDPj@\\~@x@jAb@xAVtAL`ALtAF~ANr@P`@@NA^S|A?bAAH?j@@BE~BDvACrA_@tNGlEM~@Ch@DvDDtAFd@@\\AdCUbCCnEEfAQnBA~@@jBOnCEdA@z@F`CJvANl@Rl@ZzANf@T\\`@\\\\PLLb@~Bb@fDFdD^tE@bBAXEN_@RkAd@qAx@WR[NECEMEaASy@@WJQAyAEoAKkAEu@]uASeAGm@C_BCUoAqGIcAKo@EU]}@G]Ec@?e@GcAAuCBiECmC?cCD_CZwI@gBDiAAs@NyGFoFIqI@m@EyC?yAEeB?UVyAIWMkAQ]OOKUMs@QYY]Q[}AuB}BiEWq@EWy@kGI_AQaAIiAU}A@_@XkADc@?WSqBSiAAg@GQOaAYcAUc@g@_Bu@aBK]Q}@BMf@g@FKvB}@bAW^GBC@OCuAIe@Ca@Ia@s@cC_A_CwA_DQe@c@iA",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 127.5,
+    "average_watts": 173.6,
+    "date": "2026-11-08",
+    "distance": 28087.7,
+    "elevation_gain": 259.0,
+    "id": "20907634878",
+    "max_heartrate": 168.0,
+    "moving_time": 3624.0,
+    "name": "Zwift - Mayan San Remo in Watopia",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-08T04:35:26Z",
+    "start_latlng": [
+      -11.668652,
+      166.942582
+    ],
+    "summary_polyline": "tkffAq||y^vD]zMaE|ADfFxArF@`@b@K|A\\b@~Bc@`D|@UhA_DPWxAbFzDpClHvAvAfCf@|@sAHwBr@WdBNbCbBJlB`@b@lU|HjDWpBT~@bBpAd@`@`CMr@s@r@yAa@u@XOvBo@d@uAJgBW_BX_CwAsDw@{An@I|@r@fDSbDjCbCs@vBBlAqAzBc@Aa@k@j@kBqBuESmFe@Ue@T[bBRf@k@|AnAv@CrAf@zAsAlG^v@bBj@Al@eBJsBmA{@cBCmBc@o@}@Ii@x@rCdGMtDfB|@pCs@`BBxCWnAb@h@vC`A|@nBu@lBBbBfDpBd@nCOrAcB~@KxAn@?jA`@l@hEhAtBgArAwEsAwBwCaBQeBVaCxBaDlF_AzBaC`NMz@[jAiBzEmCbBYbD\\zCeA|Ed@rCzAtIk@zAbD`BNh@o@tBoMC{AqAoEZaBcAk@uC`@uEiDdBaEw@iCrDa@^eAq@}@iFkAm@}AGeCj@eDjA_B~@IhCjBlCR\\]RgBj@UjAt@^lFg@XoC?k@fBmG}A\\eDrCcDx@kDx@WpBr@jAq@Dk@aAiAGw@lAsGm@w@iCSkBq@oDkEFm@`BqBt@kEIkA{A}@Ys@r@wC[gCB{C\\eAfB[dAwCHmAkAuADkAvC_BhCj@n@Sd@u@]mCd@mBh@SpB^~A_AfAcKh@MnBp@x@IvBsAl@gBSqAw@iAcDSsCyBaB\\]MWiAfA_Ba@iA_AO_Bj@i@_@UeBpA}B|@aIqAuBsCCeAu@OuFnpAQdCbAnB_AlIvCJr@_@bBZ|E[|Ay@^oEHiFvCe@~@MdDgBhCWpGqBfEw@zC}@l@aDFk@p@b@bFsAhD?~@hA~@tEr@l@pAMbByBdEOlDaFxE_CH}Cx@u@[g@mBeBiCa@IaAf@sBdDeHr@u@n@Cv@^j@hG~@rA`BX~HlAvBiA~Ln@tBu@vAJp@`Aj@rDiBlAvCrAhAxAEf@tAo@x@uIfAMl@f@~BeDnMeEtAcA`CwLhOcAvGeEfCwArDaBr@oILqBq@sA{C{AGaGn@uC{AcFe@eCbAuD]aBZ{ElCsAnBm@R{MJoCfCmF`AqBrC]fCLrBlDvB~@pB{AlEqBx@_EoAYsBoAk@gA?yAfBgCPoB_@}@iCo@e@mBAmBt@_AaA_@gCmAk@{AOgAb@mBAqAj@",
+    "type": "VirtualRide",
+    "year": 2026
   }
 ]
