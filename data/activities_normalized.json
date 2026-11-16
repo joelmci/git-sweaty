@@ -16548,5 +16548,20 @@
     "summary_polyline": "s_uvH~p}xTBlaLBl@TPUXAjFDzkEa@|[Qhr@Hr@TRn@F~[Oja@_BpRY~_CU|SH|NKjCNzAKrDeAdDGh@HjAvAlBYrS?|G^~FzAlD`BpBpAjC~BvCdDpErHrCzGfLj_@nExLrBpEzG|L~J|P~AzB|\\p\\fEnDfq@bXvCpBbCnD`g@xaA~ArDt_AfsCvE~Lbx@htAdEvGd]d^`SzRjHbI~AvB`L`ZvA~EdCrL~FlWX~CQpHx@rDl@z@rCfBhBrBrCrFpBtGn@xA`AnAfDvBv@rARbB\\dJj@nHjExS`AhDh@jAv@x@`Ad@`APvAAh^qFnMmChJuE|B_AxAc@pH}@p@U~DoDlI{K|@{@p@OhEIvANRj@FjCK`aBTpGXjDr@pEbA|D|Nbc@hAjFjAnInApGrPbm@lBvJrHle@~AxN\\tIDpECvJiAd]HlETdCdCpNx@nHbGvy@r@tFl@hCt@rB|@~AdBrBzAbAlJvDhCbClAbCf@|AxA~IxCfUn@tHXdGNtJEjPJrKrAjo@d@tMb@hGl@zF|CzT|ChR|AhFvAxCdAzAdIhIfInH`C`BzBr@|JXhFv@dN`GnCrCr@nAlFzMvBnDzDxC`TvLTm@WTKCwTwMuB_BuAiBiAuBwCgIyA_DwAqBsAgAcKyEaCy@uEo@{FGeCQmBo@wBuAuPsO_CmCsByDmBsG{Guc@y@qHw@_K]_KuAqr@CyW[qQk@{IcEc[qAiHoBqEiC{BwIgDoBoAaBoB{@{AaAqC]{As@sFyGc_Ac@oDaC{L[cDEiFhAw\\@wKQsHYwF{@iIqHae@mC}NqCqKoL}a@sCeQkAoFoNcb@cA_Eq@iEc@_FQuGDibBIyAMa@a@GQXSSmEFsAVsAlAyHdKsDfDoBl@qH|@qDxA_GdDmC|@cNnCe]|EyBSeAk@k@o@c@_Ay@}CgEsRo@aHi@oL[wBi@}@aDwBgAuAi@mAaB}FwCkGwAaB}DeCi@q@{@uDLmH[sDuJwc@oAmEaLwZeAkBkGuHso@_p@uBgC}C{Esy@svA{BoF_r@stBsNcb@gFaLgd@a}@yB}C}B{Aa`@kOkQ_IsWeVaJeJgCuDoO_XeFsK_E}KkKg]iDoIoBoDwB{CkBwB}DkDaGcDiG_BmJ[aFYqJNUKm@kAYGgA\\oCKkHdAaDRqe@H}fCNmJPyTdAyO\\_W@mAQOcCH_h@`@al@GseEBuBHa@K]AiGDgkCEytAFkw@GuT?ejB",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 107.0,
+    "date": "2026-11-16",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "21013602606",
+    "max_heartrate": 169.0,
+    "moving_time": 2956.0,
+    "name": "Afternoon Weight Training",
+    "raw_activity_type": "WeightTraining",
+    "raw_type": "WeightTraining",
+    "start_date_local": "2026-11-16T13:59:42Z",
+    "type": "WeightTraining",
+    "year": 2026
   }
 ]
