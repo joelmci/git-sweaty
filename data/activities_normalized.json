@@ -16663,5 +16663,35 @@
     "start_date_local": "2026-11-17T19:25:56Z",
     "type": "Ride",
     "year": 2026
+  },
+  {
+    "average_heartrate": 126.1,
+    "date": "2026-11-18",
+    "distance": 165.4,
+    "elevation_gain": 0.0,
+    "id": "21042080243",
+    "max_heartrate": 193.0,
+    "moving_time": 3427.0,
+    "name": "Evening Tennis",
+    "raw_activity_type": "Workout",
+    "raw_type": "Tennis",
+    "start_date_local": "2026-11-18T19:02:56Z",
+    "type": "Tennis",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 119.4,
+    "date": "2026-11-19",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "21050953085",
+    "max_heartrate": 187.0,
+    "moving_time": 2910.0,
+    "name": "Afternoon Workout",
+    "raw_activity_type": "Workout",
+    "raw_type": "Workout",
+    "start_date_local": "2026-11-19T13:14:23Z",
+    "type": "Workout",
+    "year": 2026
   }
 ]

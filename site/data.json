@@ -13085,6 +13085,30 @@
       "subtype": "Ride",
       "type": "Ride",
       "year": 2026
+    },
+    {
+      "average_heartrate": 126.1,
+      "date": "2026-11-18",
+      "distance": 165.4,
+      "elevation_gain": 0.0,
+      "hour": 19,
+      "max_heartrate": 193.0,
+      "moving_time": 3427.0,
+      "subtype": "Tennis",
+      "type": "Tennis",
+      "year": 2026
+    },
+    {
+      "average_heartrate": 119.4,
+      "date": "2026-11-19",
+      "distance": 0.0,
+      "elevation_gain": 0.0,
+      "hour": 13,
+      "max_heartrate": 187.0,
+      "moving_time": 2910.0,
+      "subtype": "Workout",
+      "type": "Workout",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -22585,6 +22609,15 @@
           "distance": 480.9,
           "elevation_gain": 0.0,
           "moving_time": 5452.0
+        },
+        "2026-11-18": {
+          "activity_ids": [
+            "21042080243"
+          ],
+          "count": 1,
+          "distance": 165.4,
+          "elevation_gain": 0.0,
+          "moving_time": 3427.0
         }
       },
       "VirtualRide": {
@@ -22908,11 +22941,20 @@
           "distance": 0.0,
           "elevation_gain": 0.0,
           "moving_time": 2742.0
+        },
+        "2026-11-19": {
+          "activity_ids": [
+            "21050953085"
+          ],
+          "count": 1,
+          "distance": 0.0,
+          "elevation_gain": 0.0,
+          "moving_time": 2910.0
         }
       }
     }
   },
-  "generated_at": "2026-11-18T22:29:27.200947+00:00",
+  "generated_at": "2026-11-19T22:35:01.946364+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
