@@ -16693,5 +16693,21 @@
     "start_date_local": "2026-11-19T13:14:23Z",
     "type": "Workout",
     "year": 2026
+  },
+  {
+    "average_heartrate": 138.0,
+    "average_watts": 374.2,
+    "date": "2026-11-20",
+    "distance": 8119.5,
+    "elevation_gain": 0.0,
+    "id": "21061974369",
+    "max_heartrate": 153.0,
+    "moving_time": 2706.0,
+    "name": "Lunch Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-11-20T12:13:27Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
