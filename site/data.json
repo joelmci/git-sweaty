@@ -13122,6 +13122,19 @@
       "subtype": "Run",
       "type": "Run",
       "year": 2026
+    },
+    {
+      "average_heartrate": 132.7,
+      "average_watts": 383.8,
+      "date": "2026-11-23",
+      "distance": 8339.0,
+      "elevation_gain": 0.0,
+      "hour": 14,
+      "max_heartrate": 160.0,
+      "moving_time": 2713.0,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
     }
   ],
   "aggregates": {
@@ -22553,6 +22566,15 @@
           "distance": 8119.5,
           "elevation_gain": 0.0,
           "moving_time": 2706.0
+        },
+        "2026-11-23": {
+          "activity_ids": [
+            "21099819373"
+          ],
+          "count": 1,
+          "distance": 8339.0,
+          "elevation_gain": 0.0,
+          "moving_time": 2713.0
         }
       },
       "Surfing": {
@@ -22976,7 +22998,7 @@
       }
     }
   },
-  "generated_at": "2026-11-22T20:56:34.752333+00:00",
+  "generated_at": "2026-11-24T02:00:35.983094+00:00",
   "other_bucket": "OtherSports",
   "repo": "joelmci/git-sweaty",
   "source": "strava",
