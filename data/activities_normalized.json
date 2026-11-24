@@ -16725,5 +16725,20 @@
     "start_date_local": "2026-11-23T14:22:10Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 98.8,
+    "date": "2026-11-24",
+    "distance": 0.0,
+    "elevation_gain": 0.0,
+    "id": "21112555380",
+    "max_heartrate": 159.0,
+    "moving_time": 2768.0,
+    "name": "Afternoon Workout",
+    "raw_activity_type": "Workout",
+    "raw_type": "Workout",
+    "start_date_local": "2026-11-24T13:52:04Z",
+    "type": "Workout",
+    "year": 2026
   }
 ]
