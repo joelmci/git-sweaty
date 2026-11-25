@@ -16740,5 +16740,98 @@
     "start_date_local": "2026-11-24T13:52:04Z",
     "type": "Workout",
     "year": 2026
+  },
+  {
+    "average_heartrate": 114.3,
+    "average_watts": 158.1,
+    "date": "2026-11-24",
+    "distance": 8146.8,
+    "elevation_gain": 11.0,
+    "id": "21114782525",
+    "max_heartrate": 136.0,
+    "moving_time": 867.0,
+    "name": "Zwift - Pacer Group Ride with Miguel",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-24T19:15:26Z",
+    "start_latlng": [
+      -11.660388,
+      166.984915
+    ],
+    "summary_polyline": "h{cfAg~dz^KuAIc@c@i@mAy@c@OQEuBKc@Mo@]QEQ?yALc@Gs@U[WS]Oa@QgAMmBE{ABiAHc@HMLMz@i@VYHOLu@BwACyBIsB[wFKkAMm@K]QYYS]OOAa@@}Cr@wEvA_ANa@?OA{@[_@GcB?OCKKCOEo@M_@_@e@wByBS[Wm@A_@FeBr@oIX{DBgCE{DBq@Da@J]VYZOz@U\\MJKN[Ba@C_@EOSY[QkAe@WUGMCOAa@JoA?a@G_@O]a@c@k@Y]M_@GO?ODKFKLMZY|@UpAO\\e@d@OHODQ@OEOG[Uk@s@iCwEq@cAQUa@WYI[Ag@Fe@Rm@d@Yb@G\\D\\NZ\\d@vAfBP\\DNDt@Ab@Mr@Yp@KL[T_AZc@FgBEODOFKJSZy@lBYX]Nc@Dc@CmAk@a@Es@Bq@L_@L_@PKJINK^ObAs@nBa@|@uB`EgAfCQl@Cr@Fp@X|@b@v@b@d@h@Zl@R~Bp@\\LZPTVN\\H^Bn@E`AEp@Mn@Sn@yA|DsB`Fy@hBm@vAMd@Kb@AR@RBPL`@BRCPWZuAhAILEP@PDPTZp@r@dA|@VZP^L`@Ft@@t@Ip@K^Q\\c@`@k@XqAX_@LOHWV]n@Up@Or@Kv@Cf@@RN`@ZZ~@f@\\VpAhAl@v@d@~@^|@X`ANp@Fr@?r@Ip@K^GNWV_B`AKJK^",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "average_watts": 76.8,
+    "date": "2026-11-24",
+    "distance": 66.0,
+    "elevation_gain": 0.0,
+    "id": "21114809271",
+    "moving_time": 1037.0,
+    "name": "Evening Ride",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-11-24T19:15:33Z",
+    "type": "Ride",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 172.3,
+    "average_watts": 239.7,
+    "date": "2026-11-24",
+    "distance": 27834.1,
+    "elevation_gain": 410.0,
+    "id": "21115108524",
+    "max_heartrate": 190.0,
+    "moving_time": 3141.0,
+    "name": "Zwift - Race: Zwift Racing League 2026/27 Round 2: Team Tempo - Open Lavender League Division 1 - Race 2 (C)",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-24T19:35:29Z",
+    "start_latlng": [
+      -11.719178,
+      166.966768
+    ],
+    "summary_polyline": "vnofA{~az^_@_@IkJi@[yBASk@I}N\\UvB@dBcAR{@c@oCmAaAd@wFo@yDi@q@kEgCkDaEaA?aDv@oAFgGqBwDI_Bu@m@h@V^vGE|GvBzFaAx@?fDdE`F~Cf@tARrBi@lFpAfAb@zA@|@Yt@qAr@aCBe@\\NvOVX`C@\\XDxIPf@`HFVi@@wCb@[tH~GJr@Ul@sGvAeAn@sBaAyBbAanAD}KGoDiCcAYm@Lc@h@w@zFoAd@i@OUe@OgFY]o@Mw@J[d@UvFs@Tu@MW{@OwES_@k@Mm@HYd@YzFiAJ]_AQaFWa@s@Ie@LQf@LrEs@^wB{AoJOs@Yc@y@e@eCgDsEJ{EiC{Dk@g@sCg@]s@?_Be@s@yDoBwG}F}Bs@eIzCmBdEm@tFo@f@yBZ{BnAkBOwA}@UaFcAw@uBQeLD_Bh@a@jBhA~OSxG`AtFgApDUT}@H{A]eAoB]}AYoJe@u@aAIgA|@UzAXtC}@hBeBfAwBRi@m@S{@HaFW{BaCkAwEqH{EqDoDkBqEoA{Ei@aFAqGl@eGlAqF|BkDLc@r@?~@`AlAPhD|A`BG`B}@LsCkC_@CuBpBmAn@eExA}AP_@]UsANqH_FyFiBeHd@mIj@e@fCk@dBmARe@Me@w@Mg@L[WHc@jBc@`@uBy@{AQ_CqAc@o@sASkALy@tAyA|Ai@^oC`@u@vLaHf@{A?eDlCo@nAcA\\_BKoDdEsEvAY~BPtGvCzEe@hAr@zBtCt@\\dAg@jAuDv@kAr@YvDSlDuChCHvB{@pAMlBj@`EvBlAPdBG`Ag@r@qAz@kJtAaCxAcAtCi@bAXnCnBrAAv@cAjAuFbBwAh@{AhDsBhIQn@a@l@iB`@YhDfAbAA\\k@`@gCr@_@z@FFhBhA^f@l@pE]tDmClA@z@l@fBZh@]XaBzAy@dC\\zC_BpAPJdDjAVzAw@vCqDhAe@vAj@vBdEfC\\bDtB@v@}Av@mA~Bf@|FZr@xAb@~FLVVHvBT\\jDFjAnB^Nb@E|AsAr@QjBVtAj@`@p@b@hD^RnBFx@n@|@pDlCdG|AzF|@hAd@Bn@]XgAsAsCFiBqBcA?aAz@aA`Bu@rAIx@PZ\\Dx@aBfFGxCt@rAdHrHjBrCVfACnEVtAn@n@z@T|HGjDdA",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 142.4,
+    "average_watts": 128.9,
+    "date": "2026-11-24",
+    "distance": 7422.6,
+    "elevation_gain": 44.0,
+    "id": "21115184260",
+    "max_heartrate": 174.0,
+    "moving_time": 922.0,
+    "name": "Zwift - Pacer Group Ride with Maria",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-24T20:28:26Z",
+    "start_latlng": [
+      -11.661195,
+      166.95194
+    ],
+    "summary_polyline": "~}dfAot~y^zE`AnBb@V@VANEPOh@eAn@aBh@s@b@_@~As@VQJOJ[PmAP]d@]hBw@PMPQRk@RkANg@NWr@y@NWLe@^eCAyADwAMmACi@Fg@Nc@^i@^UhAEl@Of@k@b@_@R]J{@?WEWEKQSUKm@OQOe@iAKa@AWFe@Nc@T[h@Yj@i@h@_@v@[NQFW?YEUSm@EWEgABc@Jm@Rk@LSb@e@BMBg@GY_@i@CM@KBMFIXGJBJDXZJDJ@JEHGh@m@HEz@OTMLSFWAYIUMUc@]GICU@WPa@j@o@JYNs@PU`@Qd@A`@KTMLSHW@YKq@?WZaAPkBb@eBDYC[O]_AcBw@gAc@c@mAaAqCmBuAw@eAc@_Bi@iBc@{AS{AQwAGwACsADiBLgBPkDd@_BZoBl@mBp@y@h@UJUFY@gBEYHSRMVGZ?\\JXz@dAF\\G|AF\\RXfA|@PXD^A^K\\[P_@@]Ko@k@g@s@WW[M_@FWTg@r@WRWPyBbAoBn@yBj@eJpB{QlEkNrD_GdB{@\\g@ZILE\\B\\HZp@xBl@dBBJCJWJuCv@gFpAuATcCZ",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 145.1,
+    "average_watts": 379.3,
+    "date": "2026-11-25",
+    "distance": 5524.0,
+    "elevation_gain": 0.0,
+    "id": "21124049941",
+    "max_heartrate": 159.0,
+    "moving_time": 1813.0,
+    "name": "Afternoon Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-11-25T13:33:01Z",
+    "type": "Run",
+    "year": 2026
   }
 ]
