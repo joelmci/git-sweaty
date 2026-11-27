@@ -16833,5 +16833,42 @@
     "start_date_local": "2026-11-25T13:33:01Z",
     "type": "Run",
     "year": 2026
+  },
+  {
+    "average_heartrate": 133.0,
+    "average_watts": 164.8,
+    "date": "2026-11-27",
+    "distance": 45181.2,
+    "elevation_gain": 184.0,
+    "id": "21145220962",
+    "max_heartrate": 151.0,
+    "moving_time": 5044.0,
+    "name": "Zwift - Endurance Double Shift",
+    "raw_activity_type": "VirtualRide",
+    "raw_type": "VirtualRide",
+    "start_date_local": "2026-11-27T10:18:59Z",
+    "start_latlng": [
+      -11.63814,
+      166.948998
+    ],
+    "summary_polyline": "vq_fAct~y^]yCZiBdJ_IiD}E|B}@iAaLLiElAwCrBiBxFiBdSwCtAqA`CwFdEuB`Fb@xG|HzCt@`IcAx[}IdBGp@tAKrOyDvOa@xLuK`@sGuOqB[aBjBLnCdHbOiMfCeAdBhAf@`KqAbATsNnBOn@xAb@hHW~Bh@d@rDhCnEMv@gCz@Eh@dAtC`Cv@[h@kCP~@hBcDc@sBXkHpGsB~Lh@rOi@`GkG~LwBpBeAjE_FdCoHKx@q@fC[c@oAkGhBqEsCC}CjB_A]cJcBw@kCv@y@fBsAHkCcG^uBtE_IyGaVjB{A`EzB\\}@uEuKaKsDiEmCwBaDaAgEj@kDtIqHmDqE~B_AmAyLZqErBoDdDgB`XqElEaIfE{BfFf@pGvH|Cv@hIaAr[{I`BIn@l@KxRqDzM]pLaLf@_GmOsBg@iBfBLzCbH~NuMlCy@bBdAb@dKqA`AXmNjBSn@xAb@fG[dDn@d@vDdCtEWt@{Br@Cl@bAnC~Bt@_@j@eCLdAnAMb@iDk@aBXuHxGqBnLj@~Os@|GcGdLqBhBaAdEaFnCoHEj@q@lCa@e@oAcGhBsDuBs@sBTqA`Bg@JcEi@qDwAw@mCp@iArBiAHoCmG^gBvEiI_G{QWeCbBuAxAV`B`Bj@M?o@yEyKyK}DwEeD_B}Cq@uDh@{CtIgHYiAoCeC|BqAmAcMV}DtBsDnDkB`XqEdE{H|D{BrBG~Bl@jGrHvC|@xIgAx[{IxACf@b@AlQuDjOa@zL}K`@eGoOqBc@eBdBJzCbHtNoAv@eK~Ay@|AvAf@vJoA~@PoAn@}K`AS|@fBVpE_@fEr@f@vDfCtEYv@yBn@Cn@~@hCfBVXj@eDt@~@z@Gr@{Ci@yBZgHrGsB~Lj@fOq@~G{F~KyBrBiApE}EfCkHEd@o@tCg@q@mAmFhBwAW{CcDLsBfBq@J_Ei@wD}As@eCn@_AjBsAPoCeG\\oBrBgCbBkEeG{QSyBnByAxD|Bb@}@iEgKqKeEoEqCoBwCaAqEj@eDrIgHQ_A{C{CbCgAoAoLXmEnBoDhDmBnXyEbE}HvDsBjF^bHbIxCn@zJsAhZmIxBND~QuDfOE|Ia@`B{KZiGqOkB]gBnBNrCbHxNqAr@_KzAs@f@G`AfA^bKqA`AR_Bn@sK`AOp@zA^jHWbCt@^hDfC`Fa@t@kBd@Kl@bArC~B|@Q`@uCZ`Az@Ip@uCk@cBPqGbF",
+    "type": "VirtualRide",
+    "year": 2026
+  },
+  {
+    "average_heartrate": 128.1,
+    "average_watts": 147.4,
+    "date": "2026-11-27",
+    "distance": 398.7,
+    "elevation_gain": 0.0,
+    "id": "21145271970",
+    "max_heartrate": 148.0,
+    "moving_time": 1713.0,
+    "name": "Morning Ride",
+    "raw_activity_type": "Ride",
+    "raw_type": "Ride",
+    "start_date_local": "2026-11-27T10:15:13Z",
+    "type": "Ride",
+    "year": 2026
   }
 ]
